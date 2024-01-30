@@ -95,7 +95,6 @@ jobs:
           echo "修改文件名"
           mkdir -p "${{ github.workspace }}/apk/"
           cp ${{ env.outputs_dir }}/apk/${{ env.product }}/release/*${{ env.ver_name }}.apk "${{ github.workspace }}/apk/TTS-Server_${{ env.product }}_${{ env.ver_name }}.apk"
-          done
 
       - name: Upload APK To Artifact
         uses: actions/upload-artifact@v3
