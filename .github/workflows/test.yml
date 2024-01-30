@@ -91,7 +91,7 @@ jobs:
           echo "ver_name=$(grep -m 1 'versionName' ${{ env.outputs_dir }}/apk/${{ env.product }}/release/output-metadata.json | cut -d\" -f4)" >> $GITHUB_ENV
           echo "修改文件名"
           mkdir -p "${{ github.workspace }}/apk/"
-          for file in "${{ github.workspace }}/app/build/outputs/apk/${{ env.product }}/release/*.apk"; do
+          for file in "${{ env.outputs_dir }}/apk/${{ env.product }}/release/*${{ env.ver_name }}.apk"; do
               mv "$file" "${{ github.workspace }}/apk/TTS-Server_${{ env.product }}_${{ env.ver_name }}.apk"
           done
 
