@@ -115,11 +115,13 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/download-artifact@v3
         with:
-          path: ${{ github.workspace }}/apk
+          path: apk/
+      - working-directory: apk/
+        run: mv */*.apk . ;rm -rf */
       - name: Upload To Lanzou
         continue-on-error: true
         run: |
-          path="$GITHUB_WORKSPACE/apk"
+          path="$GITHUB_WORKSPACE/"
           python3 $GITHUB_WORKSPACE/.github/scripts/lzy_web.py "$path" "$LANZOU_FOLDER_ID"
           echo "[$(date -u -d '+8 hour' '+%Y.%m.%d %H:%M:%S')] 分享链接: https://miaogongzi.lanzout.com/b01rvtuhg"
 
