@@ -45,7 +45,7 @@ jobs:
     env:
       product: ${{ matrix.product.value }}
       product_name: ${{ matrix.product.value }}
-      outputs_dir: "${{ github.workspace }}/app/"
+      outputs_dir: "${{ github.workspace }}/app/build/outputs"
 
 
     steps:
@@ -85,7 +85,10 @@ jobs:
           echo "开始${{ env.product }}$typeName构建"
           chmod +x gradlew
           ./gradlew assemble${{ env.product }}release --build-cache --parallel --daemon --warning-mode all
-
+      - name: Set Version Name
+        run: |
+          echo "ver_name=$(grep -m 1 'versionName' ${{ env.outputs_dir }}/apk/${{ env.product }}/release/output-metadata.json | cut -d\" -f4)" >> $GITHUB_ENV
+      
       - name: Upload APK To Artifact
         uses: actions/upload-artifact@v3
         with:
@@ -102,15 +105,12 @@ jobs:
       # 蓝奏云里的文件夹ID
       LANZOU_FOLDER_ID: '9494606'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
       - uses: actions/download-artifact@v3
-        with:
-          path: apk/
-      - working-directory: apk/
-        run: mv */*.apk . ;rm -rf */
       - name: Upload To Lanzou
         continue-on-error: true
         run: |
+          mkdir apk
           cp ${{ env.outputs_dir }}/apk/${{ env.product }}/release/*${{ env.ver_name }}.apk "${{ github.workspace }}/apk"
           path="$GITHUB_WORKSPACE/apk/"
           python3 $GITHUB_WORKSPACE/.github/scripts/lzy_web.py "$path" "$LANZOU_FOLDER_ID"
