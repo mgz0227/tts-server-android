@@ -89,6 +89,7 @@ jobs:
           echo "给apk增加签名"
           # not use this output
           # echo "KeyStore=yes" >> $GITHUB_OUTPUT
+          touch local.properties
           echo RELEASE_KEY_ALIAS='${{ secrets.RELEASE_KEY_ALIAS }}' >> local.properties
           echo RELEASE_KEY_PASSWORD='${{ secrets.RELEASE_KEY_PASSWORD }}' >> local.properties
           echo RELEASE_STORE_PASSWORD='${{ secrets.RELEASE_STORE_PASSWORD }}' >> local.properties
@@ -102,7 +103,7 @@ jobs:
           echo "开始${{ env.product }}$typeName构建"
           chmod +x gradlew
           ./gradlew assemble${{ env.product }}release --build-cache --parallel --daemon --warning-mode all
-         
+
       - name: Upload App To Artifact
         uses: actions/upload-artifact@v3
         with:
