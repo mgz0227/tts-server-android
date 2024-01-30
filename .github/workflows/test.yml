@@ -93,7 +93,7 @@ jobs:
           path: ${{ github.workspace }}/apk/*.apk
 
   lanzou:
-    needs: [ prepare, build ]
+    needs: [  build ]
     if: ${{ github.event_name != 'pull_request' && needs.prepare.outputs.lanzou == 'yes' }}
     runs-on: ubuntu-latest
     env:
