@@ -45,7 +45,7 @@ jobs:
     env:
       product: ${{ matrix.product.value }}
       product_name: ${{ matrix.product.value }}
-      outputs_dir: "${{ github.workspace }}/app/build/outputs"
+      outputs_dir: "${{ github.workspace }}/app/"
 
 
     steps:
@@ -86,11 +86,11 @@ jobs:
           chmod +x gradlew
           ./gradlew assemble${{ env.product }}release --build-cache --parallel --daemon --warning-mode all
 
-      - name: Upload App To Artifact
+      - name: Upload APK To Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: TTS-Server.${{ env.product }}.${{ env.type }}
-          path: ${{ github.workspace }}/apk/*.apk
+          name: "TTS-Server_${{ env.product }}_${{ env.ver_name }}"
+          path: ${{env.outputs_dir}}/apk/${{ env.product }}/release/*${{ env.ver_name }}.apk
 
   lanzou:
     needs: [  build ]
@@ -112,6 +112,7 @@ jobs:
       - name: Upload To Lanzou
         continue-on-error: true
         run: |
+          cp ${{ env.outputs_dir }}/apk/${{ env.product }}/release/*${{ env.ver_name }}.apk "${{ github.workspace }}/apk"
           path="$GITHUB_WORKSPACE/apk/"
           python3 $GITHUB_WORKSPACE/.github/scripts/lzy_web.py "$path" "$LANZOU_FOLDER_ID"
           echo "[$(date -u -d '+8 hour' '+%Y.%m.%d %H:%M:%S')] 分享链接: https://miaogongzi.lanzout.com/b01rvtuhg"
