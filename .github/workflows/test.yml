@@ -28,29 +28,44 @@ jobs:
           go get golang.org/x/mobile/bind
           gomobile bind -ldflags "-s -w" -v -androidapi=21
           cp -f *.aar $GITHUB_WORKSPACE/app/libs
-
       - uses: actions/upload-artifact@v3.1.0
         with:
           name: tts-server-lib
           path: tts-server-lib/*.aar
 
-  build:
+  prepare:
     needs: go-lib
+    runs-on: ubuntu-latest
+    if: ${{ !startsWith(github.event.head_commit.message, 'Merge pull request') }}
+    outputs:
+      version: ${{ steps.set-ver.outputs.version }}
+      versionL: ${{ steps.set-ver.outputs.versionL }}
+      lanzou: ${{ steps.check.outputs.lanzou }}
+    steps:
+      - id: set-ver
+        run: |
+          echo "version=$(date -d "8 hour" -u +3.%y.%m%d%H)" >> $GITHUB_OUTPUT
+          echo "versionL=$(date -d "8 hour" -u +3.%y.%m%d%H%M)" >> $GITHUB_OUTPUT
+      - id: check
+        run: |
+          if [ ${{ secrets.LANZOU_ID }} ]; then
+            echo "lanzou=yes" >> $GITHUB_OUTPUT
+          fi
+
+  build:
+    needs: prepare
     strategy:
       matrix:
-        product: [ { name: "App原版", value: app, lzyId: "9493563" }, { name: "Dev共存版", value: dev, lzyId: "7381570" } ]
-
+        product: [ { name: "App原版", value: app }, { name: "Dev共存版", value: dev} ]
+        type: [ release, releasedev ]
       fail-fast: false
     runs-on: ubuntu-latest
     env:
       product: ${{ matrix.product.value }}
-      product_name: ${{ matrix.product.value }}
-      lzy_folder_id: ${{ matrix.product.lzyId }}
-      ylogin: ${{ secrets.LANZOU_ID }}
-      phpdisk_info: ${{ secrets.LANZOU_PSD }}
-      outputs_dir: "${{ github.workspace }}/app/build/outputs"
-      ver_name: ""
-
+      type: ${{ matrix.type }}
+      VERSION: ${{ needs.prepare.outputs.version }}
+      VERSIONL: ${{ needs.prepare.outputs.versionL }}
+      
     steps:
       - uses: actions/checkout@v3
         with:
@@ -61,57 +76,75 @@ jobs:
           name: tts-server-lib
           path: ${{ github.workspace }}/app/libs
 
-      - uses: actions/setup-java@v3
-        with:
-          distribution: temurin
+      -  uses: actions/setup-java@v3
+         with:
+          distribution: 'temurin'
           java-version: 17
 
-      - name: Setup Gradle
+      - name: Set up Gradle
         uses: gradle/gradle-build-action@v2
 
-      - name: Init Signature
+      - name: Release Apk Sign
         run: |
-          touch local.properties
-          echo ALIAS_NAME='${{ secrets.ALIAS_NAME }}' >> local.properties
-          echo ALIAS_PASSWORD='${{ secrets.ALIAS_PASSWORD }}' >> local.properties
-          echo KEY_PASSWORD='${{ secrets.KEY_PASSWORD }}' >> local.properties
-          echo KEY_PATH='./key.jks' >> local.properties
-          # 从Secrets读取无换行符Base64解码, 然后保存到到app/key.jks
-          echo ${{ secrets.KEY_STORE }} | base64 --decode > $GITHUB_WORKSPACE/app/key.jks
+          echo "给apk增加签名"
+          # not use this output
+          # echo "KeyStore=yes" >> $GITHUB_OUTPUT
+          echo RELEASE_KEY_ALIAS='${{ secrets.RELEASE_KEY_ALIAS }}' >> local.propertie
+          echo RELEASE_KEY_PASSWORD='${{ secrets.RELEASE_KEY_PASSWORD }}' >> local.propertie
+          echo RELEASE_STORE_PASSWORD='${{ secrets.RELEASE_STORE_PASSWORD }}' >> local.propertie
+          echo RELEASE_STORE_FILE='./key.jks' >> local.propertie
+          echo ${{ secrets.RELEASE_KEY_STORE }} | base64 --decode > $GITHUB_WORKSPACE/app/key.jks
 
-      - name: Build with Gradle
+
+
+      - name: Build With Gradle
         run: |
+          if [ ${{ env.type }} == 'release' ]; then
+            typeName="app"
+          else
+            typeName="Dev"
+            sed "s/'.release'/'.releasedev'/" $GITHUB_WORKSPACE/app/build.gradle  -i
+
+          fi
+          echo "统一版本号"
+          sed "/def version/c def version = \"${{ env.VERSION }}\"" $GITHUB_WORKSPACE/app/build.gradle  -i
+
+          echo "开始${{ env.product }}$typeName构建"
           chmod +x gradlew
           ./gradlew assemble${{ env.product }}release --build-cache --parallel --daemon --warning-mode all
-
-      - name: Set Version Name
-        run: |
-          echo "ver_name=$(grep -m 1 'versionName' ${{ env.outputs_dir }}/apk/${{ env.product }}/release/output-metadata.json | cut -d\" -f4)" >> $GITHUB_ENV
-          
-          #      - name: Set APK Path
-          #        run: |
-          #          echo "apk_path=${{ env.outputs_dir }}/apk/${{ env.product }}/release/${{ env.product }}-release.apk" >> $GITHUB_ENV    
-          
-          #            - name: Upload Mappings to Artifact
-          #              uses: actions/upload-artifact@v3
-          #              with:
-          #                name: mappings_${{ env.product }}_${{ env.ver_name }}
-          #                path: ${{ env.outputs_dir }}/mapping/*/*.txt
-
-      - name: Upload APK To Artifact
+          echo "修改文件名"
+          mkdir -p ${{ github.workspace }}/apk/
+          for file in `ls ${{ github.workspace }}/app/build/outputs/apk/*/*/*.apk`; do
+            mv "$file" ${{ github.workspace }}/apk/TTS-Server_${{ env.product }}_${{ env.VERSIONL }}_$typeName.apk
+          done
+      - name: Upload App To Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: "TTS-Server_${{ env.product }}_${{ env.ver_name }}"
-          path: ${{env.outputs_dir}}/apk/${{ env.product }}/release/*${{ env.ver_name }}.apk
+          name: TTS-Server.${{ env.product }}.${{ env.type }}
+          path: ${{ github.workspace }}/apk/*.apk
 
-
-      - name: Upload APK To Lanzouyun
+  lanzou:
+    needs: [ prepare, build ]
+    if: ${{ github.event_name != 'pull_request' && needs.prepare.outputs.lanzou == 'yes' }}
+    runs-on: ubuntu-latest
+    env:
+      # 登录蓝奏云后在控制台运行document.cookie
+      ylogin: ${{ secrets.LANZOU_ID }}
+      phpdisk_info: ${{ secrets.LANZOU_PSD }}
+      # 蓝奏云里的文件夹ID
+      LANZOU_FOLDER_ID: '9494606'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v3
+        with:
+          path: apk/
+      - working-directory: apk/
+        run: mv */*.apk . ;rm -rf */
+      - name: Upload To Lanzou
+        continue-on-error: true
         run: |
-          mkdir apk
-          cp ${{ env.outputs_dir }}/apk/${{ env.product }}/release/*${{ env.ver_name }}.apk "${{ github.workspace }}/apk"
-          path="${{ github.workspace }}/apk"
-          python3 ${{ github.workspace }}/.github/scripts/lzy_web.py $path "${{ env.lzy_folder_id }}"
-          
-#          echo "app: https://jing332.lanzn.com/b09jpjd2d"
-#          echo "dev: https://jing332.lanzn.com/b09ig9qla"
-#          echo "密码PWD: 1234"
+          path="$GITHUB_WORKSPACE/apk/"
+          python3 $GITHUB_WORKSPACE/.github/scripts/lzy_web.py "$path" "$LANZOU_FOLDER_ID"
+          echo "[$(date -u -d '+8 hour' '+%Y.%m.%d %H:%M:%S')] 分享链接: https://miaogongzi.lanzout.com/b01rvtuhg"
+
+ 
