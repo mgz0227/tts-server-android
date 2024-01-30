@@ -33,27 +33,9 @@ jobs:
           name: tts-server-lib
           path: tts-server-lib/*.aar
 
-  prepare:
-    needs: go-lib
-    runs-on: ubuntu-latest
-    if: ${{ !startsWith(github.event.head_commit.message, 'Merge pull request') }}
-    outputs:
-      version: ${{ steps.set-ver.outputs.version }}
-      versionL: ${{ steps.set-ver.outputs.versionL }}
-      lanzou: ${{ steps.check.outputs.lanzou }}
-    steps:
-      - id: set-ver
-        run: |
-          echo "version=$(date -d "8 hour" -u +3.%y.%m%d%H)" >> $GITHUB_OUTPUT
-          echo "versionL=$(date -d "8 hour" -u +3.%y.%m%d%H%M)" >> $GITHUB_OUTPUT
-      - id: check
-        run: |
-          if [ ${{ secrets.LANZOU_ID }} ]; then
-            echo "lanzou=yes" >> $GITHUB_OUTPUT
-          fi
 
   build:
-    needs: prepare
+    needs: go-lib
     strategy:
       matrix:
         product: [ { name: "App原版", value: app }, { name: "Dev共存版", value: dev} ]
@@ -63,8 +45,7 @@ jobs:
     env:
       product: ${{ matrix.product.value }}
       product_name: ${{ matrix.product.value }}
-      VERSION: ${{ needs.prepare.outputs.version }}
-      VERSIONL: ${{ needs.prepare.outputs.versionL }}
+
 
     steps:
       - uses: actions/checkout@v3
@@ -84,18 +65,18 @@ jobs:
       - name: Set up Gradle
         uses: gradle/gradle-build-action@v2
 
-      - name: Release Apk Sign
+      - name: Init Signature
         run: |
           echo "给apk增加签名"
           # not use this output
           # echo "KeyStore=yes" >> $GITHUB_OUTPUT
           touch local.properties
-          echo RELEASE_KEY_ALIAS='${{ secrets.RELEASE_KEY_ALIAS }}' >> local.properties
-          echo RELEASE_KEY_PASSWORD='${{ secrets.RELEASE_KEY_PASSWORD }}' >> local.properties
-          echo RELEASE_STORE_PASSWORD='${{ secrets.RELEASE_STORE_PASSWORD }}' >> local.properties
-          echo RELEASE_STORE_FILE='./key.jks' >> local.properties
-          echo ${{ secrets.RELEASE_KEY_STORE }} | base64 --decode > $GITHUB_WORKSPACE/app/key.jks
-
+          echo ALIAS_NAME='${{ secrets.ALIAS_NAME }}' >> local.properties
+          echo ALIAS_PASSWORD='${{ secrets.ALIAS_PASSWORD }}' >> local.properties
+          echo KEY_PASSWORD='${{ secrets.KEY_PASSWORD }}' >> local.properties
+          echo KEY_PATH='./key.jks' >> local.properties
+          # 从Secrets读取无换行符Base64解码, 然后保存到到app/key.jks
+          echo ${{ secrets.KEY_STORE }} | base64 --decode > $GITHUB_WORKSPACE/app/key.jks
 
 
       - name: Build With Gradle
