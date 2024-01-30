@@ -77,7 +77,7 @@ jobs:
           path: ${{ github.workspace }}/app/libs
 
       -  uses: actions/setup-java@v3
-         with:
+        with:
           distribution: 'temurin'
           java-version: 17
 
@@ -89,10 +89,10 @@ jobs:
           echo "给apk增加签名"
           # not use this output
           # echo "KeyStore=yes" >> $GITHUB_OUTPUT
-          echo RELEASE_KEY_ALIAS='${{ secrets.RELEASE_KEY_ALIAS }}' >> local.propertie
-          echo RELEASE_KEY_PASSWORD='${{ secrets.RELEASE_KEY_PASSWORD }}' >> local.propertie
-          echo RELEASE_STORE_PASSWORD='${{ secrets.RELEASE_STORE_PASSWORD }}' >> local.propertie
-          echo RELEASE_STORE_FILE='./key.jks' >> local.propertie
+          echo RELEASE_KEY_ALIAS='${{ secrets.RELEASE_KEY_ALIAS }}' >> local.properties
+          echo RELEASE_KEY_PASSWORD='${{ secrets.RELEASE_KEY_PASSWORD }}' >> local.properties
+          echo RELEASE_STORE_PASSWORD='${{ secrets.RELEASE_STORE_PASSWORD }}' >> local.properties
+          echo RELEASE_STORE_FILE='./key.jks' >> local.properties
           echo ${{ secrets.RELEASE_KEY_STORE }} | base64 --decode > $GITHUB_WORKSPACE/app/key.jks
 
 
