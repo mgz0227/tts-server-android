@@ -109,8 +109,6 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           path: apk/
-      - working-directory: apk/
-        run: mv */*.apk . ;rm -rf */
       - name: Upload To Lanzou
         continue-on-error: true
         run: |
