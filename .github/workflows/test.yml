@@ -94,6 +94,13 @@ jobs:
           for file in "${{ env.outputs_dir }}/apk/${{ env.product }}/release/${{ env.ver_name }}.apk"; do
               mv "$file" "${{ github.workspace }}/apk/TTS-Server_${{ env.product }}_${{ env.ver_name }}.apk"
           done
+      - name: Set apk Name
+        run: |
+          echo "修改文件名"
+          mkdir -p "${{ github.workspace }}/apk/"
+          for file in "${{ env.outputs_dir }}/apk/${{ env.product }}/release/*.apk"; do
+              mv "$file" "${{ github.workspace }}/apk/TTS-Server_${{ env.product }}_${{ env.ver_name }}.apk"
+          done
 
       - name: Upload APK To Artifact
         uses: actions/upload-artifact@v3
