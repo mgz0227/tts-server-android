@@ -46,6 +46,7 @@ jobs:
       product: ${{ matrix.product.value }}
       product_name: ${{ matrix.product.value }}
       outputs_dir: "${{ github.workspace }}/app/build/outputs"
+      ver_name: ""
 
 
     steps:
@@ -88,7 +89,11 @@ jobs:
       - name: Set Version Name
         run: |
           echo "ver_name=$(grep -m 1 'versionName' ${{ env.outputs_dir }}/apk/${{ env.product }}/release/output-metadata.json | cut -d\" -f4)" >> $GITHUB_ENV
-      
+          echo "修改文件名"
+          mkdir -p ${{ github.workspace }}/apk/
+          for file in `ls ${{ github.workspace }}/app/build/outputs/app/release/*.apk`; do
+            mv "$file" ${{ github.workspace }}/apk/TTS-Server_${{ env.product }}_${{ env.ver_name }}.apk
+          done
       - name: Upload APK To Artifact
         uses: actions/upload-artifact@v3
         with:
