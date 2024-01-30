@@ -94,7 +94,6 @@ jobs:
 
   lanzou:
     needs: [  build ]
-    if: ${{ github.event_name != 'pull_request' && needs.prepare.outputs.lanzou == 'yes' }}
     runs-on: ubuntu-latest
     env:
       # 登录蓝奏云后在控制台运行document.cookie
