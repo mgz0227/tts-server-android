@@ -57,15 +57,15 @@ jobs:
     strategy:
       matrix:
         product: [ { name: "App原版", value: app }, { name: "Dev共存版", value: dev} ]
-        type: [ release, releasedev ]
+
       fail-fast: false
     runs-on: ubuntu-latest
     env:
       product: ${{ matrix.product.value }}
-      type: ${{ matrix.type }}
+      product_name: ${{ matrix.product.value }}
       VERSION: ${{ needs.prepare.outputs.version }}
       VERSIONL: ${{ needs.prepare.outputs.versionL }}
-      
+
     steps:
       - uses: actions/checkout@v3
         with:
@@ -77,7 +77,7 @@ jobs:
           path: ${{ github.workspace }}/app/libs
 
       -  uses: actions/setup-java@v3
-         with:
+        with:
           distribution: 'temurin'
           java-version: 17
 
@@ -99,13 +99,7 @@ jobs:
 
       - name: Build With Gradle
         run: |
-          if [ ${{ env.type }} == 'release' ]; then
-            typeName="app"
-          else
-            typeName="Dev"
-            sed "s/'.release'/'.releasedev'/" $GITHUB_WORKSPACE/app/build.gradle  -i
-
-          fi
+ 
           echo "统一版本号"
           sed "/def version/c def version = \"${{ env.VERSION }}\"" $GITHUB_WORKSPACE/app/build.gradle  -i
 
