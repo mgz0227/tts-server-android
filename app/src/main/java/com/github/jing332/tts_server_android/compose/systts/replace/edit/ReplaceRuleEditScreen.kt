@@ -19,7 +19,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Abc
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Headset
-import androidx.compose.material.icons.filled.MoreVert
 import androidx.compose.material.icons.filled.Save
 import androidx.compose.material3.AlertDialogDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -148,11 +147,11 @@ fun RuleEditScreen(
                     Icon(Icons.Filled.Save, stringResource(id = R.string.save))
                 }
 
-                IconButton(onClick = {}) {
-                    Icon(
-                        Icons.Filled.MoreVert, stringResource(id = R.string.more_options)
-                    )
-                }
+//                IconButton(onClick = {}) {
+//                    Icon(
+//                        Icons.Filled.MoreVert, stringResource(id = R.string.more_options)
+//                    )
+//                }
             })
     }, bottomBar = {
         SoftKeyboardInputToolbar(symbols = toolBarSymbols, onClick = {
@@ -175,8 +174,8 @@ fun RuleEditScreen(
                     onRuleChange.invoke(rule.copy(groupId = it.id))
                 },
 
-                nameValue = rule.name,
-                onNameValueChange = {
+                name = rule.name,
+                onNameChange = {
                     onRuleChange.invoke(rule.copy(name = it))
                 },
 
@@ -193,6 +192,11 @@ fun RuleEditScreen(
                 isRegex = rule.isRegex,
                 onIsRegexChange = {
                     onRuleChange.invoke(rule.copy(isRegex = it))
+                },
+
+                sampleText = rule.sampleText,
+                onSampleTextChange = {
+                    onRuleChange.invoke(rule.copy(sampleText = it))
                 },
 
                 onTest = {
@@ -233,14 +237,17 @@ private fun Screen(
     groupValues: List<String>,
     onGroupChange: (ReplaceRuleGroup) -> Unit,
 
-    nameValue: String,
-    onNameValueChange: (String) -> Unit,
+    name: String,
+    onNameChange: (String) -> Unit,
     patternValue: String,
     onReplaceValueChange: (String) -> Unit,
     replacementValue: String,
     onReplacementValueChange: (String) -> Unit,
     isRegex: Boolean,
     onIsRegexChange: (Boolean) -> Unit,
+
+    sampleText: String,
+    onSampleTextChange: (String) -> Unit,
 
     onTest: (String) -> String,
 ) {
@@ -268,8 +275,8 @@ private fun Screen(
 
         TextFieldInsert(
             label = { Text(stringResource(R.string.name)) },
-            value = nameValue,
-            onValueChange = onNameValueChange,
+            value = name,
+            onValueChange = onNameChange,
             modifier = Modifier
                 .fillMaxWidth(),
             inertKeyState = insertKeyState,
@@ -314,12 +321,11 @@ private fun Screen(
         )
 
         var testResult by remember { mutableStateOf("") }
-        var sampleTextFieldValue by remember { mutableStateOf("") }
         TextFieldInsert(
             label = { Text(stringResource(R.string.test)) },
-            value = sampleTextFieldValue,
+            value = sampleText,
             onValueChange = {
-                sampleTextFieldValue = it
+                onSampleTextChange(it)
                 testResult = onTest(it)
             },
             modifier = Modifier
@@ -337,7 +343,7 @@ private fun Screen(
 
                 var showTtsSelectDialog by remember { mutableStateOf(false) }
                 if (showTtsSelectDialog) {
-                    TtsConfigSelectDialog(onDismissRequest = { showTtsSelectDialog = false }) {
+                    SysttsSelectBottomSheet(onDismissRequest = { showTtsSelectDialog = false }) {
                         showTtsSelectDialog = false
                         showAuditionDialog = it
                     }
@@ -353,7 +359,7 @@ private fun Screen(
             }
         )
 
-        if (sampleTextFieldValue.isNotEmpty()) Text(stringResource(R.string.label_result))
+        if (sampleText.isNotEmpty()) Text(stringResource(R.string.label_result))
         SelectionContainer {
             Text(text = testResult, style = MaterialTheme.typography.bodyMedium)
         }
