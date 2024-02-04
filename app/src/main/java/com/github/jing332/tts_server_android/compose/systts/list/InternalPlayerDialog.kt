@@ -12,7 +12,7 @@ import com.github.jing332.tts_server_android.R
 import com.github.jing332.tts_server_android.compose.widgets.AppDialog
 import com.github.jing332.tts_server_android.compose.widgets.LabelSlider
 import com.github.jing332.tts_server_android.conf.SystemTtsConfig
-import java.text.DecimalFormat
+import com.github.jing332.tts_server_android.utils.toScale
 
 @Composable
 fun InternalPlayerDialog(onDismissRequest: () -> Unit) {
@@ -26,38 +26,28 @@ fun InternalPlayerDialog(onDismissRequest: () -> Unit) {
                 LabelSlider(
                     value = speed,
                     onValueChange = {
-                        speed = DecimalFormat("#.00").format(it).toFloat()
+                        speed = it.toScale(2)
                     },
-                    valueRange = 0.1f..3.0f
-                ) {
-                    val str = stringResource(id = R.string.label_speed) + speed
-                    Text(str)
-                    str
-                }
-
+                    valueRange = 0.1f..3.0f,
+                    text = stringResource(id = R.string.label_speed) + speed
+                )
                 LabelSlider(
                     value = volume,
                     onValueChange = {
-                        volume = DecimalFormat("#.00").format(it).toFloat()
+                        volume = it.toScale(2)
                     },
-                    valueRange = 0.1f..1.0f
-                ) {
-                    val str = stringResource(id = R.string.label_volume) + volume
-                    Text(str)
-                    str
-                }
+                    valueRange = 0.1f..1.0f,
+                    text = stringResource(id = R.string.label_volume) + volume
+                )
 
                 LabelSlider(
                     value = pitch,
                     onValueChange = {
-                        pitch = DecimalFormat("#.00").format(it).toFloat()
+                        pitch = it.toScale(2)
                     },
-                    valueRange = 0.1f..3.0f
-                ) {
-                    val str = stringResource(id = R.string.label_pitch) + pitch
-                    Text(str)
-                    str
-                }
+                    valueRange = 0.1f..3.0f,
+                    text = stringResource(id = R.string.label_pitch) + pitch
+                )
 
             }
         },
