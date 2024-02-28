@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.model.rhino.core.type.ui
+package com.github.mgz0227.tts_server_android.model.rhino.core.type.ui
 
 import android.annotation.SuppressLint
 import android.content.Context

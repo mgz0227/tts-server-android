@@ -1,11 +1,11 @@
-package com.github.jing332.tts_server_android.conf
+package com.github.mgz0227.tts_server_android.conf
 
 import com.funny.data_saver.core.DataSaverConverter.registerTypeConverters
 import com.funny.data_saver.core.DataSaverPreferences
 import com.funny.data_saver.core.mutableDataSaverStateOf
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.app
-import com.github.jing332.tts_server_android.compose.theme.AppTheme
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.app
+import com.github.mgz0227.tts_server_android.compose.theme.AppTheme
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json

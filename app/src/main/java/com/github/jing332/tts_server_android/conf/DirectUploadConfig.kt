@@ -1,9 +1,9 @@
-package com.github.jing332.tts_server_android.conf
+package com.github.mgz0227.tts_server_android.conf
 
 import com.funny.data_saver.core.DataSaverPreferences
 import com.funny.data_saver.core.mutableDataSaverStateOf
-import com.github.jing332.tts_server_android.app
-import com.github.jing332.tts_server_android.utils.FileUtils.readAllText
+import com.github.mgz0227.tts_server_android.app
+import com.github.mgz0227.tts_server_android.utils.FileUtils.readAllText
 
 object DirectUploadConfig {
     private val pref = DataSaverPreferences(app.getSharedPreferences("direct_link_upload", 0))

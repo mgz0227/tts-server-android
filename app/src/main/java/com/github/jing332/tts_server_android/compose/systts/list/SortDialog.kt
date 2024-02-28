@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts.list
+package com.github.mgz0227.tts_server_android.compose.systts.list
 
 import androidx.annotation.StringRes
 import androidx.compose.runtime.Composable
@@ -8,10 +8,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.res.stringResource
 import com.drake.net.utils.withIO
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.systts.ListSortSettingsDialog
-import com.github.jing332.tts_server_android.data.appDb
-import com.github.jing332.tts_server_android.data.entities.systts.SystemTts
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.systts.ListSortSettingsDialog
+import com.github.mgz0227.tts_server_android.data.appDb
+import com.github.mgz0227.tts_server_android.data.entities.systts.SystemTts
 
 internal enum class SortFields(@StringRes val strResId: Int) {
     NAME(R.string.name),

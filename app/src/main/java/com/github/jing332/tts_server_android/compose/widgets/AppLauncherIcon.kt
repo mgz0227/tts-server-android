@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.widgets
+package com.github.mgz0227.tts_server_android.compose.widgets
 
 import android.graphics.drawable.AdaptiveIconDrawable
 import android.os.Build
@@ -15,7 +15,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.toBitmap
-import com.github.jing332.tts_server_android.R
+import com.github.mgz0227.tts_server_android.R
 
 // https://gist.github.com/tkuenneth/ddf598663f041dc79960cda503d14448?permalink_comment_id=4660486#gistcomment-4660486
 @Composable

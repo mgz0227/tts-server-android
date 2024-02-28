@@ -1,7 +1,7 @@
 package tts_server_lib
 
 import (
-	"github.com/jing332/tts-server-go/server"
+	"github.com/mgz0227/tts-server-go/server"
 	log "github.com/sirupsen/logrus"
 	"io"
 )

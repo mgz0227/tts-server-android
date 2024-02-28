@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.model.speech.tts
+package com.github.mgz0227.tts_server_android.model.speech.tts
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

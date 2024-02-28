@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.ui
+package com.github.mgz0227.tts_server_android.ui
 
 import android.Manifest
 import android.app.Activity
@@ -30,18 +30,18 @@ import androidx.core.app.ActivityCompat
 import androidx.core.net.toUri
 import androidx.lifecycle.lifecycleScope
 import com.drake.net.utils.withMain
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.theme.AppTheme
-import com.github.jing332.tts_server_android.compose.widgets.AppSelectionDialog
-import com.github.jing332.tts_server_android.conf.AppConfig
-import com.github.jing332.tts_server_android.constant.FilePickerMode
-import com.github.jing332.tts_server_android.help.ByteArrayBinder
-import com.github.jing332.tts_server_android.ui.view.AppDialogs.displayErrorDialog
-import com.github.jing332.tts_server_android.utils.FileUtils
-import com.github.jing332.tts_server_android.utils.FileUtils.mimeType
-import com.github.jing332.tts_server_android.utils.getBinder
-import com.github.jing332.tts_server_android.utils.grantReadWritePermission
-import com.github.jing332.tts_server_android.utils.toast
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.theme.AppTheme
+import com.github.mgz0227.tts_server_android.compose.widgets.AppSelectionDialog
+import com.github.mgz0227.tts_server_android.conf.AppConfig
+import com.github.mgz0227.tts_server_android.constant.FilePickerMode
+import com.github.mgz0227.tts_server_android.help.ByteArrayBinder
+import com.github.mgz0227.tts_server_android.ui.view.AppDialogs.displayErrorDialog
+import com.github.mgz0227.tts_server_android.utils.FileUtils
+import com.github.mgz0227.tts_server_android.utils.FileUtils.mimeType
+import com.github.mgz0227.tts_server_android.utils.getBinder
+import com.github.mgz0227.tts_server_android.utils.grantReadWritePermission
+import com.github.mgz0227.tts_server_android.utils.toast
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.parcelize.IgnoredOnParcel

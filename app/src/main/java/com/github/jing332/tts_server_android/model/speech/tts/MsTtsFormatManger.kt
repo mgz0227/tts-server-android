@@ -1,7 +1,7 @@
-package com.github.jing332.tts_server_android.model.speech.tts
+package com.github.mgz0227.tts_server_android.model.speech.tts
 
 import android.media.AudioFormat
-import com.github.jing332.tts_server_android.constant.MsTtsApiType
+import com.github.mgz0227.tts_server_android.constant.MsTtsApiType
 
 object MsTtsFormatManger {
     private val formats = arrayListOf<MsTtsAudioFormat>(

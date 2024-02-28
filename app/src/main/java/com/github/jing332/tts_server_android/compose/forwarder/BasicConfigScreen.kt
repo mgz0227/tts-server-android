@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.forwarder
+package com.github.mgz0227.tts_server_android.compose.forwarder
 
 import android.content.IntentFilter
 import androidx.compose.foundation.layout.Column
@@ -11,14 +11,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.systts.LogScreen
-import com.github.jing332.tts_server_android.compose.widgets.DenseOutlinedField
-import com.github.jing332.tts_server_android.compose.widgets.LocalBroadcastReceiver
-import com.github.jing332.tts_server_android.compose.widgets.SwitchFloatingButton
-import com.github.jing332.tts_server_android.constant.KeyConst
-import com.github.jing332.tts_server_android.constant.LogLevel
-import com.github.jing332.tts_server_android.ui.AppLog
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.systts.LogScreen
+import com.github.mgz0227.tts_server_android.compose.widgets.DenseOutlinedField
+import com.github.mgz0227.tts_server_android.compose.widgets.LocalBroadcastReceiver
+import com.github.mgz0227.tts_server_android.compose.widgets.SwitchFloatingButton
+import com.github.mgz0227.tts_server_android.constant.KeyConst
+import com.github.mgz0227.tts_server_android.constant.LogLevel
+import com.github.mgz0227.tts_server_android.ui.AppLog
 
 @Suppress("DEPRECATION")
 @Composable

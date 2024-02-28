@@ -1,5 +1,5 @@
 /*
-package com.github.jing332.text_searcher.ui.widgets
+package com.github.mgz0227.text_searcher.ui.widgets
 
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.PaddingValues
@@ -33,7 +33,7 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.github.jing332.text_searcher.ui.search.texttoolbar.CustomTextToolbar
+import com.github.mgz0227.text_searcher.ui.search.texttoolbar.CustomTextToolbar
 
 
 @OptIn(ExperimentalMaterial3Api::class)

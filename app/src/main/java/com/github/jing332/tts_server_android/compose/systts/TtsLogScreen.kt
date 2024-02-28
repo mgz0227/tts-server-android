@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts
+package com.github.mgz0227.tts_server_android.compose.systts
 
 import android.content.IntentFilter
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,12 +14,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.nav.NavTopAppBar
-import com.github.jing332.tts_server_android.compose.widgets.LocalBroadcastReceiver
-import com.github.jing332.tts_server_android.constant.KeyConst
-import com.github.jing332.tts_server_android.service.systts.SystemTtsService
-import com.github.jing332.tts_server_android.ui.AppLog
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.nav.NavTopAppBar
+import com.github.mgz0227.tts_server_android.compose.widgets.LocalBroadcastReceiver
+import com.github.mgz0227.tts_server_android.constant.KeyConst
+import com.github.mgz0227.tts_server_android.service.systts.SystemTtsService
+import com.github.mgz0227.tts_server_android.ui.AppLog
 
 @Suppress("DEPRECATION")
 @OptIn(ExperimentalMaterial3Api::class)

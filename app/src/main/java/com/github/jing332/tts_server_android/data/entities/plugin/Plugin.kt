@@ -1,11 +1,11 @@
-package com.github.jing332.tts_server_android.data.entities.plugin
+package com.github.mgz0227.tts_server_android.data.entities.plugin
 
 import android.os.Parcelable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
-import com.github.jing332.tts_server_android.data.entities.MapConverters
+import com.github.mgz0227.tts_server_android.data.entities.MapConverters
 import kotlinx.parcelize.Parcelize
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.Transient

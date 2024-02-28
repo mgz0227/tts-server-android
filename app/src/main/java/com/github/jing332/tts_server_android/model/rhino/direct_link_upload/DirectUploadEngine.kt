@@ -1,10 +1,10 @@
-package com.github.jing332.tts_server_android.model.rhino.direct_link_upload
+package com.github.mgz0227.tts_server_android.model.rhino.direct_link_upload
 
 import android.content.Context
-import com.github.jing332.tts_server_android.conf.DirectUploadConfig
-import com.github.jing332.tts_server_android.model.rhino.core.BaseScriptEngine
-import com.github.jing332.tts_server_android.model.rhino.core.BaseScriptEngineContext
-import com.github.jing332.tts_server_android.model.rhino.core.Logger
+import com.github.mgz0227.tts_server_android.conf.DirectUploadConfig
+import com.github.mgz0227.tts_server_android.model.rhino.core.BaseScriptEngine
+import com.github.mgz0227.tts_server_android.model.rhino.core.BaseScriptEngineContext
+import com.github.mgz0227.tts_server_android.model.rhino.core.Logger
 import com.script.javascript.RhinoScriptEngine
 import org.mozilla.javascript.NativeObject
 

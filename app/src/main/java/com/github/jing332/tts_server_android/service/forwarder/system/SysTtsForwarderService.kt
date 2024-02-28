@@ -1,16 +1,16 @@
 @file:Suppress("OVERRIDE_DEPRECATION")
 
-package com.github.jing332.tts_server_android.service.forwarder.system
+package com.github.mgz0227.tts_server_android.service.forwarder.system
 
 import android.speech.tts.TextToSpeech
-import com.github.jing332.tts_server_android.App
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.conf.SysttsForwarderConfig
-import com.github.jing332.tts_server_android.constant.AppConst
-import com.github.jing332.tts_server_android.constant.LogLevel
-import com.github.jing332.tts_server_android.help.LocalTtsEngineHelper
-import com.github.jing332.tts_server_android.model.speech.tts.LocalTTS
-import com.github.jing332.tts_server_android.service.forwarder.AbsForwarderService
+import com.github.mgz0227.tts_server_android.App
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.conf.SysttsForwarderConfig
+import com.github.mgz0227.tts_server_android.constant.AppConst
+import com.github.mgz0227.tts_server_android.constant.LogLevel
+import com.github.mgz0227.tts_server_android.help.LocalTtsEngineHelper
+import com.github.mgz0227.tts_server_android.model.speech.tts.LocalTTS
+import com.github.mgz0227.tts_server_android.service.forwarder.AbsForwarderService
 import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.encodeToString
 import tts_server_lib.SysTtsForwarder

@@ -1,8 +1,8 @@
-package com.github.jing332.tts_server_android.service.systts.help
+package com.github.mgz0227.tts_server_android.service.systts.help
 
-import com.github.jing332.tts_server_android.data.appDb
-import com.github.jing332.tts_server_android.data.entities.replace.ReplaceRule
-import com.github.jing332.tts_server_android.service.systts.help.exception.TextReplacerException
+import com.github.mgz0227.tts_server_android.data.appDb
+import com.github.mgz0227.tts_server_android.data.entities.replace.ReplaceRule
+import com.github.mgz0227.tts_server_android.service.systts.help.exception.TextReplacerException
 
 class TextReplacer {
     companion object {

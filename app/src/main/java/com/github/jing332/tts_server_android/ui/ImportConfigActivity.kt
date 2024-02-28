@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.ui
+package com.github.mgz0227.tts_server_android.ui
 
 import android.content.ContentResolver
 import android.content.Intent
@@ -11,16 +11,16 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.res.stringResource
 import com.drake.net.utils.fileName
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.systts.LocalImportFilePath
-import com.github.jing332.tts_server_android.compose.systts.LocalImportRemoteUrl
-import com.github.jing332.tts_server_android.compose.theme.AppTheme
-import com.github.jing332.tts_server_android.compose.widgets.AppSelectionDialog
-import com.github.jing332.tts_server_android.ui.systts.ImportConfigFactory
-import com.github.jing332.tts_server_android.ui.systts.ImportConfigFactory.gotoEditorFromJS
-import com.github.jing332.tts_server_android.ui.systts.ImportType
-import com.github.jing332.tts_server_android.utils.FileUtils.readAllText
-import com.github.jing332.tts_server_android.utils.longToast
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.systts.LocalImportFilePath
+import com.github.mgz0227.tts_server_android.compose.systts.LocalImportRemoteUrl
+import com.github.mgz0227.tts_server_android.compose.theme.AppTheme
+import com.github.mgz0227.tts_server_android.compose.widgets.AppSelectionDialog
+import com.github.mgz0227.tts_server_android.ui.systts.ImportConfigFactory
+import com.github.mgz0227.tts_server_android.ui.systts.ImportConfigFactory.gotoEditorFromJS
+import com.github.mgz0227.tts_server_android.ui.systts.ImportType
+import com.github.mgz0227.tts_server_android.utils.FileUtils.readAllText
+import com.github.mgz0227.tts_server_android.utils.longToast
 
 
 class ImportConfigActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts.replace
+package com.github.mgz0227.tts_server_android.compose.systts.replace
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -35,8 +35,8 @@ import androidx.compose.ui.semantics.role
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.unit.dp
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.systts.ConfigDeleteDialog
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.systts.ConfigDeleteDialog
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

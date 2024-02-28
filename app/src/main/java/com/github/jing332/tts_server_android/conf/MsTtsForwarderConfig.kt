@@ -1,8 +1,8 @@
-package com.github.jing332.tts_server_android.conf
+package com.github.mgz0227.tts_server_android.conf
 
 import com.funny.data_saver.core.DataSaverPreferences
 import com.funny.data_saver.core.mutableDataSaverStateOf
-import com.github.jing332.tts_server_android.app
+import com.github.mgz0227.tts_server_android.app
 
 object MsTtsForwarderConfig {
     private val pref = DataSaverPreferences(app.getSharedPreferences("server", 0))

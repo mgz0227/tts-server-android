@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts.list.edit.ui
+package com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui
 
 import android.util.Log
 import android.widget.LinearLayout
@@ -25,19 +25,19 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.drake.net.utils.withIO
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.systts.AuditionDialog
-import com.github.jing332.tts_server_android.compose.systts.list.IntSlider
-import com.github.jing332.tts_server_android.compose.systts.list.edit.BasicInfoEditScreen
-import com.github.jing332.tts_server_android.compose.systts.list.edit.ui.widgets.AuditionTextField
-import com.github.jing332.tts_server_android.compose.systts.list.edit.ui.widgets.TtsTopAppBar
-import com.github.jing332.tts_server_android.compose.widgets.AppSpinner
-import com.github.jing332.tts_server_android.compose.widgets.LoadingContent
-import com.github.jing332.tts_server_android.compose.widgets.LoadingDialog
-import com.github.jing332.tts_server_android.data.entities.systts.SystemTts
-import com.github.jing332.tts_server_android.model.speech.tts.BaseAudioFormat
-import com.github.jing332.tts_server_android.model.speech.tts.PluginTTS
-import com.github.jing332.tts_server_android.ui.view.AppDialogs.displayErrorDialog
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.systts.AuditionDialog
+import com.github.mgz0227.tts_server_android.compose.systts.list.IntSlider
+import com.github.mgz0227.tts_server_android.compose.systts.list.edit.BasicInfoEditScreen
+import com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui.widgets.AuditionTextField
+import com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui.widgets.TtsTopAppBar
+import com.github.mgz0227.tts_server_android.compose.widgets.AppSpinner
+import com.github.mgz0227.tts_server_android.compose.widgets.LoadingContent
+import com.github.mgz0227.tts_server_android.compose.widgets.LoadingDialog
+import com.github.mgz0227.tts_server_android.data.entities.systts.SystemTts
+import com.github.mgz0227.tts_server_android.model.speech.tts.BaseAudioFormat
+import com.github.mgz0227.tts_server_android.model.speech.tts.PluginTTS
+import com.github.mgz0227.tts_server_android.ui.view.AppDialogs.displayErrorDialog
 import kotlinx.coroutines.launch
 
 class PluginTtsUI : TtsUI() {

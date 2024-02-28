@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.nav
+package com.github.mgz0227.tts_server_android.compose.nav
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.size
@@ -9,7 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.github.jing332.tts_server_android.R
+import com.github.mgz0227.tts_server_android.R
 
 sealed class NavRoutes(
     val id: String,

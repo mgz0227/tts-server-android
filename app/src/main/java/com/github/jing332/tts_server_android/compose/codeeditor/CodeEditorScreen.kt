@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.codeeditor
+package com.github.mgz0227.tts_server_android.compose.codeeditor
 
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.compose.foundation.background
@@ -43,14 +43,14 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.widgets.CheckedMenuItem
-import com.github.jing332.tts_server_android.compose.widgets.LongClickIconButton
-import com.github.jing332.tts_server_android.conf.CodeEditorConfig
-import com.github.jing332.tts_server_android.ui.AppActivityResultContracts
-import com.github.jing332.tts_server_android.ui.FilePickerActivity
-import com.github.jing332.tts_server_android.ui.view.AppDialogs.displayErrorDialog
-import com.github.jing332.tts_server_android.utils.clickableRipple
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.widgets.CheckedMenuItem
+import com.github.mgz0227.tts_server_android.compose.widgets.LongClickIconButton
+import com.github.mgz0227.tts_server_android.conf.CodeEditorConfig
+import com.github.mgz0227.tts_server_android.ui.AppActivityResultContracts
+import com.github.mgz0227.tts_server_android.ui.FilePickerActivity
+import com.github.mgz0227.tts_server_android.ui.view.AppDialogs.displayErrorDialog
+import com.github.mgz0227.tts_server_android.utils.clickableRipple
 import io.github.rosemoe.sora.widget.CodeEditor
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

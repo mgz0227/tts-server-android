@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts.plugin
+package com.github.mgz0227.tts_server_android.compose.systts.plugin
 
 import android.content.Intent
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -23,18 +23,18 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.asFlow
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.LocalNavController
-import com.github.jing332.tts_server_android.compose.codeeditor.CodeEditorScreen
-import com.github.jing332.tts_server_android.compose.codeeditor.LoggerBottomSheet
-import com.github.jing332.tts_server_android.compose.widgets.TextFieldDialog
-import com.github.jing332.tts_server_android.conf.PluginConfig
-import com.github.jing332.tts_server_android.constant.AppConst
-import com.github.jing332.tts_server_android.data.entities.plugin.Plugin
-import com.github.jing332.tts_server_android.model.speech.tts.PluginTTS
-import com.github.jing332.tts_server_android.ui.view.AppDialogs.displayErrorDialog
-import com.github.jing332.tts_server_android.utils.FileUtils.readAllText
-import com.github.jing332.tts_server_android.utils.longToast
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.LocalNavController
+import com.github.mgz0227.tts_server_android.compose.codeeditor.CodeEditorScreen
+import com.github.mgz0227.tts_server_android.compose.codeeditor.LoggerBottomSheet
+import com.github.mgz0227.tts_server_android.compose.widgets.TextFieldDialog
+import com.github.mgz0227.tts_server_android.conf.PluginConfig
+import com.github.mgz0227.tts_server_android.constant.AppConst
+import com.github.mgz0227.tts_server_android.data.entities.plugin.Plugin
+import com.github.mgz0227.tts_server_android.model.speech.tts.PluginTTS
+import com.github.mgz0227.tts_server_android.ui.view.AppDialogs.displayErrorDialog
+import com.github.mgz0227.tts_server_android.utils.FileUtils.readAllText
+import com.github.mgz0227.tts_server_android.utils.longToast
 import io.github.rosemoe.sora.widget.CodeEditor
 
 @Suppress("DEPRECATION")

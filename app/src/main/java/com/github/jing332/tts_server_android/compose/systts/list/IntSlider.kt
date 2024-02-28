@@ -1,8 +1,8 @@
-package com.github.jing332.tts_server_android.compose.systts.list
+package com.github.mgz0227.tts_server_android.compose.systts.list
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.github.jing332.tts_server_android.compose.widgets.LabelSlider
+import com.github.mgz0227.tts_server_android.compose.widgets.LabelSlider
 
 @Composable
 fun IntSlider(

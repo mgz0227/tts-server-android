@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.theme
+package com.github.mgz0227.tts_server_android.compose.theme
 
 import android.content.Context
 import android.view.WindowManager
@@ -13,8 +13,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
-import com.github.jing332.tts_server_android.compose.widgets.SetupSystemBars
-import com.github.jing332.tts_server_android.conf.AppConfig
+import com.github.mgz0227.tts_server_android.compose.widgets.SetupSystemBars
+import com.github.mgz0227.tts_server_android.conf.AppConfig
 import com.gyf.immersionbar.ImmersionBar
 
 /**

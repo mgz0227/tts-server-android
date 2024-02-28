@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.constant
+package com.github.mgz0227.tts_server_android.constant
 
 object KeyConst {
     const val KEY_DATA = "data"

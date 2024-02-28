@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.codeeditor
+package com.github.mgz0227.tts_server_android.compose.codeeditor
 
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
@@ -23,9 +23,9 @@ import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
-import com.github.jing332.tts_server_android.compose.widgets.AppBottomSheet
-import com.github.jing332.tts_server_android.constant.LogLevel
-import com.github.jing332.tts_server_android.model.rhino.core.Logger
+import com.github.mgz0227.tts_server_android.compose.widgets.AppBottomSheet
+import com.github.mgz0227.tts_server_android.constant.LogLevel
+import com.github.mgz0227.tts_server_android.model.rhino.core.Logger
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

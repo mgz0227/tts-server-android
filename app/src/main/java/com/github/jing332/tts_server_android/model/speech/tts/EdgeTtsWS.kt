@@ -1,9 +1,9 @@
-package com.github.jing332.tts_server_android.model.speech.tts
+package com.github.mgz0227.tts_server_android.model.speech.tts
 
 import android.util.Log
 import cn.hutool.core.lang.UUID
 import com.drake.net.utils.withIO
-import com.github.jing332.tts_server_android.model.rhino.core.type.ws.internal.WebSocketException
+import com.github.mgz0227.tts_server_android.model.rhino.core.type.ws.internal.WebSocketException
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.awaitCancellation
 import kotlinx.coroutines.coroutineScope

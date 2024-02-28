@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts.list.edit.ui
+package com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui
 
 import android.content.Context
 import android.widget.LinearLayout
@@ -8,10 +8,10 @@ import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import com.drake.net.utils.withIO
-import com.github.jing332.tts_server_android.app
-import com.github.jing332.tts_server_android.compose.systts.list.edit.ui.widgets.BaseViewModel
-import com.github.jing332.tts_server_android.model.rhino.tts.TtsPluginUiEngine
-import com.github.jing332.tts_server_android.model.speech.tts.PluginTTS
+import com.github.mgz0227.tts_server_android.app
+import com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui.widgets.BaseViewModel
+import com.github.mgz0227.tts_server_android.model.rhino.tts.TtsPluginUiEngine
+import com.github.mgz0227.tts_server_android.model.speech.tts.PluginTTS
 
 class PluginTtsViewModel : BaseViewModel() {
     lateinit var engine: TtsPluginUiEngine

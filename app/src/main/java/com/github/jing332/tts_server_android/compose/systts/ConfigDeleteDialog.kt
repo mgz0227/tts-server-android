@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts
+package com.github.mgz0227.tts_server_android.compose.systts
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.DeleteForever
@@ -10,7 +10,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
-import com.github.jing332.tts_server_android.R
+import com.github.mgz0227.tts_server_android.R
 
 @Composable
 fun ConfigDeleteDialog(onDismissRequest: () -> Unit, name: String, onConfirm: () -> Unit) {

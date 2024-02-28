@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts.plugin
+package com.github.mgz0227.tts_server_android.compose.systts.plugin
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -9,8 +9,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.github.jing332.tts_server_android.compose.widgets.AppBottomSheet
-import com.github.jing332.tts_server_android.data.entities.plugin.Plugin
+import com.github.mgz0227.tts_server_android.compose.widgets.AppBottomSheet
+import com.github.mgz0227.tts_server_android.data.entities.plugin.Plugin
 
 @Composable
 internal fun PluginVarsBottomSheet(

@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.forwarder
+package com.github.mgz0227.tts_server_android.compose.forwarder
 
 import android.content.IntentFilter
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -20,9 +20,9 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.widgets.LocalBroadcastReceiver
-import com.github.jing332.tts_server_android.service.forwarder.system.SysTtsForwarderService
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.widgets.LocalBroadcastReceiver
+import com.github.mgz0227.tts_server_android.service.forwarder.system.SysTtsForwarderService
 import com.google.accompanist.web.rememberWebViewNavigator
 import com.google.accompanist.web.rememberWebViewState
 import kotlinx.coroutines.launch

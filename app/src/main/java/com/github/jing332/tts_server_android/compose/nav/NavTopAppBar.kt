@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.nav
+package com.github.mgz0227.tts_server_android.compose.nav
 
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.WindowInsets
@@ -19,9 +19,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.LocalDrawerState
-import com.github.jing332.tts_server_android.compose.widgets.AppTooltip
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.LocalDrawerState
+import com.github.mgz0227.tts_server_android.compose.widgets.AppTooltip
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)

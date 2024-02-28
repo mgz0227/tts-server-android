@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts.list.edit.ui
+package com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -19,20 +19,20 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.systts.AuditionDialog
-import com.github.jing332.tts_server_android.compose.systts.list.IntSlider
-import com.github.jing332.tts_server_android.compose.systts.list.edit.BasicInfoEditScreen
-import com.github.jing332.tts_server_android.compose.systts.list.edit.ui.widgets.AuditionTextField
-import com.github.jing332.tts_server_android.compose.systts.list.edit.ui.widgets.TtsTopAppBar
-import com.github.jing332.tts_server_android.compose.widgets.AppSpinner
-import com.github.jing332.tts_server_android.compose.widgets.LoadingContent
-import com.github.jing332.tts_server_android.constant.MsTtsApiType
-import com.github.jing332.tts_server_android.data.entities.systts.SystemTts
-import com.github.jing332.tts_server_android.model.GeneralVoiceData
-import com.github.jing332.tts_server_android.model.speech.tts.MsTTS
-import com.github.jing332.tts_server_android.model.speech.tts.MsTtsFormatManger
-import com.github.jing332.tts_server_android.ui.view.AppDialogs.displayErrorDialog
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.systts.AuditionDialog
+import com.github.mgz0227.tts_server_android.compose.systts.list.IntSlider
+import com.github.mgz0227.tts_server_android.compose.systts.list.edit.BasicInfoEditScreen
+import com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui.widgets.AuditionTextField
+import com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui.widgets.TtsTopAppBar
+import com.github.mgz0227.tts_server_android.compose.widgets.AppSpinner
+import com.github.mgz0227.tts_server_android.compose.widgets.LoadingContent
+import com.github.mgz0227.tts_server_android.constant.MsTtsApiType
+import com.github.mgz0227.tts_server_android.data.entities.systts.SystemTts
+import com.github.mgz0227.tts_server_android.model.GeneralVoiceData
+import com.github.mgz0227.tts_server_android.model.speech.tts.MsTTS
+import com.github.mgz0227.tts_server_android.model.speech.tts.MsTtsFormatManger
+import com.github.mgz0227.tts_server_android.ui.view.AppDialogs.displayErrorDialog
 
 class MsTtsUI : TtsUI() {
     @Composable

@@ -1,10 +1,10 @@
-package com.github.jing332.tts_server_android.compose.codeeditor
+package com.github.mgz0227.tts_server_android.compose.codeeditor
 
 import android.util.Log
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import com.drake.net.utils.withMain
-import com.github.jing332.tts_server_android.utils.runOnUI
+import com.github.mgz0227.tts_server_android.utils.runOnUI
 import kotlinx.coroutines.runBlocking
 import tts_server_lib.ScriptCodeSyncServerCallback
 import tts_server_lib.ScriptSyncServer

@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.backup
+package com.github.mgz0227.tts_server_android.compose.backup
 
 import android.content.Intent
 import android.os.Bundle
@@ -24,10 +24,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.settings.BasePreferenceWidget
-import com.github.jing332.tts_server_android.compose.theme.AppTheme
-import com.github.jing332.tts_server_android.utils.FileUtils.readBytes
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.settings.BasePreferenceWidget
+import com.github.mgz0227.tts_server_android.compose.theme.AppTheme
+import com.github.mgz0227.tts_server_android.utils.FileUtils.readBytes
 
 class BackupRestoreActivity : AppCompatActivity() {
     companion object {

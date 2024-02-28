@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts.list.edit
+package com.github.mgz0227.tts_server_android.compose.systts.list.edit
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -14,12 +14,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.github.jing332.tts_server_android.compose.systts.list.edit.ui.LocalSaveCallBack
-import com.github.jing332.tts_server_android.compose.systts.list.edit.ui.TtsUiFactory
-import com.github.jing332.tts_server_android.compose.systts.list.edit.ui.rememberSaveCallBacks
-import com.github.jing332.tts_server_android.compose.widgets.AppBottomSheet
-import com.github.jing332.tts_server_android.data.entities.systts.SystemTts
-import com.github.jing332.tts_server_android.model.speech.tts.BgmTTS
+import com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui.LocalSaveCallBack
+import com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui.TtsUiFactory
+import com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui.rememberSaveCallBacks
+import com.github.mgz0227.tts_server_android.compose.widgets.AppBottomSheet
+import com.github.mgz0227.tts_server_android.data.entities.systts.SystemTts
+import com.github.mgz0227.tts_server_android.model.speech.tts.BgmTTS
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

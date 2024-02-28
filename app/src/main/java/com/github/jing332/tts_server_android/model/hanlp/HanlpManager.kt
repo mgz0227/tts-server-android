@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.model.hanlp
+package com.github.mgz0227.tts_server_android.model.hanlp
 
 import android.util.Log
 import com.hankcs.hanlp.HanLP

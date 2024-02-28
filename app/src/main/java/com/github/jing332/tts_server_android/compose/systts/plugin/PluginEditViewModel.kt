@@ -1,18 +1,18 @@
-package com.github.jing332.tts_server_android.compose.systts.plugin
+package com.github.mgz0227.tts_server_android.compose.systts.plugin
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.github.jing332.tts_server_android.app
-import com.github.jing332.tts_server_android.conf.PluginConfig
-import com.github.jing332.tts_server_android.data.entities.plugin.Plugin
-import com.github.jing332.tts_server_android.model.rhino.tts.TtsPluginUiEngine
-import com.github.jing332.tts_server_android.model.speech.tts.PluginTTS
-import com.github.jing332.tts_server_android.utils.StringUtils.sizeToReadable
-import com.github.jing332.tts_server_android.utils.readableString
-import com.github.jing332.tts_server_android.utils.rootCause
+import com.github.mgz0227.tts_server_android.app
+import com.github.mgz0227.tts_server_android.conf.PluginConfig
+import com.github.mgz0227.tts_server_android.data.entities.plugin.Plugin
+import com.github.mgz0227.tts_server_android.model.rhino.tts.TtsPluginUiEngine
+import com.github.mgz0227.tts_server_android.model.speech.tts.PluginTTS
+import com.github.mgz0227.tts_server_android.utils.StringUtils.sizeToReadable
+import com.github.mgz0227.tts_server_android.utils.readableString
+import com.github.mgz0227.tts_server_android.utils.rootCause
 import com.script.ScriptException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

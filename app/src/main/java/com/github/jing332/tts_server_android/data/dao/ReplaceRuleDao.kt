@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.data.dao
+package com.github.mgz0227.tts_server_android.data.dao
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -7,10 +7,10 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
 import androidx.room.Update
-import com.github.jing332.tts_server_android.data.entities.AbstractListGroup.Companion.DEFAULT_GROUP_ID
-import com.github.jing332.tts_server_android.data.entities.replace.GroupWithReplaceRule
-import com.github.jing332.tts_server_android.data.entities.replace.ReplaceRule
-import com.github.jing332.tts_server_android.data.entities.replace.ReplaceRuleGroup
+import com.github.mgz0227.tts_server_android.data.entities.AbstractListGroup.Companion.DEFAULT_GROUP_ID
+import com.github.mgz0227.tts_server_android.data.entities.replace.GroupWithReplaceRule
+import com.github.mgz0227.tts_server_android.data.entities.replace.ReplaceRule
+import com.github.mgz0227.tts_server_android.data.entities.replace.ReplaceRuleGroup
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.conflate
 import kotlinx.coroutines.flow.map

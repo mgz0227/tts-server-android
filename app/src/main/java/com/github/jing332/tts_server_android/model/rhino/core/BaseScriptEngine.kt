@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.model.rhino.core
+package com.github.mgz0227.tts_server_android.model.rhino.core
 
 import com.script.javascript.RhinoScriptEngine
 import org.mozilla.javascript.NativeObject

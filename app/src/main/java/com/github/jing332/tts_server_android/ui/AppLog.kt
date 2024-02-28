@@ -1,8 +1,8 @@
-package com.github.jing332.tts_server_android.ui
+package com.github.mgz0227.tts_server_android.ui
 
 import android.os.Parcelable
-import com.github.jing332.tts_server_android.constant.LogLevel
-import com.github.jing332.tts_server_android.constant.LogLevel.Companion.toColor
+import com.github.mgz0227.tts_server_android.constant.LogLevel
+import com.github.mgz0227.tts_server_android.constant.LogLevel.Companion.toColor
 import kotlinx.parcelize.Parcelize
 
 @Parcelize

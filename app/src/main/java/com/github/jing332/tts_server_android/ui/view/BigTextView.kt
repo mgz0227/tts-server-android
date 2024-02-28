@@ -1,9 +1,9 @@
-package com.github.jing332.tts_server_android.ui.view
+package com.github.mgz0227.tts_server_android.ui.view
 
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.FrameLayout
-import com.github.jing332.tts_server_android.databinding.BigTextViewBinding
+import com.github.mgz0227.tts_server_android.databinding.BigTextViewBinding
 import splitties.systemservices.layoutInflater
 
 class BigTextView(context: Context, attrs: AttributeSet?, defaultStyle: Int) :

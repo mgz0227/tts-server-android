@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.settings
+package com.github.mgz0227.tts_server_android.compose.settings
 
 import android.os.Build
 import androidx.compose.animation.AnimatedVisibility
@@ -27,8 +27,8 @@ import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.theme.AppTheme
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.theme.AppTheme
 import kotlinx.coroutines.delay
 
 

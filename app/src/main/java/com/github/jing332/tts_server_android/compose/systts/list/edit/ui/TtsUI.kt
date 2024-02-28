@@ -1,11 +1,11 @@
-package com.github.jing332.tts_server_android.compose.systts.list.edit.ui
+package com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import com.github.jing332.tts_server_android.data.entities.systts.SystemTts
+import com.github.mgz0227.tts_server_android.data.entities.systts.SystemTts
 import kotlinx.coroutines.CoroutineScope
 
 typealias CallbackState = MutableState<(suspend () -> Unit)?>

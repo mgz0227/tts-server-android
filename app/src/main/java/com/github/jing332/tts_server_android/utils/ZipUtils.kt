@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.utils
+package com.github.mgz0227.tts_server_android.utils
 
 import android.util.Log
 import kotlinx.coroutines.Dispatchers

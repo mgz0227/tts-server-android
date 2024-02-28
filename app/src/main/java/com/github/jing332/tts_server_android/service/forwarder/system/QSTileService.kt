@@ -1,12 +1,12 @@
-package com.github.jing332.tts_server_android.service.forwarder.system
+package com.github.mgz0227.tts_server_android.service.forwarder.system
 
 import android.content.Intent
 import android.os.Build
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
 import androidx.annotation.RequiresApi
-import com.github.jing332.tts_server_android.service.forwarder.ForwarderServiceManager
-import com.github.jing332.tts_server_android.service.forwarder.ForwarderServiceManager.startSysTtsForwarder
+import com.github.mgz0227.tts_server_android.service.forwarder.ForwarderServiceManager
+import com.github.mgz0227.tts_server_android.service.forwarder.ForwarderServiceManager.startSysTtsForwarder
 
 @RequiresApi(Build.VERSION_CODES.N)
 class QSTileService : TileService() {

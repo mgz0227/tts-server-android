@@ -1,10 +1,10 @@
-package com.github.jing332.tts_server_android.compose.systts.list.edit.ui
+package com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui
 
-import com.github.jing332.tts_server_android.model.speech.tts.BgmTTS
-import com.github.jing332.tts_server_android.model.speech.tts.ITextToSpeechEngine
-import com.github.jing332.tts_server_android.model.speech.tts.LocalTTS
-import com.github.jing332.tts_server_android.model.speech.tts.MsTTS
-import com.github.jing332.tts_server_android.model.speech.tts.PluginTTS
+import com.github.mgz0227.tts_server_android.model.speech.tts.BgmTTS
+import com.github.mgz0227.tts_server_android.model.speech.tts.ITextToSpeechEngine
+import com.github.mgz0227.tts_server_android.model.speech.tts.LocalTTS
+import com.github.mgz0227.tts_server_android.model.speech.tts.MsTTS
+import com.github.mgz0227.tts_server_android.model.speech.tts.PluginTTS
 
 object TtsUiFactory {
     fun from(tts: ITextToSpeechEngine): TtsUI? {

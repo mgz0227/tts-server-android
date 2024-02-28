@@ -1,8 +1,8 @@
-package com.github.jing332.text_searcher.ui.plugin
+package com.github.mgz0227.text_searcher.ui.plugin
 
 import android.content.Context
 import android.content.res.Configuration
-import com.github.jing332.tts_server_android.constant.CodeEditorTheme
+import com.github.mgz0227.tts_server_android.constant.CodeEditorTheme
 import io.github.rosemoe.sora.langs.textmate.TextMateColorScheme
 import io.github.rosemoe.sora.langs.textmate.TextMateLanguage
 import io.github.rosemoe.sora.langs.textmate.registry.FileProviderRegistry

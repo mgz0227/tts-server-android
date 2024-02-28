@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.widgets
+package com.github.mgz0227.tts_server_android.compose.widgets
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.BoxScope
@@ -37,11 +37,11 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.utils.ClipboardUtils
-import com.github.jing332.tts_server_android.utils.clickableRipple
-import com.github.jing332.tts_server_android.utils.performLongPress
-import com.github.jing332.tts_server_android.utils.toast
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.utils.ClipboardUtils
+import com.github.mgz0227.tts_server_android.utils.clickableRipple
+import com.github.mgz0227.tts_server_android.utils.performLongPress
+import com.github.mgz0227.tts_server_android.utils.toast
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 

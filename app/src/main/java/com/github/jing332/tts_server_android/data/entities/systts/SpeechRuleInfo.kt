@@ -1,12 +1,12 @@
-package com.github.jing332.tts_server_android.data.entities.systts
+package com.github.mgz0227.tts_server_android.data.entities.systts
 
 import android.os.Parcelable
 import androidx.room.ColumnInfo
 import androidx.room.Ignore
 import androidx.room.TypeConverters
-import com.github.jing332.tts_server_android.constant.SpeechTarget
-import com.github.jing332.tts_server_android.data.entities.MapConverters
-import com.github.jing332.tts_server_android.model.speech.tts.ITextToSpeechEngine
+import com.github.mgz0227.tts_server_android.constant.SpeechTarget
+import com.github.mgz0227.tts_server_android.data.entities.MapConverters
+import com.github.mgz0227.tts_server_android.model.speech.tts.ITextToSpeechEngine
 import kotlinx.parcelize.IgnoredOnParcel
 import kotlinx.parcelize.Parcelize
 import kotlinx.serialization.Serializable

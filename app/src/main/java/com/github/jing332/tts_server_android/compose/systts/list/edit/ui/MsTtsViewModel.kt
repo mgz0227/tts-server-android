@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts.list.edit.ui
+package com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
@@ -7,9 +7,9 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.drake.net.utils.withIO
-import com.github.jing332.tts_server_android.constant.MsTtsApiType
-import com.github.jing332.tts_server_android.model.GeneralVoiceData
-import com.github.jing332.tts_server_android.model.MsTtsEditRepository
+import com.github.mgz0227.tts_server_android.constant.MsTtsApiType
+import com.github.mgz0227.tts_server_android.model.GeneralVoiceData
+import com.github.mgz0227.tts_server_android.model.MsTtsEditRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

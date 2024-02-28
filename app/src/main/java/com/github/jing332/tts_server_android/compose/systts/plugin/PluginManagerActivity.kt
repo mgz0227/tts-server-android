@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts.plugin
+package com.github.mgz0227.tts_server_android.compose.systts.plugin
 
 import android.content.Intent
 import android.os.Bundle
@@ -13,14 +13,14 @@ import androidx.compose.runtime.setValue
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.github.jing332.tts_server_android.compose.LocalNavController
-import com.github.jing332.tts_server_android.compose.navigate
-import com.github.jing332.tts_server_android.compose.theme.AppTheme
-import com.github.jing332.tts_server_android.data.appDb
-import com.github.jing332.tts_server_android.data.entities.SpeechRule
-import com.github.jing332.tts_server_android.data.entities.plugin.Plugin
-import com.github.jing332.tts_server_android.data.entities.systts.SystemTts
-import com.github.jing332.tts_server_android.model.speech.tts.PluginTTS
+import com.github.mgz0227.tts_server_android.compose.LocalNavController
+import com.github.mgz0227.tts_server_android.compose.navigate
+import com.github.mgz0227.tts_server_android.compose.theme.AppTheme
+import com.github.mgz0227.tts_server_android.data.appDb
+import com.github.mgz0227.tts_server_android.data.entities.SpeechRule
+import com.github.mgz0227.tts_server_android.data.entities.plugin.Plugin
+import com.github.mgz0227.tts_server_android.data.entities.systts.SystemTts
+import com.github.mgz0227.tts_server_android.model.speech.tts.PluginTTS
 
 class PluginManagerActivity : AppCompatActivity() {
     private var jsCode by mutableStateOf("")

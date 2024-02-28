@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.utils
+package com.github.mgz0227.tts_server_android.utils
 
 import android.app.Activity
 import android.app.Notification
@@ -60,7 +60,7 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
 import androidx.viewpager2.widget.ViewPager2
-import com.github.jing332.tts_server_android.constant.KeyConst
+import com.github.mgz0227.tts_server_android.constant.KeyConst
 import java.lang.reflect.ParameterizedType
 
 fun Service.startForegroundCompat(

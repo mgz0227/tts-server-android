@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.ui.view
+package com.github.mgz0227.tts_server_android.ui.view
 
 import android.content.Context
 import android.util.TypedValue

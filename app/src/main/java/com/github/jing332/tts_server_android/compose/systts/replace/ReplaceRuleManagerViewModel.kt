@@ -1,17 +1,17 @@
-package com.github.jing332.tts_server_android.compose.systts.replace
+package com.github.mgz0227.tts_server_android.compose.systts.replace
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.app
-import com.github.jing332.tts_server_android.data.appDb
-import com.github.jing332.tts_server_android.data.entities.AbstractListGroup.Companion.DEFAULT_GROUP_ID
-import com.github.jing332.tts_server_android.data.entities.replace.GroupWithReplaceRule
-import com.github.jing332.tts_server_android.data.entities.replace.ReplaceRule
-import com.github.jing332.tts_server_android.data.entities.replace.ReplaceRuleGroup
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.app
+import com.github.mgz0227.tts_server_android.data.appDb
+import com.github.mgz0227.tts_server_android.data.entities.AbstractListGroup.Companion.DEFAULT_GROUP_ID
+import com.github.mgz0227.tts_server_android.data.entities.replace.GroupWithReplaceRule
+import com.github.mgz0227.tts_server_android.data.entities.replace.ReplaceRule
+import com.github.mgz0227.tts_server_android.data.entities.replace.ReplaceRuleGroup
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.collectLatest

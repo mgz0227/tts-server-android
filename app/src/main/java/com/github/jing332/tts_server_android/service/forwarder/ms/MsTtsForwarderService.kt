@@ -1,9 +1,9 @@
-package com.github.jing332.tts_server_android.service.forwarder.ms
+package com.github.mgz0227.tts_server_android.service.forwarder.ms
 
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.conf.MsTtsForwarderConfig
-import com.github.jing332.tts_server_android.service.forwarder.AbsForwarderService
-import com.github.jing332.tts_server_android.ui.AppLog
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.conf.MsTtsForwarderConfig
+import com.github.mgz0227.tts_server_android.service.forwarder.AbsForwarderService
+import com.github.mgz0227.tts_server_android.ui.AppLog
 import tts_server_lib.LogCallback
 import tts_server_lib.Tts_server_lib
 

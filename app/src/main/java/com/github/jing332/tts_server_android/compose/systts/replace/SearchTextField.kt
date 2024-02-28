@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts.replace
+package com.github.mgz0227.tts_server_android.compose.systts.replace
 
 import android.os.Parcelable
 import androidx.annotation.StringRes
@@ -37,9 +37,9 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.theme.AppTheme
-import com.github.jing332.tts_server_android.compose.widgets.DenseTextField
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.theme.AppTheme
+import com.github.mgz0227.tts_server_android.compose.widgets.DenseTextField
 import kotlinx.parcelize.Parcelize
 
 @Parcelize

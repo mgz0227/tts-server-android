@@ -1,16 +1,16 @@
-package com.github.jing332.tts_server_android.compose.systts.speechrule
+package com.github.mgz0227.tts_server_android.compose.systts.speechrule
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import com.github.jing332.tts_server_android.compose.systts.ConfigImportBottomSheet
-import com.github.jing332.tts_server_android.compose.systts.ConfigModel
-import com.github.jing332.tts_server_android.compose.systts.SelectImportConfigDialog
-import com.github.jing332.tts_server_android.constant.AppConst
-import com.github.jing332.tts_server_android.data.appDb
-import com.github.jing332.tts_server_android.data.entities.SpeechRule
+import com.github.mgz0227.tts_server_android.compose.systts.ConfigImportBottomSheet
+import com.github.mgz0227.tts_server_android.compose.systts.ConfigModel
+import com.github.mgz0227.tts_server_android.compose.systts.SelectImportConfigDialog
+import com.github.mgz0227.tts_server_android.constant.AppConst
+import com.github.mgz0227.tts_server_android.data.appDb
+import com.github.mgz0227.tts_server_android.data.entities.SpeechRule
 
 @Composable
 fun SpeechRuleImportBottomSheet(onDismissRequest: () -> Unit) {

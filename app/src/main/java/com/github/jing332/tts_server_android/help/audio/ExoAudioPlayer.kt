@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.help.audio
+package com.github.mgz0227.tts_server_android.help.audio
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,8 +10,8 @@ import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.exoplayer.source.MediaSource
 import com.drake.net.utils.runMain
 import com.drake.net.utils.withMain
-import com.github.jing332.tts_server_android.help.audio.ExoPlayerHelper.createMediaSourceFromByteArray
-import com.github.jing332.tts_server_android.help.audio.ExoPlayerHelper.createMediaSourceFromInputStream
+import com.github.mgz0227.tts_server_android.help.audio.ExoPlayerHelper.createMediaSourceFromByteArray
+import com.github.mgz0227.tts_server_android.help.audio.ExoPlayerHelper.createMediaSourceFromInputStream
 import kotlinx.coroutines.*
 import java.io.InputStream
 

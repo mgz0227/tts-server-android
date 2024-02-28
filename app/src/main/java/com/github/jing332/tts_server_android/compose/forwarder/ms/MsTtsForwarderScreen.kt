@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.forwarder.ms
+package com.github.mgz0227.tts_server_android.compose.forwarder.ms
 
 import android.content.Intent
 import android.content.IntentFilter
@@ -18,17 +18,17 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.forwarder.BasicConfigScreen
-import com.github.jing332.tts_server_android.compose.forwarder.BasicForwarderScreen
-import com.github.jing332.tts_server_android.compose.forwarder.ConfigViewModel
-import com.github.jing332.tts_server_android.compose.forwarder.ForwarderTopAppBar
-import com.github.jing332.tts_server_android.compose.widgets.TextFieldDialog
-import com.github.jing332.tts_server_android.conf.MsForwarderConfig
-import com.github.jing332.tts_server_android.service.forwarder.ForwarderServiceManager.switchMsTtsForwarder
-import com.github.jing332.tts_server_android.service.forwarder.ms.MsTtsForwarderService
-import com.github.jing332.tts_server_android.ui.forwarder.MsForwarderSwitchActivity
-import com.github.jing332.tts_server_android.utils.MyTools
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.forwarder.BasicConfigScreen
+import com.github.mgz0227.tts_server_android.compose.forwarder.BasicForwarderScreen
+import com.github.mgz0227.tts_server_android.compose.forwarder.ConfigViewModel
+import com.github.mgz0227.tts_server_android.compose.forwarder.ForwarderTopAppBar
+import com.github.mgz0227.tts_server_android.compose.widgets.TextFieldDialog
+import com.github.mgz0227.tts_server_android.conf.MsForwarderConfig
+import com.github.mgz0227.tts_server_android.service.forwarder.ForwarderServiceManager.switchMsTtsForwarder
+import com.github.mgz0227.tts_server_android.service.forwarder.ms.MsTtsForwarderService
+import com.github.mgz0227.tts_server_android.ui.forwarder.MsForwarderSwitchActivity
+import com.github.mgz0227.tts_server_android.utils.MyTools
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

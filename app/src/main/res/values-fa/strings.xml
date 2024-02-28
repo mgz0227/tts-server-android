@@ -384,7 +384,7 @@
     <string name="voice_name_bad_format">خطای قالب voiceName</string>
     <string name="import_hanlp_zip">بسته تحلیل نحوی Hanlp را وارد کنید</string>
     <string name="hanlp_settings">تنظیمات Hanlp</string>
-    <string name="hanlp_tips">یا به صورت دستی آن را در حافظه خارجی/Android/data/com.github.jing332.tts_server_android/files/hanlp استخراج کنید.\nتوجه: لطفاً مطمئن شوید که یک پوشه فرهنگ لغت در فهرست راهنمای hanlp وجود دارد.</string>
+    <string name="hanlp_tips">یا به صورت دستی آن را در حافظه خارجی/Android/data/com.github.mgz0227.tts_server_android/files/hanlp استخراج کنید.\nتوجه: لطفاً مطمئن شوید که یک پوشه فرهنگ لغت در فهرست راهنمای hanlp وجود دارد.</string>
     <string name="copy_group">گروه کپی</string>
     <string name="no_audio_data_head_warn">⚠️ این صدا هدر داده ای ندارد، بنابراین نمی توان اطلاعات را به دست آورد.</string>
     <string name="theme_default">پیش فرض</string>

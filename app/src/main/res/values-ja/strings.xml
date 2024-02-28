@@ -376,7 +376,7 @@
     <string name="voice_name_bad_format">voiceName格式错误</string>
     <string name="import_hanlp_zip">导入Hanlp语法分析包</string>
     <string name="hanlp_settings">Hanlp设置</string>
-    <string name="hanlp_tips">或手动解压到 外部存储/Android/data/com.github.jing332.tts_server_android/files/hanlp 中，\n注意：请确保hanlp目录下有 dictionary 文件夹。</string>
+    <string name="hanlp_tips">或手动解压到 外部存储/Android/data/com.github.mgz0227.tts_server_android/files/hanlp 中，\n注意：请确保hanlp目录下有 dictionary 文件夹。</string>
     <string name="copy_group">复制分组</string>
     <string name="no_audio_data_head_warn">⚠️ 该音频没有数据头，故无法获取信息。</string>
     <string name="theme_default">默认</string>

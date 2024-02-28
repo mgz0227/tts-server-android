@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.utils
+package com.github.mgz0227.tts_server_android.utils
 
 import android.annotation.SuppressLint
 import android.app.PendingIntent
@@ -12,10 +12,10 @@ import android.os.Build
 import android.provider.Settings
 import android.util.Log
 import android.widget.Toast
-import com.github.jing332.tts_server_android.BuildConfig
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.bean.GithubReleaseApiBean
-import com.github.jing332.tts_server_android.constant.AppConst
+import com.github.mgz0227.tts_server_android.BuildConfig
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.bean.GithubReleaseApiBean
+import com.github.mgz0227.tts_server_android.constant.AppConst
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import splitties.systemservices.powerManager
 import java.math.BigDecimal

@@ -3,9 +3,9 @@ package tts_server_lib
 import (
 	"crypto/tls"
 	"fmt"
-	core "github.com/jing332/tts-server-go"
-	"github.com/jing332/tts-server-go/tts"
-	"github.com/jing332/tts-server-go/tts/edge"
+	core "github.com/mgz0227/tts-server-go"
+	"github.com/mgz0227/tts-server-go/tts"
+	"github.com/mgz0227/tts-server-go/tts/edge"
 	"io"
 	"net/http"
 	"time"

@@ -1,11 +1,11 @@
-package com.github.jing332.tts_server_android.constant
+package com.github.mgz0227.tts_server_android.constant
 
 import android.annotation.SuppressLint
 import android.content.pm.PackageManager
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
-import com.github.jing332.tts_server_android.App
-import com.github.jing332.tts_server_android.BuildConfig
-import com.github.jing332.tts_server_android.app
+import com.github.mgz0227.tts_server_android.App
+import com.github.mgz0227.tts_server_android.BuildConfig
+import com.github.mgz0227.tts_server_android.app
 import com.script.javascript.RhinoScriptEngine
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
@@ -15,7 +15,7 @@ import java.util.Locale
 @SuppressLint("SimpleDateFormat")
 @Suppress("DEPRECATION")
 object AppConst {
-    const val PACKET_NAME = "com.github.jing332.tts_server_android"
+    const val PACKET_NAME = "com.github.mgz0227.tts_server_android"
 
     val fileProviderAuthor = BuildConfig.APPLICATION_ID + ".fileprovider"
     val localBroadcast by lazy { LocalBroadcastManager.getInstance(App.context) }

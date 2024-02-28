@@ -1,7 +1,7 @@
-package com.github.jing332.tts_server_android.constant
+package com.github.mgz0227.tts_server_android.constant
 
 import androidx.annotation.StringRes
-import com.github.jing332.tts_server_android.R
+import com.github.mgz0227.tts_server_android.R
 
 enum class ConfigType(@StringRes val strId: Int) {
     UNKNOWN(R.string.unknown),

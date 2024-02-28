@@ -1,6 +1,6 @@
-package com.github.jing332.tts_server_android.help
+package com.github.mgz0227.tts_server_android.help
 
-import com.github.jing332.tts_server_android.constant.ConfigType
+import com.github.mgz0227.tts_server_android.constant.ConfigType
 
 object ConfigImportHelper {
     private val fieldMap = mapOf(

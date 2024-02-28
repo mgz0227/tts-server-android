@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts.speechrule
+package com.github.mgz0227.tts_server_android.compose.systts.speechrule
 
 import android.content.Intent
 import android.os.Bundle
@@ -49,16 +49,16 @@ import androidx.compose.ui.semantics.role
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.unit.dp
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.LocalNavController
-import com.github.jing332.tts_server_android.compose.ShadowReorderableItem
-import com.github.jing332.tts_server_android.compose.navigate
-import com.github.jing332.tts_server_android.compose.systts.ConfigDeleteDialog
-import com.github.jing332.tts_server_android.compose.systts.plugin.PluginManagerActivity
-import com.github.jing332.tts_server_android.compose.widgets.LazyListIndexStateSaver
-import com.github.jing332.tts_server_android.data.appDb
-import com.github.jing332.tts_server_android.data.entities.SpeechRule
-import com.github.jing332.tts_server_android.utils.MyTools
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.LocalNavController
+import com.github.mgz0227.tts_server_android.compose.ShadowReorderableItem
+import com.github.mgz0227.tts_server_android.compose.navigate
+import com.github.mgz0227.tts_server_android.compose.systts.ConfigDeleteDialog
+import com.github.mgz0227.tts_server_android.compose.systts.plugin.PluginManagerActivity
+import com.github.mgz0227.tts_server_android.compose.widgets.LazyListIndexStateSaver
+import com.github.mgz0227.tts_server_android.data.appDb
+import com.github.mgz0227.tts_server_android.data.entities.SpeechRule
+import com.github.mgz0227.tts_server_android.utils.MyTools
 import kotlinx.coroutines.flow.conflate
 import org.burnoutcrew.reorderable.detectReorderAfterLongPress
 import org.burnoutcrew.reorderable.rememberReorderableLazyListState

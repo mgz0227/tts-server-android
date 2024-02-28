@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts.replace
+package com.github.mgz0227.tts_server_android.compose.systts.replace
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Edit
@@ -11,8 +11,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.state.ToggleableState
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.systts.GroupItem
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.systts.GroupItem
 
 @Composable
 internal fun Group(

@@ -1,8 +1,8 @@
-package com.github.jing332.tts_server_android
+package com.github.mgz0227.tts_server_android
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.github.jing332.tts_server_android.model.rhino.core.ext.JsExtensions
-import com.github.jing332.tts_server_android.model.rhino.direct_link_upload.DirectUploadEngine
+import com.github.mgz0227.tts_server_android.model.rhino.core.ext.JsExtensions
+import com.github.mgz0227.tts_server_android.model.rhino.direct_link_upload.DirectUploadEngine
 import org.junit.Test
 import org.junit.runner.RunWith
 

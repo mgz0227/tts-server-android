@@ -1,9 +1,9 @@
 /*
-package com.github.jing332.tts_server_android.data.dao
+package com.github.mgz0227.tts_server_android.data.dao
 
 import androidx.room.*
-import com.github.jing332.tts_server_android.constant.ReadAloudTarget
-import com.github.jing332.tts_server_android.data.entities.SysTts
+import com.github.mgz0227.tts_server_android.constant.ReadAloudTarget
+import com.github.mgz0227.tts_server_android.data.entities.SysTts
 import kotlinx.coroutines.flow.Flow
 
 @Dao

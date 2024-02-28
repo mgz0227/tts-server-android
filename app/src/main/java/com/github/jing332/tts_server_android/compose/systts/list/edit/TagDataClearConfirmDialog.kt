@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts.list.edit
+package com.github.mgz0227.tts_server_android.compose.systts.list.edit
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -6,8 +6,8 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.widgets.AppDialog
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.widgets.AppDialog
 
 @Composable
 fun TagDataClearConfirmDialog(

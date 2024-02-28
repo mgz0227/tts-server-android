@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.model.rhino.core.type.ui
+package com.github.mgz0227.tts_server_android.model.rhino.core.type.ui
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -8,9 +8,9 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.ComposeView
-import com.github.jing332.tts_server_android.compose.widgets.LabelSlider
-import com.github.jing332.tts_server_android.utils.ThrottleUtil
-import com.github.jing332.tts_server_android.utils.toScale
+import com.github.mgz0227.tts_server_android.compose.widgets.LabelSlider
+import com.github.mgz0227.tts_server_android.utils.ThrottleUtil
+import com.github.mgz0227.tts_server_android.utils.toScale
 
 @Suppress("unused")
 @SuppressLint("ViewConstructor")

@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts.speechrule
+package com.github.mgz0227.tts_server_android.compose.systts.speechrule
 
 internal sealed class NavRoutes(val id: String) {
     data object SpeechRuleManager : NavRoutes("manager")

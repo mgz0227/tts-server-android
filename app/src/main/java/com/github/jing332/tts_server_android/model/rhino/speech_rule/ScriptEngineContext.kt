@@ -1,7 +1,7 @@
-package com.github.jing332.tts_server_android.model.rhino.speech_rule
+package com.github.mgz0227.tts_server_android.model.rhino.speech_rule
 
 import android.content.Context
-import com.github.jing332.tts_server_android.model.rhino.core.BaseScriptEngineContext
+import com.github.mgz0227.tts_server_android.model.rhino.core.BaseScriptEngineContext
 import com.hankcs.hanlp.HanLP
 import com.hankcs.hanlp.seg.Segment
 

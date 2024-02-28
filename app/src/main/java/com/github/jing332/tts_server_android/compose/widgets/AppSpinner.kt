@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.widgets
+package com.github.mgz0227.tts_server_android.compose.widgets
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -25,7 +25,7 @@ import androidx.compose.ui.platform.LocalTextInputService
 import androidx.compose.ui.platform.LocalTextToolbar
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.tooling.preview.Preview
-import com.github.jing332.tts_server_android.conf.AppConfig
+import com.github.mgz0227.tts_server_android.conf.AppConfig
 import kotlin.math.max
 
 @OptIn(ExperimentalMaterial3Api::class)

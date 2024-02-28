@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts.plugin
+package com.github.mgz0227.tts_server_android.compose.systts.plugin
 
 internal sealed class NavRoutes(val id: String) {
     data object PluginManager : NavRoutes("plugin_manager")

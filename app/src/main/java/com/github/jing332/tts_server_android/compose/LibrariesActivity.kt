@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose
+package com.github.mgz0227.tts_server_android.compose
 
 import android.os.Bundle
 import androidx.activity.compose.setContent
@@ -17,8 +17,8 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.theme.AppTheme
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.theme.AppTheme
 import com.mikepenz.aboutlibraries.ui.compose.LibrariesContainer
 import com.mikepenz.aboutlibraries.ui.compose.LibraryDefaults
 

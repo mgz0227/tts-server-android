@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android
+package com.github.mgz0227.tts_server_android
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -6,8 +6,8 @@ import android.os.Build
 import android.os.LocaleList
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.os.LocaleListCompat
-import com.github.jing332.tts_server_android.utils.FileUtils
-import com.github.jing332.tts_server_android.utils.sysConfiguration
+import com.github.mgz0227.tts_server_android.utils.FileUtils
+import com.github.mgz0227.tts_server_android.utils.sysConfiguration
 import java.io.File
 import java.util.*
 

@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.ui
+package com.github.mgz0227.tts_server_android.ui
 
 import android.os.Bundle
 import android.text.Spanned
@@ -23,12 +23,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.view.setPadding
 import androidx.core.widget.NestedScrollView
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.theme.AppTheme
-import com.github.jing332.tts_server_android.utils.ClipboardUtils
-import com.github.jing332.tts_server_android.utils.FileUtils.readAllText
-import com.github.jing332.tts_server_android.utils.dp
-import com.github.jing332.tts_server_android.utils.toast
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.theme.AppTheme
+import com.github.mgz0227.tts_server_android.utils.ClipboardUtils
+import com.github.mgz0227.tts_server_android.utils.FileUtils.readAllText
+import com.github.mgz0227.tts_server_android.utils.dp
+import com.github.mgz0227.tts_server_android.utils.toast
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import io.noties.markwon.AbstractMarkwonPlugin
 import io.noties.markwon.LinkResolverDef

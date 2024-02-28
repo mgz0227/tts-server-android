@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.data
+package com.github.mgz0227.tts_server_android.data
 
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase

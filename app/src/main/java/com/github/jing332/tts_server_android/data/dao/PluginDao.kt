@@ -1,8 +1,8 @@
-package com.github.jing332.tts_server_android.data.dao
+package com.github.mgz0227.tts_server_android.data.dao
 
 import androidx.room.*
-import com.github.jing332.tts_server_android.data.entities.SpeechRule
-import com.github.jing332.tts_server_android.data.entities.plugin.Plugin
+import com.github.mgz0227.tts_server_android.data.entities.SpeechRule
+import com.github.mgz0227.tts_server_android.data.entities.plugin.Plugin
 import kotlinx.coroutines.flow.Flow
 
 @Dao

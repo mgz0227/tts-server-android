@@ -7,7 +7,7 @@
 -keep class com.script.javascript.** { *; }
 
 # 插件相关
--keep class com.github.jing332.tts_server_android.model.rhino.core.** { *; }
+-keep class com.github.mgz0227.tts_server_android.model.rhino.core.** { *; }
 -keep class cn.hutool.crypto.** { *; }
 -keep class com.hankcs.hanlp.** { *; }
 

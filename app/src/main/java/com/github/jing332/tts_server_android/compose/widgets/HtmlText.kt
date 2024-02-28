@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.widgets
+package com.github.mgz0227.tts_server_android.compose.widgets
 
 import androidx.compose.foundation.text.InlineTextContent
 import androidx.compose.material3.LocalTextStyle
@@ -17,7 +17,7 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.TextUnit
 import androidx.core.text.HtmlCompat
-import com.github.jing332.tts_server_android.utils.toAnnotatedString
+import com.github.mgz0227.tts_server_android.utils.toAnnotatedString
 
 @Composable
 fun HtmlText(

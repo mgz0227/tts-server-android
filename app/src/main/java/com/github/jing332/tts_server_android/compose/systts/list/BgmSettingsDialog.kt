@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.systts.list
+package com.github.mgz0227.tts_server_android.compose.systts.list
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -15,10 +15,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.widgets.AppDialog
-import com.github.jing332.tts_server_android.conf.SystemTtsConfig
-import com.github.jing332.tts_server_android.utils.clickableRipple
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.widgets.AppDialog
+import com.github.mgz0227.tts_server_android.conf.SystemTtsConfig
+import com.github.mgz0227.tts_server_android.utils.clickableRipple
 
 @Composable
 fun BgmSettingsDialog(onDismissRequest: () -> Unit) {

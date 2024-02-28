@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.data.entities
+package com.github.mgz0227.tts_server_android.data.entities
 
 import androidx.room.TypeConverter
 

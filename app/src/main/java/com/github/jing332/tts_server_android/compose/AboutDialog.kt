@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose
+package com.github.mgz0227.tts_server_android.compose
 
 import android.content.Intent
 import androidx.compose.foundation.clickable
@@ -23,10 +23,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextAlign.Companion
 import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
-import com.github.jing332.tts_server_android.BuildConfig
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.widgets.AppDialog
-import com.github.jing332.tts_server_android.compose.widgets.AppLauncherIcon
+import com.github.mgz0227.tts_server_android.BuildConfig
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.widgets.AppDialog
+import com.github.mgz0227.tts_server_android.compose.widgets.AppLauncherIcon
 
 @Composable
 fun AboutDialog(onDismissRequest: () -> Unit) {
@@ -68,7 +68,7 @@ fun AboutDialog(onDismissRequest: () -> Unit) {
                     modifier = Modifier
                         .clip(MaterialTheme.shapes.small)
                         .clickable {
-                            openUrl("https://github.com/jing332/tts-server-android")
+                            openUrl("https://github.com/mgz0227/tts-server-android")
                         }
                         .padding(vertical = 8.dp)
                         .fillMaxWidth(),

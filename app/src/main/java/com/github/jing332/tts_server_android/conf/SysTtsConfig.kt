@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.conf
+package com.github.mgz0227.tts_server_android.conf
 
 object SysTtsConfig {
     var isInAppPlayAudio: Boolean

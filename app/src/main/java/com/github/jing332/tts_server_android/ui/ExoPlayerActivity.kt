@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.ui
+package com.github.mgz0227.tts_server_android.ui
 
 import android.graphics.drawable.ShapeDrawable
 import android.graphics.drawable.shapes.OvalShape
@@ -32,10 +32,10 @@ import androidx.media3.common.Player
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.ui.PlayerView
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.theme.AppTheme
-import com.github.jing332.tts_server_android.ui.view.AppDialogs.displayErrorDialog
-import com.github.jing332.tts_server_android.utils.ASFUriUtils.getPath
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.theme.AppTheme
+import com.github.mgz0227.tts_server_android.ui.view.AppDialogs.displayErrorDialog
+import com.github.mgz0227.tts_server_android.utils.ASFUriUtils.getPath
 
 @kotlin.OptIn(ExperimentalMaterial3Api::class)
 class ExoPlayerActivity : AppCompatActivity(), Player.Listener {

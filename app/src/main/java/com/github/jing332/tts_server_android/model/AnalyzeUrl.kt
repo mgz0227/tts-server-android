@@ -1,7 +1,7 @@
-package com.github.jing332.tts_server_android.model
+package com.github.mgz0227.tts_server_android.model
 
-import com.github.jing332.tts_server_android.constant.AppConst
-import com.github.jing332.tts_server_android.constant.AppConst.SCRIPT_ENGINE
+import com.github.mgz0227.tts_server_android.constant.AppConst
+import com.github.mgz0227.tts_server_android.constant.AppConst.SCRIPT_ENGINE
 import com.script.SimpleBindings
 import kotlinx.serialization.decodeFromString
 import java.util.regex.Pattern

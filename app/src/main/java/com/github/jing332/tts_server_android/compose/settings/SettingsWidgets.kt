@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.compose.settings
+package com.github.mgz0227.tts_server_android.compose.settings
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -35,9 +35,9 @@ import androidx.compose.ui.semantics.role
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.github.jing332.tts_server_android.R
-import com.github.jing332.tts_server_android.compose.widgets.AppDialog
-import com.github.jing332.tts_server_android.compose.widgets.LabelSlider
+import com.github.mgz0227.tts_server_android.R
+import com.github.mgz0227.tts_server_android.compose.widgets.AppDialog
+import com.github.mgz0227.tts_server_android.compose.widgets.LabelSlider
 
 @Composable
 internal fun DropdownPreference(

@@ -1,7 +1,7 @@
-package com.github.jing332.tts_server_android.model.rhino.core
+package com.github.mgz0227.tts_server_android.model.rhino.core
 
 import android.util.Log
-import com.github.jing332.tts_server_android.constant.LogLevel
+import com.github.mgz0227.tts_server_android.constant.LogLevel
 import org.mozilla.javascript.NativeArray
 import org.mozilla.javascript.NativeMap
 import org.mozilla.javascript.NativeObject

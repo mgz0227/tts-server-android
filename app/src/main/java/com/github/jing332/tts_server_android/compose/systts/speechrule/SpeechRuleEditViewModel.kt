@@ -1,16 +1,16 @@
-package com.github.jing332.tts_server_android.compose.systts.speechrule
+package com.github.mgz0227.tts_server_android.compose.systts.speechrule
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.github.jing332.tts_server_android.app
-import com.github.jing332.tts_server_android.constant.SpeechTarget
-import com.github.jing332.tts_server_android.data.appDb
-import com.github.jing332.tts_server_android.data.entities.SpeechRule
-import com.github.jing332.tts_server_android.model.rhino.ExceptionExt.lineMessage
-import com.github.jing332.tts_server_android.model.rhino.core.Logger
-import com.github.jing332.tts_server_android.model.rhino.speech_rule.SpeechRuleEngine
+import com.github.mgz0227.tts_server_android.app
+import com.github.mgz0227.tts_server_android.constant.SpeechTarget
+import com.github.mgz0227.tts_server_android.data.appDb
+import com.github.mgz0227.tts_server_android.data.entities.SpeechRule
+import com.github.mgz0227.tts_server_android.model.rhino.ExceptionExt.lineMessage
+import com.github.mgz0227.tts_server_android.model.rhino.core.Logger
+import com.github.mgz0227.tts_server_android.model.rhino.speech_rule.SpeechRuleEngine
 import com.script.ScriptException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

@@ -1,4 +1,4 @@
-package com.github.jing332.tts_server_android.service.systts.help
+package com.github.mgz0227.tts_server_android.service.systts.help
 
 import android.content.Context
 import android.util.Log
@@ -6,10 +6,10 @@ import androidx.media3.common.MediaItem
 import androidx.media3.common.PlaybackException
 import androidx.media3.common.Player
 import androidx.media3.exoplayer.ExoPlayer
-import com.github.jing332.tts_server_android.conf.SysTtsConfig
-import com.github.jing332.tts_server_android.utils.FileUtils
-import com.github.jing332.tts_server_android.utils.FileUtils.mimeType
-import com.github.jing332.tts_server_android.utils.runOnUI
+import com.github.mgz0227.tts_server_android.conf.SysTtsConfig
+import com.github.mgz0227.tts_server_android.utils.FileUtils
+import com.github.mgz0227.tts_server_android.utils.FileUtils.mimeType
+import com.github.mgz0227.tts_server_android.utils.runOnUI
 import java.io.File
 
 
