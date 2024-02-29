@@ -32,11 +32,7 @@
 
 ## Actions mirror
 
-app: https://mgz0227.lanzn.com/b09jpjd2d
-
-dev: https://mgz0227.lanzn.com/b09ig9qla
-
-密码Password: 1234
+app&Dev：https://miaogongzi.lanzout.com/b01rvtuhg
 
 
 # JS
