@@ -68,7 +68,7 @@ fun AboutDialog(onDismissRequest: () -> Unit) {
                     modifier = Modifier
                         .clip(MaterialTheme.shapes.small)
                         .clickable {
-                            openUrl("https://github.com/jing332/tts-server-android")
+                            openUrl("https://github.com/mgz0227/tts-server-android")
                         }
                         .padding(vertical = 8.dp)
                         .fillMaxWidth(),
