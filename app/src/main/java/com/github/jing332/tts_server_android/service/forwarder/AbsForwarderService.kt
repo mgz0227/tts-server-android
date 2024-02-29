@@ -1,6 +1,6 @@
 @file:Suppress("OVERRIDE_DEPRECATION")
 
-package com.github.mgz0227.tts_server_android.service.forwarder
+package com.github.jing332.tts_server_android.service.forwarder
 
 import android.annotation.SuppressLint
 import android.app.*
@@ -13,16 +13,16 @@ import android.os.PowerManager
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.core.content.ContextCompat
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.constant.AppConst
-import com.github.mgz0227.tts_server_android.constant.KeyConst
-import com.github.mgz0227.tts_server_android.ui.AppLog
-import com.github.mgz0227.tts_server_android.constant.LogLevel
-import com.github.mgz0227.tts_server_android.ui.ImportConfigActivity
-import com.github.mgz0227.tts_server_android.utils.ClipboardUtils
-import com.github.mgz0227.tts_server_android.utils.registerGlobalReceiver
-import com.github.mgz0227.tts_server_android.utils.startForegroundCompat
-import com.github.mgz0227.tts_server_android.utils.toast
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.constant.AppConst
+import com.github.jing332.tts_server_android.constant.KeyConst
+import com.github.jing332.tts_server_android.ui.AppLog
+import com.github.jing332.tts_server_android.constant.LogLevel
+import com.github.jing332.tts_server_android.ui.ImportConfigActivity
+import com.github.jing332.tts_server_android.utils.ClipboardUtils
+import com.github.jing332.tts_server_android.utils.registerGlobalReceiver
+import com.github.jing332.tts_server_android.utils.startForegroundCompat
+import com.github.jing332.tts_server_android.utils.toast
 import splitties.systemservices.powerManager
 import tts_server_lib.Tts_server_lib
 

@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.systts.list.edit
+package com.github.jing332.tts_server_android.compose.systts.list.edit
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
@@ -10,11 +10,11 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui.LocalSaveCallBack
-import com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui.TtsUiFactory
-import com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui.rememberSaveCallBacks
-import com.github.mgz0227.tts_server_android.data.entities.systts.SystemTts
-import com.github.mgz0227.tts_server_android.model.speech.tts.PluginTTS
+import com.github.jing332.tts_server_android.compose.systts.list.edit.ui.LocalSaveCallBack
+import com.github.jing332.tts_server_android.compose.systts.list.edit.ui.TtsUiFactory
+import com.github.jing332.tts_server_android.compose.systts.list.edit.ui.rememberSaveCallBacks
+import com.github.jing332.tts_server_android.data.entities.systts.SystemTts
+import com.github.jing332.tts_server_android.model.speech.tts.PluginTTS
 import kotlinx.coroutines.launch
 
 @Composable

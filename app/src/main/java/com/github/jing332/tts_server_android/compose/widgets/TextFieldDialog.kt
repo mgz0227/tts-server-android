@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.widgets
+package com.github.jing332.tts_server_android.compose.widgets
 
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.OutlinedTextField

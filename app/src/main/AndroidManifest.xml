@@ -93,7 +93,7 @@
             android:name=".compose.systts.speechrule.SpeechRuleManagerActivity"
             android:exported="true"
             android:label="@string/speech_rule_manager"
-            android:taskAffinity="com.github.mgz0227.tts_server_android.speechrule" />
+            android:taskAffinity="com.github.jing332.tts_server_android.speechrule" />
         <activity
             android:name=".ui.ExoPlayerActivity"
             android:exported="false"
@@ -102,12 +102,12 @@
             android:name=".compose.systts.plugin.PluginManagerActivity"
             android:exported="true"
             android:label="@string/plugin_manager"
-            android:taskAffinity="com.github.mgz0227.tts_server_android.plugin" />
+            android:taskAffinity="com.github.jing332.tts_server_android.plugin" />
         <activity
             android:name=".ui.ImportConfigActivity"
             android:exported="true"
             android:launchMode="singleTask"
-            android:taskAffinity="com.github.mgz0227.tts_server_android.import">
+            android:taskAffinity="com.github.jing332.tts_server_android.import">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 

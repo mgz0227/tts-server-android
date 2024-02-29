@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui.widgets
+package com.github.jing332.tts_server_android.compose.systts.list.edit.ui.widgets
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
@@ -14,7 +14,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.res.stringResource
-import com.github.mgz0227.tts_server_android.R
+import com.github.jing332.tts_server_android.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

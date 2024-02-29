@@ -1,13 +1,13 @@
-package com.github.mgz0227.tts_server_android.model.updater
+package com.github.jing332.tts_server_android.model.updater
 
 import com.drake.net.Net
-import com.github.mgz0227.tts_server_android.constant.AppConst
+import com.github.jing332.tts_server_android.constant.AppConst
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 
 object Github {
-    private const val repo = "mgz0227/tts-server-android"
+    private const val repo = "jing332/tts-server-android"
 
     fun getActions(repo: String = this.repo): WorkflowRuns {
         val str = Net.get("https://api.github.com/repos/${repo}/actions/runs") {
@@ -29,7 +29,7 @@ object Github {
         @SerialName("assets")
         val assets: List<Asset> = listOf(),
 //        @SerialName("assets_url")
-//        val assetsUrl: String = "", // https://api.github.com/repos/mgz0227/frpandroid/releases/117392218/assets
+//        val assetsUrl: String = "", // https://api.github.com/repos/jing332/frpandroid/releases/117392218/assets
 //        @SerialName("author")
 //        val author: Author = Author(),
 //        @SerialName("body")
@@ -39,7 +39,7 @@ object Github {
 //        @SerialName("draft")
 //        val draft: Boolean = false, // false
 //        @SerialName("html_url")
-//        val htmlUrl: String = "", // https://github.com/mgz0227/frpandroid/releases/tag/1.23.081611
+//        val htmlUrl: String = "", // https://github.com/jing332/frpandroid/releases/tag/1.23.081611
 //        @SerialName("id")
 //        val id: Int = 0, // 117392218
 //        @SerialName("name")
@@ -53,20 +53,20 @@ object Github {
         @SerialName("tag_name")
         val tagName: String = "", // 1.23.081611
 //        @SerialName("tarball_url")
-//        val tarballUrl: String = "", // https://api.github.com/repos/mgz0227/frpandroid/tarball/1.23.081611
+//        val tarballUrl: String = "", // https://api.github.com/repos/jing332/frpandroid/tarball/1.23.081611
 //        @SerialName("target_commitish")
 //        val targetCommitish: String = "", // master
 //        @SerialName("upload_url")
-//        val uploadUrl: String = "", // https://uploads.github.com/repos/mgz0227/frpandroid/releases/117392218/assets{?name,label}
+//        val uploadUrl: String = "", // https://uploads.github.com/repos/jing332/frpandroid/releases/117392218/assets{?name,label}
 //        @SerialName("url")
-//        val url: String = "", // https://api.github.com/repos/mgz0227/frpandroid/releases/117392218
+//        val url: String = "", // https://api.github.com/repos/jing332/frpandroid/releases/117392218
 //        @SerialName("zipball_url")
-//        val zipballUrl: String = "" // https://api.github.com/repos/mgz0227/frpandroid/zipball/1.23.081611
+//        val zipballUrl: String = "" // https://api.github.com/repos/jing332/frpandroid/zipball/1.23.081611
     ) {
         @Serializable
         data class Asset(
             @SerialName("browser_download_url")
-            val browserDownloadUrl: String = "", // https://github.com/mgz0227/frpandroid/releases/download/1.23.081611/AList-v1.23.081611.apk
+            val browserDownloadUrl: String = "", // https://github.com/jing332/frpandroid/releases/download/1.23.081611/AList-v1.23.081611.apk
 //            @SerialName("content_type")
 //            val contentType: String = "", // application/vnd.android.package-archive
 //            @SerialName("created_at")
@@ -90,7 +90,7 @@ object Github {
 //            @SerialName("uploader")
 //            val uploader: Uploader = Uploader(),
 //            @SerialName("url")
-//            val url: String = "" // https://api.github.com/repos/mgz0227/frpandroid/releases/assets/121683040
+//            val url: String = "" // https://api.github.com/repos/jing332/frpandroid/releases/assets/121683040
         ) {
             @Serializable
             data class Uploader(

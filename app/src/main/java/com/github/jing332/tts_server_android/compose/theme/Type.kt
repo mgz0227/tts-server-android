@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.theme
+package com.github.jing332.tts_server_android.compose.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

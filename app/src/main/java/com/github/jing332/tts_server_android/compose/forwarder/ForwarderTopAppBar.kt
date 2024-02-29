@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.forwarder
+package com.github.jing332.tts_server_android.compose.forwarder
 
 import android.content.Intent
 import android.webkit.CookieManager
@@ -25,10 +25,10 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.core.net.toUri
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.compose.nav.NavTopAppBar
-import com.github.mgz0227.tts_server_android.compose.widgets.CheckedMenuItem
-import com.github.mgz0227.tts_server_android.utils.toast
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.compose.nav.NavTopAppBar
+import com.github.jing332.tts_server_android.compose.widgets.CheckedMenuItem
+import com.github.jing332.tts_server_android.utils.toast
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

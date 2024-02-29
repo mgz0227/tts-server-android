@@ -1,16 +1,16 @@
-package com.github.mgz0227.tts_server_android.ui.systts
+package com.github.jing332.tts_server_android.ui.systts
 
 import android.content.Context
 import android.content.Intent
 import androidx.annotation.StringRes
 import androidx.compose.runtime.Composable
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.compose.systts.list.ListImportBottomSheet
-import com.github.mgz0227.tts_server_android.compose.systts.plugin.PluginImportBottomSheet
-import com.github.mgz0227.tts_server_android.compose.systts.plugin.PluginManagerActivity
-import com.github.mgz0227.tts_server_android.compose.systts.replace.ReplaceRuleImportBottomSheet
-import com.github.mgz0227.tts_server_android.compose.systts.speechrule.SpeechRuleImportBottomSheet
-import com.github.mgz0227.tts_server_android.compose.systts.speechrule.SpeechRuleManagerActivity
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.compose.systts.list.ListImportBottomSheet
+import com.github.jing332.tts_server_android.compose.systts.plugin.PluginImportBottomSheet
+import com.github.jing332.tts_server_android.compose.systts.plugin.PluginManagerActivity
+import com.github.jing332.tts_server_android.compose.systts.replace.ReplaceRuleImportBottomSheet
+import com.github.jing332.tts_server_android.compose.systts.speechrule.SpeechRuleImportBottomSheet
+import com.github.jing332.tts_server_android.compose.systts.speechrule.SpeechRuleManagerActivity
 
 enum class ImportType(val id: String, @StringRes val strResId: Int) {
     LIST("list", R.string.config_list),

@@ -1,15 +1,15 @@
-package com.github.mgz0227.tts_server_android
+package com.github.jing332.tts_server_android
 
 import android.content.Context
 import android.content.Intent
 import androidx.core.content.pm.ShortcutInfoCompat
 import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.core.graphics.drawable.IconCompat
-import com.github.mgz0227.tts_server_android.compose.systts.plugin.PluginManagerActivity
-import com.github.mgz0227.tts_server_android.compose.systts.replace.ReplaceManagerActivity
-import com.github.mgz0227.tts_server_android.compose.systts.speechrule.SpeechRuleManagerActivity
-import com.github.mgz0227.tts_server_android.ui.forwarder.MsForwarderSwitchActivity
-import com.github.mgz0227.tts_server_android.ui.forwarder.SystemForwarderSwitchActivity
+import com.github.jing332.tts_server_android.compose.systts.plugin.PluginManagerActivity
+import com.github.jing332.tts_server_android.compose.systts.replace.ReplaceManagerActivity
+import com.github.jing332.tts_server_android.compose.systts.speechrule.SpeechRuleManagerActivity
+import com.github.jing332.tts_server_android.ui.forwarder.MsForwarderSwitchActivity
+import com.github.jing332.tts_server_android.ui.forwarder.SystemForwarderSwitchActivity
 
 object ShortCuts {
     private inline fun <reified T> buildIntent(context: Context): Intent {

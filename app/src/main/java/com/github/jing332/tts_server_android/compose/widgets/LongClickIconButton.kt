@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.widgets
+package com.github.jing332.tts_server_android.compose.widgets
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -25,7 +25,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
-import com.github.mgz0227.tts_server_android.utils.performLongPress
+import com.github.jing332.tts_server_android.utils.performLongPress
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable

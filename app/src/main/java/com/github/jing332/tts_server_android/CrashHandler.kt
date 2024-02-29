@@ -1,10 +1,10 @@
-package com.github.mgz0227.tts_server_android
+package com.github.jing332.tts_server_android
 
 import android.content.Context
-import com.github.mgz0227.tts_server_android.constant.AppConst
-import com.github.mgz0227.tts_server_android.utils.ClipboardUtils
-import com.github.mgz0227.tts_server_android.utils.longToast
-import com.github.mgz0227.tts_server_android.utils.runOnUI
+import com.github.jing332.tts_server_android.constant.AppConst
+import com.github.jing332.tts_server_android.utils.ClipboardUtils
+import com.github.jing332.tts_server_android.utils.longToast
+import com.github.jing332.tts_server_android.utils.runOnUI
 import tts_server_lib.Tts_server_lib
 import java.time.LocalDateTime
 

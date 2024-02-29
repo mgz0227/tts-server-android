@@ -1,12 +1,12 @@
-package com.github.mgz0227.tts_server_android.model.rhino.speech_rule
+package com.github.jing332.tts_server_android.model.rhino.speech_rule
 
 import android.content.Context
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.data.entities.SpeechRule
-import com.github.mgz0227.tts_server_android.data.entities.TagsDataMap
-import com.github.mgz0227.tts_server_android.data.entities.systts.SpeechRuleInfo
-import com.github.mgz0227.tts_server_android.model.rhino.core.BaseScriptEngine
-import com.github.mgz0227.tts_server_android.model.rhino.core.Logger
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.data.entities.SpeechRule
+import com.github.jing332.tts_server_android.data.entities.TagsDataMap
+import com.github.jing332.tts_server_android.data.entities.systts.SpeechRuleInfo
+import com.github.jing332.tts_server_android.model.rhino.core.BaseScriptEngine
+import com.github.jing332.tts_server_android.model.rhino.core.Logger
 
 class SpeechRuleEngine(
     val context: Context,

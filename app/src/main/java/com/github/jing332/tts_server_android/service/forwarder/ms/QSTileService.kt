@@ -1,11 +1,11 @@
-package com.github.mgz0227.tts_server_android.service.forwarder.ms
+package com.github.jing332.tts_server_android.service.forwarder.ms
 
 import android.content.Intent
 import android.os.Build
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
 import androidx.annotation.RequiresApi
-import com.github.mgz0227.tts_server_android.service.forwarder.ForwarderServiceManager.startMsTtsForwarder
+import com.github.jing332.tts_server_android.service.forwarder.ForwarderServiceManager.startMsTtsForwarder
 
 /* 快捷开关(Android 7+) */
 @RequiresApi(Build.VERSION_CODES.N)

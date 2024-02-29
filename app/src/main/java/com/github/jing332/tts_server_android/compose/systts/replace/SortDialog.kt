@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.systts.replace
+package com.github.jing332.tts_server_android.compose.systts.replace
 
 import androidx.annotation.StringRes
 import androidx.compose.runtime.Composable
@@ -7,10 +7,10 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.res.stringResource
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.compose.systts.ListSortSettingsDialog
-import com.github.mgz0227.tts_server_android.data.appDb
-import com.github.mgz0227.tts_server_android.data.entities.replace.ReplaceRule
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.compose.systts.ListSortSettingsDialog
+import com.github.jing332.tts_server_android.data.appDb
+import com.github.jing332.tts_server_android.data.entities.replace.ReplaceRule
 
 internal enum class SortType(@StringRes val strId: Int) {
     CREATE_TIME(R.string.created_time_id),

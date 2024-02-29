@@ -1,5 +1,5 @@
 /*
-package com.github.mgz0227.text_searcher.ui.widgets
+package com.github.jing332.text_searcher.ui.widgets
 
 import androidx.compose.animation.animateContentSize
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -26,7 +26,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.TextUnit
-import com.github.mgz0227.text_searcher.R
+import com.github.jing332.text_searcher.R
 
 
 // from https://stackoverflow.com/a/72982110/13197001

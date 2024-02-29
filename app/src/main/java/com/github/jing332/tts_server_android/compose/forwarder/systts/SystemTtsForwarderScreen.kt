@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.forwarder.systts
+package com.github.jing332.tts_server_android.compose.forwarder.systts
 
 import android.content.Intent
 import android.content.IntentFilter
@@ -13,16 +13,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.compose.forwarder.BasicConfigScreen
-import com.github.mgz0227.tts_server_android.compose.forwarder.BasicForwarderScreen
-import com.github.mgz0227.tts_server_android.compose.forwarder.ConfigViewModel
-import com.github.mgz0227.tts_server_android.compose.forwarder.ForwarderTopAppBar
-import com.github.mgz0227.tts_server_android.conf.SysttsForwarderConfig
-import com.github.mgz0227.tts_server_android.service.forwarder.ForwarderServiceManager.switchSysTtsForwarder
-import com.github.mgz0227.tts_server_android.service.forwarder.system.SysTtsForwarderService
-import com.github.mgz0227.tts_server_android.ui.forwarder.SystemForwarderSwitchActivity
-import com.github.mgz0227.tts_server_android.utils.MyTools
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.compose.forwarder.BasicConfigScreen
+import com.github.jing332.tts_server_android.compose.forwarder.BasicForwarderScreen
+import com.github.jing332.tts_server_android.compose.forwarder.ConfigViewModel
+import com.github.jing332.tts_server_android.compose.forwarder.ForwarderTopAppBar
+import com.github.jing332.tts_server_android.conf.SysttsForwarderConfig
+import com.github.jing332.tts_server_android.service.forwarder.ForwarderServiceManager.switchSysTtsForwarder
+import com.github.jing332.tts_server_android.service.forwarder.system.SysTtsForwarderService
+import com.github.jing332.tts_server_android.ui.forwarder.SystemForwarderSwitchActivity
+import com.github.jing332.tts_server_android.utils.MyTools
 
 @Composable
 fun SystemTtsForwarderScreen(cfgVM: ConfigViewModel = viewModel()) {

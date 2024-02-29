@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.systts
+package com.github.jing332.tts_server_android.compose.systts
 
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.compose.foundation.horizontalScroll
@@ -29,14 +29,14 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.compose.systts.directlink.LinkUploadSelectionDialog
-import com.github.mgz0227.tts_server_android.compose.widgets.AppBottomSheet
-import com.github.mgz0227.tts_server_android.ui.AppActivityResultContracts
-import com.github.mgz0227.tts_server_android.ui.FilePickerActivity
-import com.github.mgz0227.tts_server_android.ui.view.BigTextView
-import com.github.mgz0227.tts_server_android.utils.ClipboardUtils
-import com.github.mgz0227.tts_server_android.utils.toast
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.compose.systts.directlink.LinkUploadSelectionDialog
+import com.github.jing332.tts_server_android.compose.widgets.AppBottomSheet
+import com.github.jing332.tts_server_android.ui.AppActivityResultContracts
+import com.github.jing332.tts_server_android.ui.FilePickerActivity
+import com.github.jing332.tts_server_android.ui.view.BigTextView
+import com.github.jing332.tts_server_android.utils.ClipboardUtils
+import com.github.jing332.tts_server_android.utils.toast
 
 
 @OptIn(ExperimentalMaterial3Api::class)

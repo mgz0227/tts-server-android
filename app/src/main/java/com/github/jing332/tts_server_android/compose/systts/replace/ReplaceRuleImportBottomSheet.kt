@@ -1,20 +1,20 @@
-package com.github.mgz0227.tts_server_android.compose.systts.replace
+package com.github.jing332.tts_server_android.compose.systts.replace
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import com.github.mgz0227.tts_server_android.compose.systts.ConfigImportBottomSheet
-import com.github.mgz0227.tts_server_android.compose.systts.ConfigModel
-import com.github.mgz0227.tts_server_android.compose.systts.SelectImportConfigDialog
-import com.github.mgz0227.tts_server_android.constant.AppConst
-import com.github.mgz0227.tts_server_android.data.appDb
-import com.github.mgz0227.tts_server_android.data.entities.replace.GroupWithReplaceRule
-import com.github.mgz0227.tts_server_android.data.entities.replace.ReplaceRule
-import com.github.mgz0227.tts_server_android.data.entities.replace.ReplaceRuleGroup
-import com.github.mgz0227.tts_server_android.utils.StringUtils
-import com.github.mgz0227.tts_server_android.utils.toJsonListString
+import com.github.jing332.tts_server_android.compose.systts.ConfigImportBottomSheet
+import com.github.jing332.tts_server_android.compose.systts.ConfigModel
+import com.github.jing332.tts_server_android.compose.systts.SelectImportConfigDialog
+import com.github.jing332.tts_server_android.constant.AppConst
+import com.github.jing332.tts_server_android.data.appDb
+import com.github.jing332.tts_server_android.data.entities.replace.GroupWithReplaceRule
+import com.github.jing332.tts_server_android.data.entities.replace.ReplaceRule
+import com.github.jing332.tts_server_android.data.entities.replace.ReplaceRuleGroup
+import com.github.jing332.tts_server_android.utils.StringUtils
+import com.github.jing332.tts_server_android.utils.toJsonListString
 
 @Suppress("UNCHECKED_CAST")
 @Composable

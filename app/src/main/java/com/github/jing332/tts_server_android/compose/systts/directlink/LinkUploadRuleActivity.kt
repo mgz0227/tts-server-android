@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.systts.directlink
+package com.github.jing332.tts_server_android.compose.systts.directlink
 
 import android.os.Bundle
 import androidx.activity.compose.setContent
@@ -14,15 +14,15 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.res.stringResource
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.compose.codeeditor.CodeEditorScreen
-import com.github.mgz0227.tts_server_android.compose.codeeditor.LoggerBottomSheet
-import com.github.mgz0227.tts_server_android.compose.theme.AppTheme
-import com.github.mgz0227.tts_server_android.conf.DirectUploadConfig
-import com.github.mgz0227.tts_server_android.model.rhino.core.Logger
-import com.github.mgz0227.tts_server_android.model.rhino.direct_link_upload.DirectUploadEngine
-import com.github.mgz0227.tts_server_android.model.rhino.direct_link_upload.DirectUploadFunction
-import com.github.mgz0227.tts_server_android.ui.view.AppDialogs.displayErrorDialog
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.compose.codeeditor.CodeEditorScreen
+import com.github.jing332.tts_server_android.compose.codeeditor.LoggerBottomSheet
+import com.github.jing332.tts_server_android.compose.theme.AppTheme
+import com.github.jing332.tts_server_android.conf.DirectUploadConfig
+import com.github.jing332.tts_server_android.model.rhino.core.Logger
+import com.github.jing332.tts_server_android.model.rhino.direct_link_upload.DirectUploadEngine
+import com.github.jing332.tts_server_android.model.rhino.direct_link_upload.DirectUploadFunction
+import com.github.jing332.tts_server_android.ui.view.AppDialogs.displayErrorDialog
 import io.github.rosemoe.sora.widget.CodeEditor
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

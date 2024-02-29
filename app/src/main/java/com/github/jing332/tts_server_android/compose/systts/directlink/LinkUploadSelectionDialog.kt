@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.systts.directlink
+package com.github.jing332.tts_server_android.compose.systts.directlink
 
 
 import androidx.compose.material3.Text
@@ -12,13 +12,13 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import com.drake.net.utils.withIO
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.compose.widgets.AppSelectionDialog
-import com.github.mgz0227.tts_server_android.model.rhino.direct_link_upload.DirectUploadEngine
-import com.github.mgz0227.tts_server_android.model.rhino.direct_link_upload.DirectUploadFunction
-import com.github.mgz0227.tts_server_android.ui.view.AppDialogs.displayErrorDialog
-import com.github.mgz0227.tts_server_android.utils.ClipboardUtils
-import com.github.mgz0227.tts_server_android.utils.longToast
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.compose.widgets.AppSelectionDialog
+import com.github.jing332.tts_server_android.model.rhino.direct_link_upload.DirectUploadEngine
+import com.github.jing332.tts_server_android.model.rhino.direct_link_upload.DirectUploadFunction
+import com.github.jing332.tts_server_android.ui.view.AppDialogs.displayErrorDialog
+import com.github.jing332.tts_server_android.utils.ClipboardUtils
+import com.github.jing332.tts_server_android.utils.longToast
 import kotlinx.coroutines.launch
 
 @Composable

@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.systts.replace.edit
+package com.github.jing332.tts_server_android.compose.systts.replace.edit
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -15,8 +15,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.compose.widgets.AppDialog
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.compose.widgets.AppDialog
 
 @Composable
 fun ToolBarSettingsDialog(

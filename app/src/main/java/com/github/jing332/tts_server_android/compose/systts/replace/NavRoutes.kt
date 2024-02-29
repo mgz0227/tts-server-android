@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.systts.replace
+package com.github.jing332.tts_server_android.compose.systts.replace
 
 internal sealed class NavRoutes(val id: String) {
     data object Manager : NavRoutes("manager")

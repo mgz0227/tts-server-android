@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.help.audio
+package com.github.jing332.tts_server_android.help.audio
 
 import android.annotation.SuppressLint
 import androidx.media3.common.MediaItem
@@ -7,8 +7,8 @@ import androidx.media3.datasource.ByteArrayDataSource
 import androidx.media3.datasource.DataSource
 import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
 import androidx.media3.exoplayer.source.MediaSource
-import com.github.mgz0227.tts_server_android.App
-import com.github.mgz0227.tts_server_android.help.audio.exo.InputStreamDataSource
+import com.github.jing332.tts_server_android.App
+import com.github.jing332.tts_server_android.help.audio.exo.InputStreamDataSource
 import java.io.InputStream
 
 

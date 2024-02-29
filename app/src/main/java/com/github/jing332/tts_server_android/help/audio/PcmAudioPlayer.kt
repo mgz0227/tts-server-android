@@ -1,11 +1,11 @@
-package com.github.mgz0227.tts_server_android.help.audio
+package com.github.jing332.tts_server_android.help.audio
 
 import android.media.AudioFormat
 import android.media.AudioManager
 import android.media.AudioTrack
 import android.media.AudioTrack.PLAYSTATE_PLAYING
 import android.util.Log
-import com.github.mgz0227.tts_server_android.help.audio.AudioDecoder.Companion.readPcmChunk
+import com.github.jing332.tts_server_android.help.audio.AudioDecoder.Companion.readPcmChunk
 import java.io.InputStream
 
 class PcmAudioPlayer {

@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.help.audio.exo
+package com.github.jing332.tts_server_android.help.audio.exo
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,8 +10,8 @@ import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.exoplayer.audio.AudioSink
 import androidx.media3.exoplayer.source.MediaSource
 import com.drake.net.utils.withMain
-import com.github.mgz0227.tts_server_android.help.audio.AudioDecoderException
-import com.github.mgz0227.tts_server_android.help.audio.ExoPlayerHelper
+import com.github.jing332.tts_server_android.help.audio.AudioDecoderException
+import com.github.jing332.tts_server_android.help.audio.ExoPlayerHelper
 import kotlinx.coroutines.*
 import java.io.InputStream
 import java.nio.ByteBuffer

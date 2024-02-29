@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui
+package com.github.jing332.tts_server_android.compose.systts.list.edit.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect

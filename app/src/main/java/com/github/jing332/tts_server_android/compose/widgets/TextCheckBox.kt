@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.widgets
+package com.github.jing332.tts_server_android.compose.widgets
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
@@ -14,7 +14,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
-import com.github.mgz0227.tts_server_android.utils.clickableRipple
+import com.github.jing332.tts_server_android.utils.clickableRipple
 
 @Composable
 fun TextCheckBox(

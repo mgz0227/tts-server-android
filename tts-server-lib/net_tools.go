@@ -1,7 +1,7 @@
 package tts_server_lib
 
 import (
-	tts_server_go "github.com/mgz0227/tts-server-go"
+	tts_server_go "github.com/jing332/tts-server-go"
 	"net/http"
 	"strings"
 )

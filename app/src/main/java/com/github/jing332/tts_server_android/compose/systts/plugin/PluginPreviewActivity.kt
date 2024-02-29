@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.systts.plugin
+package com.github.jing332.tts_server_android.compose.systts.plugin
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -29,17 +29,17 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import com.github.mgz0227.tts_server_android.App
-import com.github.mgz0227.tts_server_android.AppLocale
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui.PluginTtsUI
-import com.github.mgz0227.tts_server_android.compose.theme.AppTheme
-import com.github.mgz0227.tts_server_android.compose.widgets.AppDialog
-import com.github.mgz0227.tts_server_android.constant.AppConst
-import com.github.mgz0227.tts_server_android.data.entities.systts.SystemTts
-import com.github.mgz0227.tts_server_android.model.speech.tts.PluginTTS
-import com.github.mgz0227.tts_server_android.ui.view.ErrorDialogActivity
-import com.github.mgz0227.tts_server_android.utils.clickableRipple
+import com.github.jing332.tts_server_android.App
+import com.github.jing332.tts_server_android.AppLocale
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.compose.systts.list.edit.ui.PluginTtsUI
+import com.github.jing332.tts_server_android.compose.theme.AppTheme
+import com.github.jing332.tts_server_android.compose.widgets.AppDialog
+import com.github.jing332.tts_server_android.constant.AppConst
+import com.github.jing332.tts_server_android.data.entities.systts.SystemTts
+import com.github.jing332.tts_server_android.model.speech.tts.PluginTTS
+import com.github.jing332.tts_server_android.ui.view.ErrorDialogActivity
+import com.github.jing332.tts_server_android.utils.clickableRipple
 
 @Suppress("DEPRECATION")
 class PluginPreviewActivity : AppCompatActivity() {

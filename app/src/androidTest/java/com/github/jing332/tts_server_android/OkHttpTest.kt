@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android
+package com.github.jing332.tts_server_android
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.drake.net.Net

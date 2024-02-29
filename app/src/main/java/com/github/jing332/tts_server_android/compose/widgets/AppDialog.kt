@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.widgets
+package com.github.jing332.tts_server_android.compose.widgets
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -37,11 +37,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.DialogProperties
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.compose.asActivity
-import com.github.mgz0227.tts_server_android.compose.asAppCompatActivity
-import com.github.mgz0227.tts_server_android.compose.systts.replace.edit.SoftKeyboardInputToolbar
-import com.github.mgz0227.tts_server_android.utils.SoftKeyboardUtils
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.compose.asActivity
+import com.github.jing332.tts_server_android.compose.asAppCompatActivity
+import com.github.jing332.tts_server_android.compose.systts.replace.edit.SoftKeyboardInputToolbar
+import com.github.jing332.tts_server_android.utils.SoftKeyboardUtils
 import kotlin.math.max
 
 @Preview

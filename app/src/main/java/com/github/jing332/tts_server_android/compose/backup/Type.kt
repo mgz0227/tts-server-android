@@ -1,6 +1,6 @@
-package com.github.mgz0227.tts_server_android.compose.backup
+package com.github.jing332.tts_server_android.compose.backup
 
-import com.github.mgz0227.tts_server_android.R
+import com.github.jing332.tts_server_android.R
 
 
 sealed class Type(val nameStrId: Int) {

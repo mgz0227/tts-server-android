@@ -1,7 +1,7 @@
-package com.github.mgz0227.tts_server_android.data.entities.systts
+package com.github.jing332.tts_server_android.data.entities.systts
 
-import com.github.mgz0227.tts_server_android.constant.SpeechTarget
-import com.github.mgz0227.tts_server_android.model.speech.tts.ITextToSpeechEngine
+import com.github.jing332.tts_server_android.constant.SpeechTarget
+import com.github.jing332.tts_server_android.model.speech.tts.ITextToSpeechEngine
 import kotlinx.serialization.Serializable
 
 

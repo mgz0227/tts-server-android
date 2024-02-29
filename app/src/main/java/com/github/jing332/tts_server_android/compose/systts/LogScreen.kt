@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.systts
+package com.github.jing332.tts_server_android.compose.systts
 
 import android.view.HapticFeedbackConstants
 import androidx.compose.animation.AnimatedVisibility
@@ -31,11 +31,11 @@ import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.text.HtmlCompat
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.ui.AppLog
-import com.github.mgz0227.tts_server_android.utils.ClipboardUtils
-import com.github.mgz0227.tts_server_android.utils.toAnnotatedString
-import com.github.mgz0227.tts_server_android.utils.toast
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.ui.AppLog
+import com.github.jing332.tts_server_android.utils.ClipboardUtils
+import com.github.jing332.tts_server_android.utils.toAnnotatedString
+import com.github.jing332.tts_server_android.utils.toast
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalFoundationApi::class)

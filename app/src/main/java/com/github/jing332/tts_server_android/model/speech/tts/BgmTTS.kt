@@ -1,11 +1,11 @@
-package com.github.mgz0227.tts_server_android.model.speech.tts
+package com.github.jing332.tts_server_android.model.speech.tts
 
 import android.app.Activity
 import android.content.Context
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.data.entities.systts.AudioParams
-import com.github.mgz0227.tts_server_android.data.entities.systts.SpeechRuleInfo
-import com.github.mgz0227.tts_server_android.utils.toHtmlBold
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.data.entities.systts.AudioParams
+import com.github.jing332.tts_server_android.data.entities.systts.SpeechRuleInfo
+import com.github.jing332.tts_server_android.utils.toHtmlBold
 import kotlinx.parcelize.IgnoredOnParcel
 import kotlinx.parcelize.Parcelize
 import kotlinx.serialization.SerialName

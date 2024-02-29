@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.data
+package com.github.jing332.tts_server_android.data
 
 import android.content.Context
 import androidx.room.AutoMigration
@@ -7,17 +7,17 @@ import androidx.room.DeleteColumn
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.migration.AutoMigrationSpec
-import com.github.mgz0227.tts_server_android.App
-import com.github.mgz0227.tts_server_android.data.dao.PluginDao
-import com.github.mgz0227.tts_server_android.data.dao.SpeechRuleDao
-import com.github.mgz0227.tts_server_android.data.dao.ReplaceRuleDao
-import com.github.mgz0227.tts_server_android.data.dao.SystemTtsDao
-import com.github.mgz0227.tts_server_android.data.entities.SpeechRule
-import com.github.mgz0227.tts_server_android.data.entities.plugin.Plugin
-import com.github.mgz0227.tts_server_android.data.entities.replace.ReplaceRule
-import com.github.mgz0227.tts_server_android.data.entities.replace.ReplaceRuleGroup
-import com.github.mgz0227.tts_server_android.data.entities.systts.SystemTts
-import com.github.mgz0227.tts_server_android.data.entities.systts.SystemTtsGroup
+import com.github.jing332.tts_server_android.App
+import com.github.jing332.tts_server_android.data.dao.PluginDao
+import com.github.jing332.tts_server_android.data.dao.SpeechRuleDao
+import com.github.jing332.tts_server_android.data.dao.ReplaceRuleDao
+import com.github.jing332.tts_server_android.data.dao.SystemTtsDao
+import com.github.jing332.tts_server_android.data.entities.SpeechRule
+import com.github.jing332.tts_server_android.data.entities.plugin.Plugin
+import com.github.jing332.tts_server_android.data.entities.replace.ReplaceRule
+import com.github.jing332.tts_server_android.data.entities.replace.ReplaceRuleGroup
+import com.github.jing332.tts_server_android.data.entities.systts.SystemTts
+import com.github.jing332.tts_server_android.data.entities.systts.SystemTtsGroup
 
 val appDb by lazy { AppDatabase.createDatabase(App.context) }
 

@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.codeeditor
+package com.github.jing332.tts_server_android.compose.codeeditor
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -8,10 +8,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.compose.widgets.AppSelectionDialog
-import com.github.mgz0227.tts_server_android.conf.CodeEditorConfig
-import com.github.mgz0227.tts_server_android.constant.CodeEditorTheme
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.compose.widgets.AppSelectionDialog
+import com.github.jing332.tts_server_android.conf.CodeEditorConfig
+import com.github.jing332.tts_server_android.constant.CodeEditorTheme
 
 @Composable
 internal fun ThemeSettingsDialog(onDismissRequest: () -> Unit) {

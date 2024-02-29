@@ -1,9 +1,9 @@
-package com.github.mgz0227.tts_server_android.model.rhino.core.ext
+package com.github.jing332.tts_server_android.model.rhino.core.ext
 
 import android.content.Context
 import cn.hutool.core.lang.UUID
-import com.github.mgz0227.tts_server_android.help.audio.AudioDecoder
-import com.github.mgz0227.tts_server_android.utils.FileUtils
+import com.github.jing332.tts_server_android.help.audio.AudioDecoder
+import com.github.jing332.tts_server_android.utils.FileUtils
 import java.io.File
 import java.io.InputStream
 

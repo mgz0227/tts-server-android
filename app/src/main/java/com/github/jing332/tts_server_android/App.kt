@@ -1,11 +1,11 @@
-package com.github.mgz0227.tts_server_android
+package com.github.jing332.tts_server_android
 
 import android.annotation.SuppressLint
 import android.app.Application
 import android.content.Context
 import android.content.Intent
 import android.os.Process
-import com.github.mgz0227.tts_server_android.model.hanlp.HanlpManager
+import com.github.jing332.tts_server_android.model.hanlp.HanlpManager
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

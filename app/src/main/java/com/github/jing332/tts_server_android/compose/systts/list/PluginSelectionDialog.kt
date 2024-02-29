@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.systts.list
+package com.github.jing332.tts_server_android.compose.systts.list
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -20,9 +20,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.data.appDb
-import com.github.mgz0227.tts_server_android.data.entities.plugin.Plugin
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.data.appDb
+import com.github.jing332.tts_server_android.data.entities.plugin.Plugin
 
 @Composable
 fun PluginSelectionDialog(onDismissRequest: () -> Unit, onSelect: (Plugin) -> Unit) {

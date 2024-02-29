@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.systts
+package com.github.jing332.tts_server_android.compose.systts
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.background
@@ -37,7 +37,7 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.state.ToggleableState
 import androidx.compose.ui.unit.dp
-import com.github.mgz0227.tts_server_android.R
+import com.github.jing332.tts_server_android.R
 
 fun Int.sizeToToggleableState(total: Int): ToggleableState = when (this) {
     0 -> ToggleableState.Off

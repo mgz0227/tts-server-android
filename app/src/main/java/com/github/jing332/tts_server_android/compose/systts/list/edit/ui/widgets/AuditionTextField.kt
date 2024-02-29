@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui.widgets
+package com.github.jing332.tts_server_android.compose.systts.list.edit.ui.widgets
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Headset
@@ -11,8 +11,8 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.conf.AppConfig
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.conf.AppConfig
 
 @Composable
 fun AuditionTextField(modifier: Modifier, onAudition: (String) -> Unit) {

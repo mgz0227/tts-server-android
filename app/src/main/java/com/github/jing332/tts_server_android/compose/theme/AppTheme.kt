@@ -1,7 +1,7 @@
-package com.github.mgz0227.tts_server_android.compose.theme
+package com.github.jing332.tts_server_android.compose.theme
 
 import androidx.compose.ui.graphics.Color
-import com.github.mgz0227.tts_server_android.R
+import com.github.jing332.tts_server_android.R
 
 enum class AppTheme(val id: String, val stringResId: Int = -1, val color: Color) {
     DEFAULT("", R.string.theme_default, green_seed),

@@ -1,11 +1,11 @@
-package com.github.mgz0227.tts_server_android.model.rhino.core.ext
+package com.github.jing332.tts_server_android.model.rhino.core.ext
 
 import android.view.View
 import android.view.ViewGroup
-import com.github.mgz0227.tts_server_android.app
-import com.github.mgz0227.tts_server_android.utils.dp
-import com.github.mgz0227.tts_server_android.utils.longToast
-import com.github.mgz0227.tts_server_android.utils.toast
+import com.github.jing332.tts_server_android.app
+import com.github.jing332.tts_server_android.utils.dp
+import com.github.jing332.tts_server_android.utils.longToast
+import com.github.jing332.tts_server_android.utils.toast
 
 interface JsUserInterface {
     fun toast(msg: String) = app.toast(msg)

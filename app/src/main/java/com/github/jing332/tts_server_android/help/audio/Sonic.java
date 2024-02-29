@@ -6,7 +6,7 @@
    This file is licensed under the Apache 2.0 license.
 */
 
-package com.github.mgz0227.tts_server_android.help.audio;
+package com.github.jing332.tts_server_android.help.audio;
 
 public class Sonic {
 

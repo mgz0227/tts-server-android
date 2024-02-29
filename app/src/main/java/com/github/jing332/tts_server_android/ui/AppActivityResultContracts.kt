@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.ui
+package com.github.jing332.tts_server_android.ui
 
 import android.app.Activity
 import android.content.Context
@@ -6,9 +6,9 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Parcelable
 import androidx.activity.result.contract.ActivityResultContract
-import com.github.mgz0227.tts_server_android.constant.KeyConst
-import com.github.mgz0227.tts_server_android.help.ByteArrayBinder
-import com.github.mgz0227.tts_server_android.utils.setBinder
+import com.github.jing332.tts_server_android.constant.KeyConst
+import com.github.jing332.tts_server_android.help.ByteArrayBinder
+import com.github.jing332.tts_server_android.utils.setBinder
 
 object AppActivityResultContracts {
     /**

@@ -1,13 +1,13 @@
-package com.github.mgz0227.tts_server_android.model
+package com.github.jing332.tts_server_android.model
 
 import com.drake.net.utils.withDefault
 import com.drake.net.utils.withIO
-import com.github.mgz0227.tts_server_android.app
-import com.github.mgz0227.tts_server_android.bean.EdgeVoiceBean
-import com.github.mgz0227.tts_server_android.constant.AppConst
-import com.github.mgz0227.tts_server_android.constant.CnLocalMap
-import com.github.mgz0227.tts_server_android.constant.MsTtsApiType
-import com.github.mgz0227.tts_server_android.utils.FileUtils
+import com.github.jing332.tts_server_android.app
+import com.github.jing332.tts_server_android.bean.EdgeVoiceBean
+import com.github.jing332.tts_server_android.constant.AppConst
+import com.github.jing332.tts_server_android.constant.CnLocalMap
+import com.github.jing332.tts_server_android.constant.MsTtsApiType
+import com.github.jing332.tts_server_android.utils.FileUtils
 import tts_server_lib.Tts_server_lib
 import java.io.File
 import java.util.*

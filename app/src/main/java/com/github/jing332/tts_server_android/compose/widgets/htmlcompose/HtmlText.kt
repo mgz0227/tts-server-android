@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.widgets.htmlcompose
+package com.github.jing332.tts_server_android.compose.widgets.htmlcompose
 
 import android.text.style.BulletSpan
 import android.text.style.ForegroundColorSpan

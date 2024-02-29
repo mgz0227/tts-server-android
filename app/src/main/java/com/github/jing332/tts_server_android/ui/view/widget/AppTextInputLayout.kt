@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.ui.view.widget
+package com.github.jing332.tts_server_android.ui.view.widget
 
 import android.content.Context
 import android.util.AttributeSet

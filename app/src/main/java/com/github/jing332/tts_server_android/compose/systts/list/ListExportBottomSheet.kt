@@ -1,9 +1,9 @@
-package com.github.mgz0227.tts_server_android.compose.systts.list
+package com.github.jing332.tts_server_android.compose.systts.list
 
 import androidx.compose.runtime.Composable
-import com.github.mgz0227.tts_server_android.compose.systts.ConfigExportBottomSheet
-import com.github.mgz0227.tts_server_android.constant.AppConst
-import com.github.mgz0227.tts_server_android.data.entities.systts.GroupWithSystemTts
+import com.github.jing332.tts_server_android.compose.systts.ConfigExportBottomSheet
+import com.github.jing332.tts_server_android.constant.AppConst
+import com.github.jing332.tts_server_android.data.entities.systts.GroupWithSystemTts
 import kotlinx.serialization.encodeToString
 
 @Composable

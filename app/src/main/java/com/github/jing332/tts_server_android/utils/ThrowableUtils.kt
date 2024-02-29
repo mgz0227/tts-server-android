@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.utils
+package com.github.jing332.tts_server_android.utils
 
 import cn.hutool.core.exceptions.ExceptionUtil.getThrowableList
 

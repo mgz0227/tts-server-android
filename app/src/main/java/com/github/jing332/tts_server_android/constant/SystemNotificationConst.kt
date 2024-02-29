@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.constant
+package com.github.jing332.tts_server_android.constant
 
 object SystemNotificationConst {
     const val ID_FORWARDER_MS = 1

@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose
+package com.github.jing332.tts_server_android.compose
 
 import android.content.Intent
 import android.net.Uri
@@ -24,12 +24,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.compose.widgets.AppDialog
-import com.github.mgz0227.tts_server_android.compose.widgets.Markdown
-import com.github.mgz0227.tts_server_android.constant.AppConst
-import com.github.mgz0227.tts_server_android.model.updater.AppUpdateChecker
-import com.github.mgz0227.tts_server_android.utils.ClipboardUtils
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.compose.widgets.AppDialog
+import com.github.jing332.tts_server_android.compose.widgets.Markdown
+import com.github.jing332.tts_server_android.constant.AppConst
+import com.github.jing332.tts_server_android.model.updater.AppUpdateChecker
+import com.github.jing332.tts_server_android.utils.ClipboardUtils
 
 @Preview
 @Composable

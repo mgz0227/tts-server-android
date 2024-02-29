@@ -1,7 +1,7 @@
-package com.github.mgz0227.tts_server_android.model.rhino.core
+package com.github.jing332.tts_server_android.model.rhino.core
 
 import android.content.Context
-import com.github.mgz0227.tts_server_android.model.rhino.core.ext.JsExtensions
+import com.github.jing332.tts_server_android.model.rhino.core.ext.JsExtensions
 
 /**
  * ttsrv 对象类

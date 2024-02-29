@@ -1,12 +1,12 @@
-package com.github.mgz0227.tts_server_android.data.dao
+package com.github.jing332.tts_server_android.data.dao
 
 import androidx.room.*
-import com.github.mgz0227.tts_server_android.constant.SpeechTarget
-import com.github.mgz0227.tts_server_android.data.appDb
-import com.github.mgz0227.tts_server_android.data.entities.AbstractListGroup.Companion.DEFAULT_GROUP_ID
-import com.github.mgz0227.tts_server_android.data.entities.systts.GroupWithSystemTts
-import com.github.mgz0227.tts_server_android.data.entities.systts.SystemTts
-import com.github.mgz0227.tts_server_android.data.entities.systts.SystemTtsGroup
+import com.github.jing332.tts_server_android.constant.SpeechTarget
+import com.github.jing332.tts_server_android.data.appDb
+import com.github.jing332.tts_server_android.data.entities.AbstractListGroup.Companion.DEFAULT_GROUP_ID
+import com.github.jing332.tts_server_android.data.entities.systts.GroupWithSystemTts
+import com.github.jing332.tts_server_android.data.entities.systts.SystemTts
+import com.github.jing332.tts_server_android.data.entities.systts.SystemTtsGroup
 import kotlinx.coroutines.flow.Flow
 
 @Dao

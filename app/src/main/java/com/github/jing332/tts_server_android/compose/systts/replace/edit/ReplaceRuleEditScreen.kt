@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3Api::class, ExperimentalComposeUiApi::class)
 
-package com.github.mgz0227.tts_server_android.compose.systts.replace.edit
+package com.github.jing332.tts_server_android.compose.systts.replace.edit
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.horizontalScroll
@@ -53,16 +53,16 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.compose.LocalNavController
-import com.github.mgz0227.tts_server_android.compose.systts.AuditionDialog
-import com.github.mgz0227.tts_server_android.compose.widgets.AppSpinner
-import com.github.mgz0227.tts_server_android.compose.widgets.TextCheckBox
-import com.github.mgz0227.tts_server_android.conf.ReplaceRuleConfig
-import com.github.mgz0227.tts_server_android.data.appDb
-import com.github.mgz0227.tts_server_android.data.entities.replace.ReplaceRule
-import com.github.mgz0227.tts_server_android.data.entities.replace.ReplaceRuleGroup
-import com.github.mgz0227.tts_server_android.data.entities.systts.SystemTts
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.compose.LocalNavController
+import com.github.jing332.tts_server_android.compose.systts.AuditionDialog
+import com.github.jing332.tts_server_android.compose.widgets.AppSpinner
+import com.github.jing332.tts_server_android.compose.widgets.TextCheckBox
+import com.github.jing332.tts_server_android.conf.ReplaceRuleConfig
+import com.github.jing332.tts_server_android.data.appDb
+import com.github.jing332.tts_server_android.data.entities.replace.ReplaceRule
+import com.github.jing332.tts_server_android.data.entities.replace.ReplaceRuleGroup
+import com.github.jing332.tts_server_android.data.entities.systts.SystemTts
 import androidx.compose.material3.AlertDialog as AlertDialog1
 
 

@@ -1,11 +1,11 @@
-package com.github.mgz0227.tts_server_android.conf
+package com.github.jing332.tts_server_android.conf
 
 import com.funny.data_saver.core.DataSaverConverter
 import com.funny.data_saver.core.DataSaverMutableState
 import com.funny.data_saver.core.DataSaverPreferences
 import com.funny.data_saver.core.mutableDataSaverStateOf
-import com.github.mgz0227.tts_server_android.app
-import com.github.mgz0227.tts_server_android.constant.AppConst
+import com.github.jing332.tts_server_android.app
+import com.github.jing332.tts_server_android.constant.AppConst
 import kotlinx.serialization.encodeToString
 
 object ReplaceRuleConfig {

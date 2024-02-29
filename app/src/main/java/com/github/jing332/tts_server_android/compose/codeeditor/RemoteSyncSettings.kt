@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.codeeditor
+package com.github.jing332.tts_server_android.compose.codeeditor
 
 import android.content.Intent
 import android.net.Uri
@@ -16,10 +16,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.compose.widgets.AppDialog
-import com.github.mgz0227.tts_server_android.compose.widgets.DenseOutlinedField
-import com.github.mgz0227.tts_server_android.conf.CodeEditorConfig
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.compose.widgets.AppDialog
+import com.github.jing332.tts_server_android.compose.widgets.DenseOutlinedField
+import com.github.jing332.tts_server_android.conf.CodeEditorConfig
 
 @Composable
 internal fun RemoteSyncSettings(onDismissRequest: () -> Unit) {
@@ -48,7 +48,7 @@ internal fun RemoteSyncSettings(onDismissRequest: () -> Unit) {
             Row {
                 TextButton(onClick = {
                     context.startActivity(Intent(Intent.ACTION_VIEW).apply {
-                        data = Uri.parse("https://github.com/mgz0227/tts-server-psc")
+                        data = Uri.parse("https://github.com/jing332/tts-server-psc")
                     })
                 }) {
                     Text(stringResource(id = R.string.learn_more))

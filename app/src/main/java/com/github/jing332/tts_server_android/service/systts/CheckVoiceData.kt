@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.service.systts
+package com.github.jing332.tts_server_android.service.systts
 
 import android.app.Activity
 import android.content.Intent

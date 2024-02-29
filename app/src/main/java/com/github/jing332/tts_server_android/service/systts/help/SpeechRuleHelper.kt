@@ -1,11 +1,11 @@
-package com.github.mgz0227.tts_server_android.service.systts.help
+package com.github.jing332.tts_server_android.service.systts.help
 
 import android.content.Context
 import android.os.SystemClock
-import com.github.mgz0227.tts_server_android.data.entities.SpeechRule
-import com.github.mgz0227.tts_server_android.model.rhino.speech_rule.SpeechRuleEngine
-import com.github.mgz0227.tts_server_android.model.speech.TtsTextSegment
-import com.github.mgz0227.tts_server_android.model.speech.tts.ITextToSpeechEngine
+import com.github.jing332.tts_server_android.data.entities.SpeechRule
+import com.github.jing332.tts_server_android.model.rhino.speech_rule.SpeechRuleEngine
+import com.github.jing332.tts_server_android.model.speech.TtsTextSegment
+import com.github.jing332.tts_server_android.model.speech.tts.ITextToSpeechEngine
 import java.util.Random
 
 class SpeechRuleHelper {

@@ -1,10 +1,10 @@
-package com.github.mgz0227.tts_server_android.data.entities.replace
+package com.github.jing332.tts_server_android.data.entities.replace
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.github.mgz0227.tts_server_android.constant.ReplaceExecution
-import com.github.mgz0227.tts_server_android.data.entities.AbstractListGroup
+import com.github.jing332.tts_server_android.constant.ReplaceExecution
+import com.github.jing332.tts_server_android.data.entities.AbstractListGroup
 
 @Entity("replaceRuleGroup")
 @kotlinx.serialization.Serializable

@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.constant
+package com.github.jing332.tts_server_android.constant
 
 import androidx.annotation.IntDef
 

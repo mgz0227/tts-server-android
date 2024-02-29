@@ -1,11 +1,11 @@
-package com.github.mgz0227.tts_server_android.compose.systts.list.edit.ui
+package com.github.jing332.tts_server_android.compose.systts.list.edit.ui
 
 import android.speech.tts.TextToSpeech
 import android.speech.tts.Voice
 import androidx.compose.runtime.mutableStateListOf
 import androidx.lifecycle.ViewModel
-import com.github.mgz0227.tts_server_android.App
-import com.github.mgz0227.tts_server_android.model.LocalTtsEngine
+import com.github.jing332.tts_server_android.App
+import com.github.jing332.tts_server_android.model.LocalTtsEngine
 import java.util.Locale
 
 class LocalTtsViewModel : ViewModel() {

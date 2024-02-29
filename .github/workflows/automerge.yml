@@ -25,5 +25,5 @@ jobs:
         name: automerge
         uses: "pascalgn/automerge-action@v0.16.2"
         env:
-          MERGE_FILTER_AUTHOR: "mgz0227"
+          MERGE_FILTER_AUTHOR: "jing332"
           GITHUB_TOKEN: ${{ secrets.TOKEN }}

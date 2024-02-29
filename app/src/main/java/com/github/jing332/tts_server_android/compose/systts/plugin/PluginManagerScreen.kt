@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.systts.plugin
+package com.github.jing332.tts_server_android.compose.systts.plugin
 
 import android.content.Intent
 import android.os.Bundle
@@ -52,15 +52,15 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.compose.LocalNavController
-import com.github.mgz0227.tts_server_android.compose.ShadowReorderableItem
-import com.github.mgz0227.tts_server_android.compose.navigateSingleTop
-import com.github.mgz0227.tts_server_android.compose.systts.ConfigDeleteDialog
-import com.github.mgz0227.tts_server_android.constant.AppConst
-import com.github.mgz0227.tts_server_android.data.appDb
-import com.github.mgz0227.tts_server_android.data.entities.plugin.Plugin
-import com.github.mgz0227.tts_server_android.utils.MyTools
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.compose.LocalNavController
+import com.github.jing332.tts_server_android.compose.ShadowReorderableItem
+import com.github.jing332.tts_server_android.compose.navigateSingleTop
+import com.github.jing332.tts_server_android.compose.systts.ConfigDeleteDialog
+import com.github.jing332.tts_server_android.constant.AppConst
+import com.github.jing332.tts_server_android.data.appDb
+import com.github.jing332.tts_server_android.data.entities.plugin.Plugin
+import com.github.jing332.tts_server_android.utils.MyTools
 import kotlinx.coroutines.flow.conflate
 import kotlinx.serialization.encodeToString
 import org.burnoutcrew.reorderable.detectReorderAfterLongPress

@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.systts.replace
+package com.github.jing332.tts_server_android.compose.systts.replace
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -17,12 +17,12 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.compose.widgets.AppDialog
-import com.github.mgz0227.tts_server_android.compose.widgets.TextCheckBox
-import com.github.mgz0227.tts_server_android.constant.ReplaceExecution
-import com.github.mgz0227.tts_server_android.data.entities.replace.ReplaceRuleGroup
-import com.github.mgz0227.tts_server_android.utils.clickableRipple
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.compose.widgets.AppDialog
+import com.github.jing332.tts_server_android.compose.widgets.TextCheckBox
+import com.github.jing332.tts_server_android.constant.ReplaceExecution
+import com.github.jing332.tts_server_android.data.entities.replace.ReplaceRuleGroup
+import com.github.jing332.tts_server_android.utils.clickableRipple
 
 @Composable
 internal fun GroupEditDialog(

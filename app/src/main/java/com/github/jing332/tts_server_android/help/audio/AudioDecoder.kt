@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.help.audio
+package com.github.jing332.tts_server_android.help.audio
 
 import android.media.MediaCodec
 import android.media.MediaCodec.BufferInfo
@@ -8,8 +8,8 @@ import android.os.Build
 import android.os.SystemClock
 import android.text.TextUtils
 import android.util.Log
-import com.github.mgz0227.tts_server_android.help.audio.AudioDecoderException.Companion.ERROR_CODE_NO_AUDIO_TRACK
-import com.github.mgz0227.tts_server_android.utils.GcManager
+import com.github.jing332.tts_server_android.help.audio.AudioDecoderException.Companion.ERROR_CODE_NO_AUDIO_TRACK
+import com.github.jing332.tts_server_android.utils.GcManager
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import okio.ByteString

@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.service.forwarder.system
+package com.github.jing332.tts_server_android.service.forwarder.system
 
 import kotlinx.serialization.Serializable
 

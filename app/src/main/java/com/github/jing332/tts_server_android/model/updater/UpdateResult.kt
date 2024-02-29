@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.model.updater
+package com.github.jing332.tts_server_android.model.updater
 
 data class UpdateResult(
     val version: String = "",

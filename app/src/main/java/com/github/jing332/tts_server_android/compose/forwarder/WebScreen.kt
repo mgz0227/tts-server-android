@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.compose.forwarder
+package com.github.jing332.tts_server_android.compose.forwarder
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -26,7 +26,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import com.github.mgz0227.tts_server_android.utils.longToast
+import com.github.jing332.tts_server_android.utils.longToast
 import com.google.accompanist.web.AccompanistWebChromeClient
 import com.google.accompanist.web.AccompanistWebViewClient
 import com.google.accompanist.web.LoadingState

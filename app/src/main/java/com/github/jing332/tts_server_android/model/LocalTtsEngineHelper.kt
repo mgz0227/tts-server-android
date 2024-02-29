@@ -1,10 +1,10 @@
-package com.github.mgz0227.tts_server_android.model
+package com.github.jing332.tts_server_android.model
 
 import android.content.Context
 import android.speech.tts.TextToSpeech
 import android.speech.tts.Voice
 import com.drake.net.utils.withMain
-import com.github.mgz0227.tts_server_android.App
+import com.github.jing332.tts_server_android.App
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay

@@ -1,4 +1,4 @@
-package com.github.mgz0227.tts_server_android.model.speech.tts
+package com.github.jing332.tts_server_android.model.speech.tts
 
 import android.os.Bundle
 import android.os.Parcelable
@@ -6,11 +6,11 @@ import android.os.SystemClock
 import android.speech.tts.TextToSpeech
 import android.speech.tts.UtteranceProgressListener
 import android.util.Log
-import com.github.mgz0227.tts_server_android.App
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.data.entities.systts.AudioParams
-import com.github.mgz0227.tts_server_android.data.entities.systts.SpeechRuleInfo
-import com.github.mgz0227.tts_server_android.utils.toHtmlBold
+import com.github.jing332.tts_server_android.App
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.data.entities.systts.AudioParams
+import com.github.jing332.tts_server_android.data.entities.systts.SpeechRuleInfo
+import com.github.jing332.tts_server_android.utils.toHtmlBold
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.awaitCancellation

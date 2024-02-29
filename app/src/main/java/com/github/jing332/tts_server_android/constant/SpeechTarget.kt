@@ -1,9 +1,9 @@
-package com.github.mgz0227.tts_server_android.constant
+package com.github.jing332.tts_server_android.constant
 
 import androidx.annotation.IntDef
-import com.github.mgz0227.tts_server_android.App
-import com.github.mgz0227.tts_server_android.R
-import com.github.mgz0227.tts_server_android.app
+import com.github.jing332.tts_server_android.App
+import com.github.jing332.tts_server_android.R
+import com.github.jing332.tts_server_android.app
 
 @IntDef(
     SpeechTarget.ALL,
