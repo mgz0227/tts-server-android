@@ -16,15 +16,15 @@ data class WorkflowRuns(
 //        @SerialName("actor")
         val actor: Actor = Actor(),
 //        @SerialName("artifacts_url")
-//        val artifactsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/actions/runs/7605412793/artifacts
+//        val artifactsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/actions/runs/7605412793/artifacts
 //        @SerialName("cancel_url")
-//        val cancelUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/actions/runs/7605412793/cancel
+//        val cancelUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/actions/runs/7605412793/cancel
 //        @SerialName("check_suite_id")
 //        val checkSuiteId: Long = 0, // 19988906797
 //        @SerialName("check_suite_node_id")
 //        val checkSuiteNodeId: String = "", // CS_kwDOH_7t188AAAAEp26DLQ
 //        @SerialName("check_suite_url")
-//        val checkSuiteUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/check-suites/19988906797
+//        val checkSuiteUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/check-suites/19988906797
         @SerialName("conclusion")
         val conclusion: String? = "", // success
         @SerialName("created_at")
@@ -42,13 +42,13 @@ data class WorkflowRuns(
 //        @SerialName("head_sha")
 //        val headSha: String = "", // 3f23a7603a75b9218e61554fd5ec69fe6377abc4
         @SerialName("html_url")
-        val htmlUrl: String = "", // https://github.com/jing332/tts-server-android/actions/runs/7605412793
+        val htmlUrl: String = "", // https://github.com/mgz0227/tts-server-android/actions/runs/7605412793
 //        @SerialName("id")
 //        val id: Long = 0, // 7605412793
 //        @SerialName("jobs_url")
-//        val jobsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/actions/runs/7605412793/jobs
+//        val jobsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/actions/runs/7605412793/jobs
 //        @SerialName("logs_url")
-//        val logsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/actions/runs/7605412793/logs
+//        val logsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/actions/runs/7605412793/logs
 //        @SerialName("name")
 //        val name: String = "", // Build Test
 //        @SerialName("node_id")
@@ -56,7 +56,7 @@ data class WorkflowRuns(
         @SerialName("path")
         val path: String = "", // .github/workflows/test.yml
 //        @SerialName("previous_attempt_url")
-//        val previousAttemptUrl: String? = "", // https://api.github.com/mgz0227/tts-server-android/actions/runs/7583634607/attempts/1
+//        val previousAttemptUrl: String? = "", // https://api.github.com/repos/mgz0227/tts-server-android/actions/runs/7583634607/attempts/1
 //        @SerialName("pull_requests")
 //        val pullRequests: List<Any> = listOf(),
 //        @SerialName("referenced_workflows")
@@ -64,7 +64,7 @@ data class WorkflowRuns(
 //        @SerialName("repository")
 //        val repository: Repository = Repository(),
 //        @SerialName("rerun_url")
-//        val rerunUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/actions/runs/7605412793/rerun
+//        val rerunUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/actions/runs/7605412793/rerun
 //        @SerialName("run_attempt")
 //        val runAttempt: Int = 0, // 1
 //        @SerialName("run_number")
@@ -78,50 +78,50 @@ data class WorkflowRuns(
         @SerialName("updated_at")
         val updatedAt: String = "", // 2024-01-22T01:49:54Z
 //        @SerialName("url")
-//        val url: String = "", // https://api.github.com/mgz0227/tts-server-android/actions/runs/7605412793
+//        val url: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/actions/runs/7605412793
 //        @SerialName("workflow_id")
 //        val workflowId: Int = 0, // 35098665
 //        @SerialName("workflow_url")
-//        val workflowUrl: String = "" // https://api.github.com/mgz0227/tts-server-android/actions/workflows/35098665
+//        val workflowUrl: String = "" // https://api.github.com/repos/mgz0227/tts-server-android/actions/workflows/35098665
     ) {
         @Serializable
         data class Actor(
             @SerialName("avatar_url")
             val avatarUrl: String = "", // https://avatars.githubusercontent.com/u/42014615?v=4
             @SerialName("events_url")
-            val eventsUrl: String = "", // https://api.github.com/users/jing332/events{/privacy}
+            val eventsUrl: String = "", // https://api.github.com/users/mgz0227/events{/privacy}
             @SerialName("followers_url")
-            val followersUrl: String = "", // https://api.github.com/users/jing332/followers
+            val followersUrl: String = "", // https://api.github.com/users/mgz0227/followers
             @SerialName("following_url")
-            val followingUrl: String = "", // https://api.github.com/users/jing332/following{/other_user}
+            val followingUrl: String = "", // https://api.github.com/users/mgz0227/following{/other_user}
             @SerialName("gists_url")
-            val gistsUrl: String = "", // https://api.github.com/users/jing332/gists{/gist_id}
+            val gistsUrl: String = "", // https://api.github.com/users/mgz0227/gists{/gist_id}
             @SerialName("gravatar_id")
             val gravatarId: String = "",
             @SerialName("html_url")
-            val htmlUrl: String = "", // https://github.com/jing332
+            val htmlUrl: String = "", // https://github.com/mgz0227
             @SerialName("id")
             val id: Int = 0, // 42014615
             @SerialName("login")
-            val login: String = "", // jing332
+            val login: String = "", // mgz0227
             @SerialName("node_id")
             val nodeId: String = "", // MDQ6VXNlcjQyMDE0NjE1
             @SerialName("organizations_url")
-            val organizationsUrl: String = "", // https://api.github.com/users/jing332/orgs
+            val organizationsUrl: String = "", // https://api.github.com/users/mgz0227/orgs
             @SerialName("received_events_url")
-            val receivedEventsUrl: String = "", // https://api.github.com/users/jing332/received_events
+            val receivedEventsUrl: String = "", // https://api.github.com/users/mgz0227/received_events
             @SerialName("repos_url")
-            val reposUrl: String = "", // https://api.github.com/users/jing332/repos
+            val reposUrl: String = "", // https://api.github.com/users/mgz0227/repos
             @SerialName("site_admin")
             val siteAdmin: Boolean = false, // false
             @SerialName("starred_url")
-            val starredUrl: String = "", // https://api.github.com/users/jing332/starred{/owner}{/repo}
+            val starredUrl: String = "", // https://api.github.com/users/mgz0227/starred{/owner}{/repo}
             @SerialName("subscriptions_url")
-            val subscriptionsUrl: String = "", // https://api.github.com/users/jing332/subscriptions
+            val subscriptionsUrl: String = "", // https://api.github.com/users/mgz0227/subscriptions
             @SerialName("type")
             val type: String = "", // User
             @SerialName("url")
-            val url: String = "" // https://api.github.com/users/jing332
+            val url: String = "" // https://api.github.com/users/mgz0227
         )
 
         /* @Serializable
@@ -142,7 +142,7 @@ data class WorkflowRuns(
              @Serializable
              data class Author(
                  @SerialName("email")
-                 val email: String = "", // 42014615+jing332@users.noreply.github.com
+                 val email: String = "", // 42014615+mgz0227@users.noreply.github.com
                  @SerialName("name")
                  val name: String = "" // Jing
              )
@@ -150,7 +150,7 @@ data class WorkflowRuns(
              @Serializable
              data class Committer(
                  @SerialName("email")
-                 val email: String = "", // 42014615+jing332@users.noreply.github.com
+                 val email: String = "", // 42014615+mgz0227@users.noreply.github.com
                  @SerialName("name")
                  val name: String = "" // Jing
              )
@@ -159,272 +159,272 @@ data class WorkflowRuns(
          @Serializable
          data class HeadRepository(
              @SerialName("archive_url")
-             val archiveUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/{archive_format}{/ref}
+             val archiveUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/{archive_format}{/ref}
              @SerialName("assignees_url")
-             val assigneesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/assignees{/user}
+             val assigneesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/assignees{/user}
              @SerialName("blobs_url")
-             val blobsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/git/blobs{/sha}
+             val blobsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/git/blobs{/sha}
              @SerialName("branches_url")
-             val branchesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/branches{/branch}
+             val branchesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/branches{/branch}
              @SerialName("collaborators_url")
-             val collaboratorsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/collaborators{/collaborator}
+             val collaboratorsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/collaborators{/collaborator}
              @SerialName("comments_url")
-             val commentsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/comments{/number}
+             val commentsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/comments{/number}
              @SerialName("commits_url")
-             val commitsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/commits{/sha}
+             val commitsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/commits{/sha}
              @SerialName("compare_url")
-             val compareUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/compare/{base}...{head}
+             val compareUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/compare/{base}...{head}
              @SerialName("contents_url")
-             val contentsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/contents/{+path}
+             val contentsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/contents/{+path}
              @SerialName("contributors_url")
-             val contributorsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/contributors
+             val contributorsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/contributors
              @SerialName("deployments_url")
-             val deploymentsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/deployments
+             val deploymentsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/deployments
              @SerialName("description")
              val description: String = "", // 这是一个Android系统TTS应用，内置微软演示接口，可自定义HTTP请求，可导入其他本地TTS引擎，以及根据中文双引号的简单旁白/对话识别朗读 ，还有自动重试，备用配置，文本替换等更多功能。
              @SerialName("downloads_url")
-             val downloadsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/downloads
+             val downloadsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/downloads
              @SerialName("events_url")
-             val eventsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/events
+             val eventsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/events
              @SerialName("fork")
              val fork: Boolean = false, // false
              @SerialName("forks_url")
-             val forksUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/forks
+             val forksUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/forks
              @SerialName("full_name")
-             val fullName: String = "", // jing332/tts-server-android
+             val fullName: String = "", // mgz0227/tts-server-android
              @SerialName("git_commits_url")
-             val gitCommitsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/git/commits{/sha}
+             val gitCommitsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/git/commits{/sha}
              @SerialName("git_refs_url")
-             val gitRefsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/git/refs{/sha}
+             val gitRefsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/git/refs{/sha}
              @SerialName("git_tags_url")
-             val gitTagsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/git/tags{/sha}
+             val gitTagsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/git/tags{/sha}
              @SerialName("hooks_url")
-             val hooksUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/hooks
+             val hooksUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/hooks
              @SerialName("html_url")
-             val htmlUrl: String = "", // https://github.com/jing332/tts-server-android
+             val htmlUrl: String = "", // https://github.com/mgz0227/tts-server-android
              @SerialName("id")
              val id: Int = 0, // 536800727
              @SerialName("issue_comment_url")
-             val issueCommentUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/issues/comments{/number}
+             val issueCommentUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/issues/comments{/number}
              @SerialName("issue_events_url")
-             val issueEventsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/issues/events{/number}
+             val issueEventsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/issues/events{/number}
              @SerialName("issues_url")
-             val issuesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/issues{/number}
+             val issuesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/issues{/number}
              @SerialName("keys_url")
-             val keysUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/keys{/key_id}
+             val keysUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/keys{/key_id}
              @SerialName("labels_url")
-             val labelsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/labels{/name}
+             val labelsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/labels{/name}
              @SerialName("languages_url")
-             val languagesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/languages
+             val languagesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/languages
              @SerialName("merges_url")
-             val mergesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/merges
+             val mergesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/merges
              @SerialName("milestones_url")
-             val milestonesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/milestones{/number}
+             val milestonesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/milestones{/number}
              @SerialName("name")
              val name: String = "", // tts-server-android
              @SerialName("node_id")
              val nodeId: String = "", // R_kgDOH_7t1w
              @SerialName("notifications_url")
-             val notificationsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/notifications{?since,all,participating}
+             val notificationsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/notifications{?since,all,participating}
              @SerialName("owner")
              val owner: Owner = Owner(),
              @SerialName("private")
              val `private`: Boolean = false, // false
              @SerialName("pulls_url")
-             val pullsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/pulls{/number}
+             val pullsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/pulls{/number}
              @SerialName("releases_url")
-             val releasesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/releases{/id}
+             val releasesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/releases{/id}
              @SerialName("stargazers_url")
-             val stargazersUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/stargazers
+             val stargazersUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/stargazers
              @SerialName("statuses_url")
-             val statusesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/statuses/{sha}
+             val statusesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/statuses/{sha}
              @SerialName("subscribers_url")
-             val subscribersUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/subscribers
+             val subscribersUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/subscribers
              @SerialName("subscription_url")
-             val subscriptionUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/subscription
+             val subscriptionUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/subscription
              @SerialName("tags_url")
-             val tagsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/tags
+             val tagsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/tags
              @SerialName("teams_url")
-             val teamsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/teams
+             val teamsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/teams
              @SerialName("trees_url")
-             val treesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/git/trees{/sha}
+             val treesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/git/trees{/sha}
              @SerialName("url")
-             val url: String = "" // https://api.github.com/mgz0227/tts-server-android
+             val url: String = "" // https://api.github.com/repos/mgz0227/tts-server-android
          ) {
              @Serializable
              data class Owner(
                  @SerialName("avatar_url")
                  val avatarUrl: String = "", // https://avatars.githubusercontent.com/u/42014615?v=4
                  @SerialName("events_url")
-                 val eventsUrl: String = "", // https://api.github.com/users/jing332/events{/privacy}
+                 val eventsUrl: String = "", // https://api.github.com/users/mgz0227/events{/privacy}
                  @SerialName("followers_url")
-                 val followersUrl: String = "", // https://api.github.com/users/jing332/followers
+                 val followersUrl: String = "", // https://api.github.com/users/mgz0227/followers
                  @SerialName("following_url")
-                 val followingUrl: String = "", // https://api.github.com/users/jing332/following{/other_user}
+                 val followingUrl: String = "", // https://api.github.com/users/mgz0227/following{/other_user}
                  @SerialName("gists_url")
-                 val gistsUrl: String = "", // https://api.github.com/users/jing332/gists{/gist_id}
+                 val gistsUrl: String = "", // https://api.github.com/users/mgz0227/gists{/gist_id}
                  @SerialName("gravatar_id")
                  val gravatarId: String = "",
                  @SerialName("html_url")
-                 val htmlUrl: String = "", // https://github.com/jing332
+                 val htmlUrl: String = "", // https://github.com/mgz0227
                  @SerialName("id")
                  val id: Int = 0, // 42014615
                  @SerialName("login")
-                 val login: String = "", // jing332
+                 val login: String = "", // mgz0227
                  @SerialName("node_id")
                  val nodeId: String = "", // MDQ6VXNlcjQyMDE0NjE1
                  @SerialName("organizations_url")
-                 val organizationsUrl: String = "", // https://api.github.com/users/jing332/orgs
+                 val organizationsUrl: String = "", // https://api.github.com/users/mgz0227/orgs
                  @SerialName("received_events_url")
-                 val receivedEventsUrl: String = "", // https://api.github.com/users/jing332/received_events
+                 val receivedEventsUrl: String = "", // https://api.github.com/users/mgz0227/received_events
                  @SerialName("repos_url")
-                 val reposUrl: String = "", // https://api.github.com/users/jing332/repos
+                 val reposUrl: String = "", // https://api.github.com/users/mgz0227/repos
                  @SerialName("site_admin")
                  val siteAdmin: Boolean = false, // false
                  @SerialName("starred_url")
-                 val starredUrl: String = "", // https://api.github.com/users/jing332/starred{/owner}{/repo}
+                 val starredUrl: String = "", // https://api.github.com/users/mgz0227/starred{/owner}{/repo}
                  @SerialName("subscriptions_url")
-                 val subscriptionsUrl: String = "", // https://api.github.com/users/jing332/subscriptions
+                 val subscriptionsUrl: String = "", // https://api.github.com/users/mgz0227/subscriptions
                  @SerialName("type")
                  val type: String = "", // User
                  @SerialName("url")
-                 val url: String = "" // https://api.github.com/users/jing332
+                 val url: String = "" // https://api.github.com/users/mgz0227
              )
          }
 
          @Serializable
          data class Repository(
              @SerialName("archive_url")
-             val archiveUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/{archive_format}{/ref}
+             val archiveUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/{archive_format}{/ref}
              @SerialName("assignees_url")
-             val assigneesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/assignees{/user}
+             val assigneesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/assignees{/user}
              @SerialName("blobs_url")
-             val blobsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/git/blobs{/sha}
+             val blobsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/git/blobs{/sha}
              @SerialName("branches_url")
-             val branchesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/branches{/branch}
+             val branchesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/branches{/branch}
              @SerialName("collaborators_url")
-             val collaboratorsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/collaborators{/collaborator}
+             val collaboratorsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/collaborators{/collaborator}
              @SerialName("comments_url")
-             val commentsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/comments{/number}
+             val commentsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/comments{/number}
              @SerialName("commits_url")
-             val commitsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/commits{/sha}
+             val commitsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/commits{/sha}
              @SerialName("compare_url")
-             val compareUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/compare/{base}...{head}
+             val compareUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/compare/{base}...{head}
              @SerialName("contents_url")
-             val contentsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/contents/{+path}
+             val contentsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/contents/{+path}
              @SerialName("contributors_url")
-             val contributorsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/contributors
+             val contributorsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/contributors
              @SerialName("deployments_url")
-             val deploymentsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/deployments
+             val deploymentsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/deployments
              @SerialName("description")
              val description: String = "", // 这是一个Android系统TTS应用，内置微软演示接口，可自定义HTTP请求，可导入其他本地TTS引擎，以及根据中文双引号的简单旁白/对话识别朗读 ，还有自动重试，备用配置，文本替换等更多功能。
              @SerialName("downloads_url")
-             val downloadsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/downloads
+             val downloadsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/downloads
              @SerialName("events_url")
-             val eventsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/events
+             val eventsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/events
              @SerialName("fork")
              val fork: Boolean = false, // false
              @SerialName("forks_url")
-             val forksUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/forks
+             val forksUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/forks
              @SerialName("full_name")
-             val fullName: String = "", // jing332/tts-server-android
+             val fullName: String = "", // mgz0227/tts-server-android
              @SerialName("git_commits_url")
-             val gitCommitsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/git/commits{/sha}
+             val gitCommitsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/git/commits{/sha}
              @SerialName("git_refs_url")
-             val gitRefsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/git/refs{/sha}
+             val gitRefsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/git/refs{/sha}
              @SerialName("git_tags_url")
-             val gitTagsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/git/tags{/sha}
+             val gitTagsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/git/tags{/sha}
              @SerialName("hooks_url")
-             val hooksUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/hooks
+             val hooksUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/hooks
              @SerialName("html_url")
-             val htmlUrl: String = "", // https://github.com/jing332/tts-server-android
+             val htmlUrl: String = "", // https://github.com/mgz0227/tts-server-android
              @SerialName("id")
              val id: Int = 0, // 536800727
              @SerialName("issue_comment_url")
-             val issueCommentUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/issues/comments{/number}
+             val issueCommentUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/issues/comments{/number}
              @SerialName("issue_events_url")
-             val issueEventsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/issues/events{/number}
+             val issueEventsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/issues/events{/number}
              @SerialName("issues_url")
-             val issuesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/issues{/number}
+             val issuesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/issues{/number}
              @SerialName("keys_url")
-             val keysUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/keys{/key_id}
+             val keysUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/keys{/key_id}
              @SerialName("labels_url")
-             val labelsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/labels{/name}
+             val labelsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/labels{/name}
              @SerialName("languages_url")
-             val languagesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/languages
+             val languagesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/languages
              @SerialName("merges_url")
-             val mergesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/merges
+             val mergesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/merges
              @SerialName("milestones_url")
-             val milestonesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/milestones{/number}
+             val milestonesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/milestones{/number}
              @SerialName("name")
              val name: String = "", // tts-server-android
              @SerialName("node_id")
              val nodeId: String = "", // R_kgDOH_7t1w
              @SerialName("notifications_url")
-             val notificationsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/notifications{?since,all,participating}
+             val notificationsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/notifications{?since,all,participating}
              @SerialName("owner")
              val owner: Owner = Owner(),
              @SerialName("private")
              val `private`: Boolean = false, // false
              @SerialName("pulls_url")
-             val pullsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/pulls{/number}
+             val pullsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/pulls{/number}
              @SerialName("releases_url")
-             val releasesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/releases{/id}
+             val releasesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/releases{/id}
              @SerialName("stargazers_url")
-             val stargazersUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/stargazers
+             val stargazersUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/stargazers
              @SerialName("statuses_url")
-             val statusesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/statuses/{sha}
+             val statusesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/statuses/{sha}
              @SerialName("subscribers_url")
-             val subscribersUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/subscribers
+             val subscribersUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/subscribers
              @SerialName("subscription_url")
-             val subscriptionUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/subscription
+             val subscriptionUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/subscription
              @SerialName("tags_url")
-             val tagsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/tags
+             val tagsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/tags
              @SerialName("teams_url")
-             val teamsUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/teams
+             val teamsUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/teams
              @SerialName("trees_url")
-             val treesUrl: String = "", // https://api.github.com/mgz0227/tts-server-android/git/trees{/sha}
+             val treesUrl: String = "", // https://api.github.com/repos/mgz0227/tts-server-android/git/trees{/sha}
              @SerialName("url")
-             val url: String = "" // https://api.github.com/mgz0227/tts-server-android
+             val url: String = "" // https://api.github.com/repos/mgz0227/tts-server-android
          ) {
              @Serializable
              data class Owner(
                  @SerialName("avatar_url")
                  val avatarUrl: String = "", // https://avatars.githubusercontent.com/u/42014615?v=4
                  @SerialName("events_url")
-                 val eventsUrl: String = "", // https://api.github.com/users/jing332/events{/privacy}
+                 val eventsUrl: String = "", // https://api.github.com/users/mgz0227/events{/privacy}
                  @SerialName("followers_url")
-                 val followersUrl: String = "", // https://api.github.com/users/jing332/followers
+                 val followersUrl: String = "", // https://api.github.com/users/mgz0227/followers
                  @SerialName("following_url")
-                 val followingUrl: String = "", // https://api.github.com/users/jing332/following{/other_user}
+                 val followingUrl: String = "", // https://api.github.com/users/mgz0227/following{/other_user}
                  @SerialName("gists_url")
-                 val gistsUrl: String = "", // https://api.github.com/users/jing332/gists{/gist_id}
+                 val gistsUrl: String = "", // https://api.github.com/users/mgz0227/gists{/gist_id}
                  @SerialName("gravatar_id")
                  val gravatarId: String = "",
                  @SerialName("html_url")
-                 val htmlUrl: String = "", // https://github.com/jing332
+                 val htmlUrl: String = "", // https://github.com/mgz0227
                  @SerialName("id")
                  val id: Int = 0, // 42014615
                  @SerialName("login")
-                 val login: String = "", // jing332
+                 val login: String = "", // mgz0227
                  @SerialName("node_id")
                  val nodeId: String = "", // MDQ6VXNlcjQyMDE0NjE1
                  @SerialName("organizations_url")
-                 val organizationsUrl: String = "", // https://api.github.com/users/jing332/orgs
+                 val organizationsUrl: String = "", // https://api.github.com/users/mgz0227/orgs
                  @SerialName("received_events_url")
-                 val receivedEventsUrl: String = "", // https://api.github.com/users/jing332/received_events
+                 val receivedEventsUrl: String = "", // https://api.github.com/users/mgz0227/received_events
                  @SerialName("repos_url")
-                 val reposUrl: String = "", // https://api.github.com/users/jing332/repos
+                 val reposUrl: String = "", // https://api.github.com/users/mgz0227/repos
                  @SerialName("site_admin")
                  val siteAdmin: Boolean = false, // false
                  @SerialName("starred_url")
-                 val starredUrl: String = "", // https://api.github.com/users/jing332/starred{/owner}{/repo}
+                 val starredUrl: String = "", // https://api.github.com/users/mgz0227/starred{/owner}{/repo}
                  @SerialName("subscriptions_url")
-                 val subscriptionsUrl: String = "", // https://api.github.com/users/jing332/subscriptions
+                 val subscriptionsUrl: String = "", // https://api.github.com/users/mgz0227/subscriptions
                  @SerialName("type")
                  val type: String = "", // User
                  @SerialName("url")
-                 val url: String = "" // https://api.github.com/users/jing332
+                 val url: String = "" // https://api.github.com/users/mgz0227
              )
          }
 
@@ -433,39 +433,39 @@ data class WorkflowRuns(
              @SerialName("avatar_url")
              val avatarUrl: String = "", // https://avatars.githubusercontent.com/u/42014615?v=4
              @SerialName("events_url")
-             val eventsUrl: String = "", // https://api.github.com/users/jing332/events{/privacy}
+             val eventsUrl: String = "", // https://api.github.com/users/mgz0227/events{/privacy}
              @SerialName("followers_url")
-             val followersUrl: String = "", // https://api.github.com/users/jing332/followers
+             val followersUrl: String = "", // https://api.github.com/users/mgz0227/followers
              @SerialName("following_url")
-             val followingUrl: String = "", // https://api.github.com/users/jing332/following{/other_user}
+             val followingUrl: String = "", // https://api.github.com/users/mgz0227/following{/other_user}
              @SerialName("gists_url")
-             val gistsUrl: String = "", // https://api.github.com/users/jing332/gists{/gist_id}
+             val gistsUrl: String = "", // https://api.github.com/users/mgz0227/gists{/gist_id}
              @SerialName("gravatar_id")
              val gravatarId: String = "",
              @SerialName("html_url")
-             val htmlUrl: String = "", // https://github.com/jing332
+             val htmlUrl: String = "", // https://github.com/mgz0227
              @SerialName("id")
              val id: Int = 0, // 42014615
              @SerialName("login")
-             val login: String = "", // jing332
+             val login: String = "", // mgz0227
              @SerialName("node_id")
              val nodeId: String = "", // MDQ6VXNlcjQyMDE0NjE1
              @SerialName("organizations_url")
-             val organizationsUrl: String = "", // https://api.github.com/users/jing332/orgs
+             val organizationsUrl: String = "", // https://api.github.com/users/mgz0227/orgs
              @SerialName("received_events_url")
-             val receivedEventsUrl: String = "", // https://api.github.com/users/jing332/received_events
+             val receivedEventsUrl: String = "", // https://api.github.com/users/mgz0227/received_events
              @SerialName("repos_url")
-             val reposUrl: String = "", // https://api.github.com/users/jing332/repos
+             val reposUrl: String = "", // https://api.github.com/users/mgz0227/repos
              @SerialName("site_admin")
              val siteAdmin: Boolean = false, // false
              @SerialName("starred_url")
-             val starredUrl: String = "", // https://api.github.com/users/jing332/starred{/owner}{/repo}
+             val starredUrl: String = "", // https://api.github.com/users/mgz0227/starred{/owner}{/repo}
              @SerialName("subscriptions_url")
-             val subscriptionsUrl: String = "", // https://api.github.com/users/jing332/subscriptions
+             val subscriptionsUrl: String = "", // https://api.github.com/users/mgz0227/subscriptions
              @SerialName("type")
              val type: String = "", // User
              @SerialName("url")
-             val url: String = "" // https://api.github.com/users/jing332
+             val url: String = "" // https://api.github.com/users/mgz0227
          )
     */
     }
