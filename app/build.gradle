@@ -1,0 +1,286 @@
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+    id("kotlinx-serialization")
+    id("kotlin-kapt")
+    id("kotlin-parcelize")
+    id("com.google.devtools.ksp")
+    id("com.mikepenz.aboutlibraries.plugin")
+}
+
+static def buildTime() {
+    def t = new Date().time / 1000
+    return (long) t
+}
+
+static def releaseTime() {
+    return new Date().format("yy.MMddHH", TimeZone.getTimeZone("GMT+8"))
+}
+
+def version = "1." + releaseTime()
+def gitCommits = Integer.parseInt('git rev-list HEAD --count'.execute().text.trim())
+
+android {
+    compileSdk 34
+    namespace 'com.github.jing332.tts_server_android'
+    defaultConfig {
+        applicationId 'com.github.jing332.tts_server_android'
+        minSdk 21
+        targetSdk 34
+        versionCode gitCommits
+        versionName version
+
+        ksp {
+            arg("room.schemaLocation", "$projectDir/schemas".toString())
+            arg("room.incremental", "true")
+            arg("room.expandProjection", "true")
+        }
+
+        // 读取strings.xml所在文件夹 获得应用支持的语言
+        tasks.register('buildTranslationArray') {
+            def defaultCode = "zh-CN"
+            def foundLocales = new StringBuilder()
+            foundLocales.append("new String[]{")
+
+            fileTree("src/main/res").visit { details ->
+                if (details.file.path.endsWith("strings.xml")) {
+                    def path = details.file.parent.replaceAll('\\\\', "/")
+                    def languageCode = path.tokenize('/').last().replaceAll('values-', '').replaceAll('-r', '-')
+                    languageCode = (languageCode == "values") ? defaultCode : languageCode;
+                    foundLocales.append("\"").append(languageCode).append("\"").append(",")
+                }
+            }
+            foundLocales.append("}")
+            def foundLocalesString = foundLocales.toString().replaceAll(',}', '}')
+            buildConfigField "String[]", "TRANSLATION_ARRAY", foundLocalesString
+        }
+        preBuild.dependsOn buildTranslationArray
+        buildConfigField "long", "BUILD_TIME", buildTime().toString()
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            //签名文件 从local.properties取值
+            Properties pro = new Properties()
+            InputStream input = project.rootProject.file("local.properties").newDataInputStream()
+            pro.load(input)
+            storeFile file(pro.getProperty("KEY_PATH"))
+            storePassword pro.getProperty("KEY_PASSWORD")
+            keyAlias pro.getProperty("ALIAS_NAME")
+            keyPassword pro.getProperty("ALIAS_PASSWORD")
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.release
+            applicationIdSuffix ".debug"
+            versionNameSuffix "_debug"
+            splits.abi.enable = false
+            splits.density.enable = false
+        }
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/INDEX.LIST', 'META-INF/*.md']
+        }
+    }
+
+
+    // 分别打包APK 原版 和 dev共存版
+    flavorDimensions += "version"
+    productFlavors {
+        app {
+            dimension = "version"
+        }
+        dev {
+            dimension = "version"
+            applicationIdSuffix ".dev"
+        }
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+
+            include 'x86_64', 'x86', 'armeabi-v7a', 'arm64-v8a'
+            universalApk true
+        }
+    }
+
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    kotlin {
+        jvmToolchain(17)
+
+        /*sourceSets.all {
+            languageSettings {
+                languageVersion = "2.0"
+            }
+        }*/
+    }
+
+    // 修改apk文件名
+    android.applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            //noinspection GrDeprecatedAPIUsage
+            def abiName = output.getFilter(com.android.build.OutputFile.ABI)
+            if (abiName == null)
+                output.outputFileName = "TTS-Server-v${variant.versionName}.apk"
+            else
+                output.outputFileName = "TTS-Server-v${variant.versionName}_${abiName}.apk"
+        }
+    }
+
+//    sourceSets {
+//        main {
+//            java {
+//                exclude 'tts_server_android/ui'
+//            }
+//        }
+//    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+
+        compose true
+        buildConfig true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "$compose_compiler"
+    }
+}
+
+dependencies {
+    implementation 'androidx.activity:activity-ktx:1.8.2'
+    coreLibraryDesugaring('com.android.tools:desugar_jdk_libs:2.0.4')
+
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    //noinspection GradleDependency
+    implementation 'com.google.android.material:material:1.9.0-beta01'
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0'
+
+    def markwon_version = '4.6.2'
+    implementation "com.caverock:androidsvg:1.4"
+    implementation "io.noties.markwon:core:$markwon_version"
+    implementation "io.noties.markwon:image:$markwon_version"
+//    implementation "io.noties.markwon:html:$markwon_version"
+    implementation "io.noties.markwon:linkify:$markwon_version"
+
+    // RecyclerView
+    implementation 'com.github.liangjingkanji:BRV:1.5.8'
+    implementation "androidx.recyclerview:recyclerview:1.3.2"
+    implementation 'me.zhanghai.android.fastscroll:library:1.2.0'
+
+    // Code Editor
+    implementation 'io.github.Rosemoe.sora-editor:editor:0.21.1'
+    implementation 'io.github.Rosemoe.sora-editor:language-textmate:0.21.1'
+
+    // Room
+    ksp("androidx.room:room-compiler:$room_version")
+    implementation("androidx.room:room-runtime:$room_version")
+    implementation("androidx.room:room-ktx:$room_version")
+    androidTestImplementation("androidx.room:room-testing:$room_version")
+
+    // IO & NET
+    implementation 'com.squareup.okio:okio:3.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+    implementation 'com.github.liangjingkanji:Net:3.6.4'
+
+    implementation 'me.rosuh:AndroidFilePicker:1.0.1'
+    implementation 'com.louiscad.splitties:splitties-systemservices:3.0.0'
+
+    implementation 'cn.hutool:hutool-crypto:5.8.19'
+
+    implementation("com.hankcs:hanlp:portable-1.8.4")
+
+    // Media
+    implementation("androidx.media3:media3-exoplayer:1.2.1")
+    implementation("androidx.media3:media3-ui:1.2.1")
+
+    // https://github.com/gyf-dev/ImmersionBar
+    implementation 'com.geyifeng.immersionbar:immersionbar:3.2.2'
+    implementation 'com.geyifeng.immersionbar:immersionbar-ktx:3.2.2'
+
+    // https://github.com/FunnySaltyFish/ComposeDataSaver
+    implementation "com.github.FunnySaltyFish.ComposeDataSaver:data-saver:v1.1.5"
+
+    implementation("com.mikepenz:aboutlibraries-core:${about_lib_version}")
+    implementation("com.mikepenz:aboutlibraries-compose:${about_lib_version}")
+
+    def accompanistVersion = "0.33.0-alpha"
+    implementation("com.google.accompanist:accompanist-systemuicontroller:${accompanistVersion}")
+    implementation("com.google.accompanist:accompanist-navigation-animation:${accompanistVersion}")
+    implementation("com.google.accompanist:accompanist-webview:${accompanistVersion}")
+    implementation("com.google.accompanist:accompanist-permissions:${accompanistVersion}")
+
+
+
+    implementation("org.burnoutcrew.composereorderable:reorderable:0.9.6")
+
+    implementation 'androidx.activity:activity-compose:1.8.2'
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
+    implementation("androidx.navigation:navigation-compose:2.7.6")
+
+    implementation("io.github.dokar3:sheets-m3:0.5.4")
+
+
+
+
+    def lifecycle_version = "2.7.0"
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:$lifecycle_version")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version")
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:${lifecycle_version}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${lifecycle_version}"
+
+//    def composeBom = platform('androidx.compose:compose-bom:2023.08.00')
+    def composeBom = platform("dev.chrisbanes.compose:compose-bom:2024.01.00-alpha01")
+    implementation composeBom
+    androidTestImplementation composeBom
+
+    implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.foundation:foundation")
+    implementation("androidx.compose.ui:ui")
+
+    implementation 'androidx.compose.material:material-icons-core'
+    implementation 'androidx.compose.material:material-icons-extended'
+    implementation 'androidx.compose.material3:material3-window-size-class'
+
+    androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
+    debugImplementation 'androidx.compose.ui:ui-test-manifest'
+    implementation 'androidx.compose.ui:ui-tooling-preview'
+    debugImplementation 'androidx.compose.ui:ui-tooling'
+
+    // Logcat (Debug)
+//    debugImplementation 'com.github.getActivity:Logcat:11.2'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
