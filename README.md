@@ -1,15 +1,6 @@
 ![MIT](https://img.shields.io/badge/license-MIT-green)
 [![Crowdin](https://img.shields.io/badge/Localization-Crowdin-blueviolet?logo=Crowdin)](https://crowdin.com/project/tts-server)
 
-<<<<<<< HEAD
-[![CI](https://github.com/jing332/tts-server-android/actions/workflows/release.yml/badge.svg)](https://github.com/jing332/tts-server-android/actions/workflows/release.yml)
-[![CI](https://github.com/jing332/tts-server-android/actions/workflows/test.yml/badge.svg)](https://github.com/jing332/tts-server-android/actions/workflows/test.yml)
-
-![GitHub release](https://img.shields.io/github/downloads/jing332/tts-server-android/total)
-![GitHub release (latest by date)](https://img.shields.io/github/downloads/jing332/tts-server-android/latest/total)
-
-# TTS Server [![](https://img.shields.io/badge/Q%E7%BE%A4-124841768-blue)](https://jq.qq.com/?_wv=1027&k=y7WCDjEA)
-=======
 [![CI](https://github.com/mgz0227/tts-server-android/actions/workflows/release.yml/badge.svg)](https://github.com/mgz0227/tts-server-android/actions/workflows/release.yml)
 [![CI](https://github.com/mgz0227/tts-server-android/actions/workflows/test.yml/badge.svg)](https://github.com/mgz0227/tts-server-android/actions/workflows/test.yml)
 
@@ -17,7 +8,6 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/downloads/mgz0227/tts-server-android/latest/total)
 
 # TTS Server [![](https://img.shields.io/badge/Q%E7%BE%A4-点击加入-blue)](https://h5.qun.qq.com/s/hxc6YglYE8)
->>>>>>> parent of e4afa4a2 (回退)
 
 本APP起初为阅读APP的网络朗读所用，在原有基础上，现已支持:
 
@@ -36,19 +26,6 @@
 
 # Download
 
-<<<<<<< HEAD
-* [Stable - 稳定版(Releases)](https://github.com/jing332/tts-server-android/releases)
-
-* [Dev - 开发版(Actions 需登陆Github账户)](https://github.com/jing332/tts-server-android/actions)
-
-## Actions mirror
-
-app: https://jing332.lanzn.com/b09jpjd2d
-
-dev: https://jing332.lanzn.com/b09ig9qla
-
-密码Password: 1234
-=======
 * [Stable - 稳定版(Releases)](https://github.com/mgz0227/tts-server-android/releases)
 
 * [Dev - 开发版(Actions 需登陆Github账户)](https://github.com/mgz0227/tts-server-android/actions)
@@ -56,7 +33,6 @@ dev: https://jing332.lanzn.com/b09ig9qla
 ## Actions mirror
 
 app&Dev：https://miaogongzi.lanzout.com/b01rvtuhg
->>>>>>> parent of e4afa4a2 (回退)
 
 
 # JS
@@ -134,11 +110,7 @@ ALIAS_PASSWORD= 别名密码
 
 
 ### Github Actions:
-<<<<<<< HEAD
-> 详见 https://www.cnblogs.com/jing332/p/17452492.html
-=======
 > 详见 https://www.cnblogs.com/mgz0227/p/17452492.html
->>>>>>> parent of e4afa4a2 (回退)
 
 使用 Git Bash 对签名文件进行无换行Base64编码: `openssl base64 < key.jks | tr -d '\r\n' | tee key.jks.base64.txt`
 

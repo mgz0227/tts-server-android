@@ -2,15 +2,9 @@ version-1
 
 ### 此帮助文档可在左侧滑菜单打开。
 
-<<<<<<< HEAD
-[![Q群](https://img.shields.io/badge/Q%E7%BE%A4-124841768-blue.svg)](https://jq.qq.com/?_wv=1027&k=y7WCDjEA) 
-[![Issue](https://img.shields.io/badge/Github-Issue-greeb.svg)](https://github.com/jing332/tts-server-android/issues)
-[![Dev](https://img.shields.io/github/actions/workflow/status/jing332/tts-server-android/test.yml?label=%E5%BC%80%E5%8F%91%E7%89%88)](https://github.com/jing332/tts-server-android/actions/workflows/test.yml)
-=======
 [![Q群](https://img.shields.io/badge/Q%E7%BE%A4-点击加入-blue.svg)](https://h5.qun.qq.com/s/hxc6YglYE8) 
 [![Issue](https://img.shields.io/badge/Github-Issue-greeb.svg)](https://github.com/mgz0227/tts-server-android/issues)
 [![Dev](https://img.shields.io/github/actions/workflow/status/mgz0227/tts-server-android/test.yml?label=%E5%BC%80%E5%8F%91%E7%89%88)](https://github.com/mgz0227/tts-server-android/actions/workflows/test.yml)
->>>>>>> parent of e4afa4a2 (回退)
 
 # TTS Server 
 本应用有3个独立功能，通过左侧滑菜单进行切换。
