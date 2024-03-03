@@ -7,7 +7,11 @@ import kotlinx.serialization.Serializable
 
 
 object Github {
+<<<<<<< HEAD
     private const val repo = "jing332/tts-server-android"
+=======
+    private const val repo = "mgz0227/tts-server-android"
+>>>>>>> parent of e4afa4a2 (回退)
 
     fun getActions(repo: String = this.repo): WorkflowRuns {
         val str = Net.get("https://api.github.com/repos/${repo}/actions/runs") {
