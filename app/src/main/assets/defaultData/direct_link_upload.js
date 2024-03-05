@@ -1,16 +1,6 @@
 let DirectUploadJS = {
-    "橘途网盘 (永久有效)": function(config) {
-        let resp = upload('http://v2.jt12.de/up-v2.php', config)
-        let str = resp.body().string()
-        let result = JSON.parse(str)
-        if (result['code'] !== 0) {
-            throw "error: " + result['msg']
-        }
 
-        return result['msg']
-    },
-
-    "喵公子 (有效期2天)": function(config) {
+    "喵公子 (有效期7天)": function(config) {
         let url = 'https://sy.mgz6.cc/shuyuan'
         let resp = upload(url, config)
         let result = JSON.parse(resp.body().string())
@@ -19,24 +9,19 @@ let DirectUploadJS = {
         }
 
         return url + '/' + result['data']
-    },
-
-    "Catbox (有效期未知)": function(config) {
-        let form = {
-            'fileToUpload': {
-                'body': config,
-                'fileName': "config.json",
-                'contentType': "application/json"
-            },
-            'reqtype': 'fileupload',
-        }
-        let resp = ttsrv.httpPostMultipart('https://catbox.moe/user/api.php', form)
-        if (resp.code() !== 200) {
-            throw 'error: HTTP-' + resp.code()
-        }
-
-        return resp.body().string()
     }
+,
+"橘途网盘 (永久有效·速度较慢，如非需要永久连接，否则不建议)": function(config) {
+    let resp = upload('http://v2.jt12.de/up-v2.php', config)
+    let str = resp.body().string()
+    let result = JSON.parse(str)
+    if (result['code'] !== 0) {
+        throw "error: " + result['msg']
+    }
+
+    return result['msg']
+}
+
 }
 
 function upload(url, config, extra) {
