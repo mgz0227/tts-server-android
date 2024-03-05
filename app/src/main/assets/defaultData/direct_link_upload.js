@@ -1,27 +1,28 @@
 let DirectUploadJS = {
 
-    "喵公子 (有效期7天)": function(config) {
+    "喵公子① (有效期7天)": function(config) {
         let url = 'https://sy.mgz6.cc/shuyuan'
+        let zl = 'https://shuyuan.mgz6.cc/shuyuan'
         let resp = upload(url, config)
         let result = JSON.parse(resp.body().string())
         if (result['msg'] !== 'success') {
             throw "error: " + result['msg']
         }
 
-        return url + '/' + result['data']
+        return zl + '/' + result['data']
     }
 ,
-"橘途网盘 (永久有效·速度较慢，如非需要永久连接，否则不建议)": function(config) {
-    let resp = upload('http://v2.jt12.de/up-v2.php', config)
-    let str = resp.body().string()
-    let result = JSON.parse(str)
-    if (result['code'] !== 0) {
+"喵公子②·备用 (有效期7天)": function(config) {
+    let url = 'https://sy.miaogongzi.cc/shuyuan'
+    let zl = 'https://shuyuan.miaogongzi.cc/shuyuan'
+    let resp = upload(url, config)
+    let result = JSON.parse(resp.body().string())
+    if (result['msg'] !== 'success') {
         throw "error: " + result['msg']
     }
 
-    return result['msg']
-}
-
+    return zl + '/' + result['data']
+    }
 }
 
 function upload(url, config, extra) {
